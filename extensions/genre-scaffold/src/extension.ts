@@ -9,6 +9,14 @@ import optionsDialog from "./ui/options.html";
 
 const COMMAND_ID = "genreScaffold.generate";
 type Api = ExtensionContext<"1.0.0">;
+const MENU_LABEL = "Generate Genre Scaffold";
+const MENU_SCOPES = [
+  "MidiTrack",
+  "MidiTrack.ArrangementSelection",
+  "MidiClip",
+  "ClipSlot",
+  "ClipSlotSelection"
+] as const;
 
 function dialogUrl() {
   return `data:text/html,${encodeURIComponent(optionsDialog)}`;
@@ -42,6 +50,7 @@ function baseBeatFromArgument(arg: unknown) {
 
 export function activate(activation: ActivationContext) {
   const api: Api = initialize(activation, "1.0.0");
+  console.log("Genre Scaffold activated.");
 
   api.commands.registerCommand(COMMAND_ID, (arg: unknown) => {
     void (async () => {
@@ -56,6 +65,7 @@ export function activate(activation: ActivationContext) {
     });
   });
 
-  api.ui.registerContextMenuAction("MidiTrack", "Generate Genre Scaffold", COMMAND_ID);
-  api.ui.registerContextMenuAction("MidiTrack.ArrangementSelection", "Generate Genre Scaffold", COMMAND_ID);
+  for (const scope of MENU_SCOPES) {
+    void api.ui.registerContextMenuAction(scope, MENU_LABEL, COMMAND_ID);
+  }
 }

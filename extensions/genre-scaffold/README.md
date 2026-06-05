@@ -70,6 +70,13 @@ In Ableton Live Beta, use the extension from a MIDI track or MIDI arrangement se
 Generate Genre Scaffold
 ```
 
+The easiest triggers are:
+
+- Arrangement View: select a time range on a MIDI track, then right-click inside the selected region
+- Session View: right-click a clip slot on a MIDI track
+- Arrangement View: right-click an existing MIDI clip
+- Arrangement View: right-click a MIDI track header
+
 The extension opens the options modal, then creates tracks, clips, notes, section markers, and tempo.
 
 ## Package
