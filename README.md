@@ -34,6 +34,7 @@ Each extension lives in `extensions/<extension-name>` with its own setup notes, 
 - MIDI tracks for drums, bass, harmony, lead/chop, and percussion or FX roles
 - Stock-only Ableton devices with explicit source labels, conservative effect tuning, and Core Library Drum Rack sample loading
 - Core Library fallback waterfall for 909, 808, Garage, Boom Bap, percussion, and generic one-shot drum samples
+- Clear/replace workflow for removing generated tracks, clips, and markers before demos or regeneration passes
 - CLI fallback that emits `.json` and multitrack `.mid` examples
 - Browser-tested UI at intended and narrow modal sizes
 

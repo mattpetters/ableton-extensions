@@ -377,7 +377,7 @@ function createPlan({ coreRoot, candidate, usedPitches, files, warnings, fallbac
   }
   if (missing.length) {
     const missingText = missing.map((item) => `${item.role} (${item.pitch})`).join(", ");
-    planWarnings.push(`Missing samples for ${missingText}; those pads were left empty.`);
+    planWarnings.push(`Missing samples for ${missingText}; those pads need manual samples.`);
   }
 
   return {

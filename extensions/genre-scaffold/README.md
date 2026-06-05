@@ -27,7 +27,9 @@ Remaining release checks:
 - Finds Ableton's Core Library inside installed Live app bundles and common Core Library folders
 - Populates generated Drum Rack pads with Simpler chains and imported Core Library samples
 - Uses a kit waterfall: 909/707/808 for house and tech house, Garage/707/909/606 for UKG, 808 for trap, Boom Bap/vinyl/MPC-flavored samples for 90s hip hop, percussion kits for perc tracks, then any matching Core Library one-shots
+- Creates audio one-shot failsafe tracks if Drum Rack pad population fails, so demo output remains audible
 - Labels generated tracks with the sample source target and `GS <version>` for stale-build spotting
+- Adds a `Clear Genre Scaffold` context action and replace-selection confirmation for cleaning generated material before another pass
 - Applies conservative parameter tuning to inserted effects when Live exposes matching parameters
 - Ships with a CLI that writes `.json` scaffold data and multitrack `.mid` files
 
@@ -104,6 +106,10 @@ The easiest triggers are:
 
 The extension opens the options modal, then creates tracks, clips, notes, section markers, and tempo.
 
+Use `Clear Genre Scaffold` from the same context menus to remove generated material. With a highlighted Arrangement range, it clears generated clips and markers inside that selection; without a range, it removes generated Genre Scaffold tracks and markers from the set.
+
+If you generate over a highlighted range that already contains Genre Scaffold material, the extension asks before replacing it. The confirmation includes a `Don't ask again` checkbox for fast iteration.
+
 ## Drum Rack Samples
 
 Genre Scaffold looks for Ableton's bundled Core Library in places such as:
@@ -124,6 +130,8 @@ The target kit/palette is genre-aware:
 - Percussion tracks prefer percussion, conga, shaker, rim, tom, and miscellaneous one-shot folders.
 
 If the preferred preset or sample folder is missing, the extension falls through to any matching Core Library drum one-shots. To customize the result, unfold the Drum Rack and drag your own sample onto any pad, or select the Simpler inside a pad chain and replace its sample.
+
+If Live cannot populate the Drum Rack chains through the SDK host, Genre Scaffold creates audio one-shot failsafe tracks from the same sample plan. Those tracks are intentionally labeled `audio failsafe` so they can be deleted or replaced after the demo-safe pass.
 
 ## Package
 

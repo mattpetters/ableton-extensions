@@ -9,7 +9,9 @@ All notable changes to this project will be documented in this file.
 
 - Genre Scaffold now discovers Ableton's Core Library and populates generated Drum Rack pads with Simpler sample chains instead of leaving empty racks.
 - Added genre-aware drum sample waterfalls for 909/707/808 house and tech house, Garage/707 UKG, 808 trap, Boom Bap/vinyl/MPC hip hop, percussion, and generic Core Library one-shots.
-- Bumped Genre Scaffold to `0.1.3`, updated visible generated-track version stamps, and refreshed setup notes for sampled Drum Rack behavior.
+- Added audio one-shot failsafe tracks when Drum Rack pad population fails, so generated drum material stays audible for demos.
+- Added `Clear Genre Scaffold` plus replace-selection confirmation with a persisted `Don't ask again` option.
+- Bumped Genre Scaffold to `0.1.4`, updated visible generated-track version stamps, and refreshed setup notes for sampled Drum Rack behavior.
 
 ### Added
 

@@ -1,4 +1,5 @@
 import {
+  AudioTrack,
   DrumChain,
   DrumRack,
   Simpler,
@@ -7,13 +8,14 @@ import {
   DeviceParameter,
   ExtensionContext,
   MidiTrack,
-  NoteDescription
+  NoteDescription,
+  Track
 } from "@ableton-extensions/sdk";
 import { generateScaffold } from "../generateScaffold.js";
 import { INSERTABLE_STOCK_DEVICE_SET } from "../stockDevices.js";
 import { resolveDrumSamplePlan, summarizeDrumSamplePlan } from "./coreLibraryDrums.js";
 
-const GENRE_SCAFFOLD_VERSION = "0.1.3";
+const GENRE_SCAFFOLD_VERSION = "0.1.4";
 
 type ScaffoldOptions = {
   genre: string;
@@ -57,6 +59,11 @@ type ScaffoldSection = {
   bars: number;
 };
 
+type BeatRange = {
+  start: number;
+  end: number;
+};
+
 type Scaffold = ReturnType<typeof generateScaffold> & {
   sections: ScaffoldSection[];
   tracks: ScaffoldTrack[];
@@ -70,6 +77,22 @@ const CLIP_COLORS: Record<string, number> = {
   hook: 0xd56bff
 };
 
+const GENERATED_NAME_RE = /\|\s*GS\s+\d+\.\d+\.\d+/;
+const LEGACY_GENRE_PREFIXES = [
+  "Old Skool House |",
+  "Tech House |",
+  "UK Garage |",
+  "Trap |",
+  "90s Hip Hop |"
+];
+const LEGACY_CUE_SUFFIXES = [
+  " - Old Skool House",
+  " - Tech House",
+  " - UK Garage",
+  " - Trap",
+  " - 90s Hip Hop"
+];
+
 type ParameterTuning = {
   names: string[];
   normalized: number;
@@ -78,6 +101,15 @@ type ParameterTuning = {
 type DeviceInsertReport = {
   drumRackLabel?: string;
   notes: string[];
+  sampleAssignments?: DrumSampleAssignment[];
+  failedAssignments?: DrumSampleAssignment[];
+};
+
+type DrumSampleAssignment = {
+  pitch: number;
+  role: string;
+  filePath: string;
+  fileName: string;
 };
 
 const DEVICE_TUNINGS: Record<string, ParameterTuning[]> = {
@@ -141,9 +173,29 @@ function toNoteDescription(note: ScaffoldNote): NoteDescription {
 function displayTrackName(scaffold: Scaffold, track: ScaffoldTrack, generatedDeviceLabel?: string) {
   const primaryDevice = track.stockDevices[0] ?? "MIDI";
   const deviceLabel = generatedDeviceLabel ?? (
-    primaryDevice === "Drum Rack" ? "Building Drum Rack" : `Init ${primaryDevice}`
+    primaryDevice === "Drum Rack" ? "Loading samples" : `Init ${primaryDevice}`
   );
   return `${scaffold.genre.label} | ${track.name} | ${deviceLabel} | GS ${GENRE_SCAFFOLD_VERSION}`;
+}
+
+function isGeneratedTrackName(name: string) {
+  return GENERATED_NAME_RE.test(name) || LEGACY_GENRE_PREFIXES.some((prefix) => name.startsWith(prefix));
+}
+
+function isGeneratedCuePointName(name: string) {
+  return GENERATED_NAME_RE.test(name) || LEGACY_CUE_SUFFIXES.some((suffix) => name.endsWith(suffix));
+}
+
+function clipOverlapsRange(clip: { startTime: number; endTime: number }, range: BeatRange) {
+  return clip.startTime < range.end && clip.endTime > range.start;
+}
+
+function clipIsInsideRange(clip: { startTime: number; endTime: number }, range: BeatRange) {
+  return clip.startTime >= range.start && clip.endTime <= range.end;
+}
+
+function cuePointInRange(cuePoint: { time: number }, range: BeatRange) {
+  return cuePoint.time >= range.start && cuePoint.time < range.end;
 }
 
 function preferredDevices(track: ScaffoldTrack) {
@@ -213,6 +265,25 @@ function usedDrumPitches(track: ScaffoldTrack) {
     .sort((a, b) => a - b);
 }
 
+function resolveTrackSamplePlan(scaffold: Scaffold, track: ScaffoldTrack) {
+  return resolveDrumSamplePlan({
+    genreId: scaffold.genre.id,
+    genreLabel: scaffold.genre.label,
+    trackRole: track.role,
+    trackName: track.name,
+    usedPitches: usedDrumPitches(track)
+  });
+}
+
+function reportFromSamplePlan(samplePlan: ReturnType<typeof resolveDrumSamplePlan>): DeviceInsertReport {
+  return {
+    drumRackLabel: samplePlan.shortLabel,
+    notes: [summarizeDrumSamplePlan(samplePlan), samplePlan.swapInstructions],
+    sampleAssignments: samplePlan.assignments ?? [],
+    failedAssignments: []
+  };
+}
+
 async function insertSimplerSample(
   context: ExtensionContext<"1.0.0">,
   chain: Chain<"1.0.0">,
@@ -240,18 +311,8 @@ async function populateDrumRack(
   scaffold: Scaffold,
   track: ScaffoldTrack
 ): Promise<DeviceInsertReport> {
-  const samplePlan = resolveDrumSamplePlan({
-    genreId: scaffold.genre.id,
-    genreLabel: scaffold.genre.label,
-    trackRole: track.role,
-    trackName: track.name,
-    usedPitches: usedDrumPitches(track)
-  });
-
-  const report: DeviceInsertReport = {
-    drumRackLabel: samplePlan.shortLabel,
-    notes: [summarizeDrumSamplePlan(samplePlan), samplePlan.swapInstructions]
-  };
+  const samplePlan = resolveTrackSamplePlan(scaffold, track);
+  const report = reportFromSamplePlan(samplePlan);
 
   for (const warning of samplePlan.warnings ?? []) {
     report.notes.push(warning);
@@ -262,22 +323,24 @@ async function populateDrumRack(
   for (const assignment of samplePlan.assignments ?? []) {
     try {
       const chain = await drumRack.insertChain(drumRack.chains.length);
-      if (chain instanceof DrumChain || "receivingNote" in chain) {
-        (chain as DrumChain<"1.0.0">).receivingNote = assignment.pitch;
+      if (!(chain instanceof DrumChain) && !("receivingNote" in chain)) {
+        throw new Error("Created Drum Rack chain cannot receive MIDI notes.");
       }
+      (chain as DrumChain<"1.0.0">).receivingNote = assignment.pitch;
       await insertSimplerSample(context, chain, assignment.filePath);
       loaded += 1;
     } catch (error) {
       const note = `Could not load ${assignment.fileName} on MIDI note ${assignment.pitch}; replace that pad manually.`;
       report.notes.push(note);
+      report.failedAssignments?.push(assignment);
       console.warn(`[Genre Scaffold] ${track.name}: ${note}`, error);
     }
   }
 
   if (loaded === 0) {
-    report.drumRackLabel = "Needs samples";
+    report.drumRackLabel = report.failedAssignments?.length ? "Audio failsafe pending" : "Needs samples";
   } else if (loaded < (samplePlan.assignments?.length ?? 0)) {
-    report.drumRackLabel = `${samplePlan.shortLabel}, partial`;
+    report.drumRackLabel = `${samplePlan.shortLabel}, plus failsafe`;
   }
 
   console.info(`[Genre Scaffold] ${track.name}: ${report.notes.join(" ")}`);
@@ -302,24 +365,107 @@ async function insertStockDevices(
           report.notes.push(...drumReport.notes);
         } else {
           const note = "Live inserted Drum Rack, but the SDK did not expose it as a DrumRack object, so pads could not be populated.";
-          report.drumRackLabel = "Needs samples";
+          const samplePlan = resolveTrackSamplePlan(scaffold, track);
+          const fallbackReport = reportFromSamplePlan(samplePlan);
+          report.drumRackLabel = fallbackReport.sampleAssignments?.length ? "Audio failsafe pending" : "Needs samples";
           report.notes.push(note);
+          report.notes.push(...fallbackReport.notes);
+          report.sampleAssignments = fallbackReport.sampleAssignments;
+          report.failedAssignments = fallbackReport.sampleAssignments;
           console.warn(`[Genre Scaffold] ${track.name}: ${note}`);
         }
       }
       await tuneInsertedDevice(device, deviceName, track);
     } catch (error) {
       console.warn(`Could not insert stock device "${deviceName}" on "${track.name}".`, error);
+      if (deviceName === "Drum Rack") {
+        const samplePlan = resolveTrackSamplePlan(scaffold, track);
+        const fallbackReport = reportFromSamplePlan(samplePlan);
+        report.drumRackLabel = fallbackReport.sampleAssignments?.length ? "Audio failsafe pending" : "Needs samples";
+        report.notes.push(...fallbackReport.notes);
+        report.sampleAssignments = fallbackReport.sampleAssignments;
+        report.failedAssignments = fallbackReport.sampleAssignments;
+      }
     }
   }
   return report;
+}
+
+async function createAudioFallbackTrack(
+  context: ExtensionContext<"1.0.0">,
+  scaffold: Scaffold,
+  track: ScaffoldTrack,
+  assignment: DrumSampleAssignment,
+  baseBeat: number
+): Promise<AudioTrack<"1.0.0"> | null> {
+  const matchingNotes = track.clips.flatMap((clipSpec) =>
+    clipSpec.notes
+      .filter((note) => note.pitch === assignment.pitch)
+      .map((note) => ({
+        clipName: clipSpec.name,
+        startTime: baseBeat + clipSpec.startBar * 4 + note.start,
+        duration: Math.max(0.125, note.duration)
+      }))
+  );
+
+  if (!matchingNotes.length) {
+    return null;
+  }
+
+  const importedSamplePath = await context.resources.importIntoProject(assignment.filePath);
+  const audioTrack = await context.application.song.createAudioTrack();
+  audioTrack.name = `${scaffold.genre.label} | ${track.name} ${assignment.role} audio failsafe | GS ${GENRE_SCAFFOLD_VERSION}`;
+
+  for (const note of matchingNotes) {
+    try {
+      const clip = await audioTrack.createAudioClip({
+        filePath: importedSamplePath,
+        startTime: note.startTime,
+        duration: note.duration,
+        isWarped: false
+      });
+      clip.name = `${assignment.role} - ${note.clipName}`;
+      clip.color = CLIP_COLORS[track.role] ?? 0x888888;
+    } catch (error) {
+      console.warn(`Could not create audio failsafe clip for "${track.name}" ${assignment.role}.`, error);
+    }
+  }
+
+  return audioTrack;
+}
+
+async function createAudioFallbackTracks(
+  context: ExtensionContext<"1.0.0">,
+  scaffold: Scaffold,
+  track: ScaffoldTrack,
+  deviceReport: DeviceInsertReport,
+  baseBeat: number
+) {
+  const assignments = deviceReport.failedAssignments ?? [];
+  if (!assignments.length) {
+    return 0;
+  }
+
+  let created = 0;
+  const uniqueAssignments = [...new Map(assignments.map((assignment) => [assignment.pitch, assignment])).values()];
+  for (const assignment of uniqueAssignments) {
+    try {
+      const audioTrack = await createAudioFallbackTrack(context, scaffold, track, assignment, baseBeat);
+      if (audioTrack) {
+        created += 1;
+      }
+    } catch (error) {
+      console.warn(`Could not create audio failsafe track for "${track.name}" ${assignment.role}.`, error);
+    }
+  }
+  return created;
 }
 
 async function createCuePoints(context: ExtensionContext<"1.0.0">, scaffold: Scaffold, baseBeat: number) {
   for (const section of scaffold.sections) {
     try {
       const cuePoint = await context.application.song.createCuePoint(baseBeat + section.startBar * 4);
-      cuePoint.name = `${section.name} - ${scaffold.genre.label}`;
+      cuePoint.name = `${section.name} - ${scaffold.genre.label} | GS ${GENRE_SCAFFOLD_VERSION}`;
     } catch (error) {
       console.warn(`Could not create cue point "${section.name}".`, error);
     }
@@ -336,6 +482,91 @@ async function createTrackClips(liveTrack: MidiTrack<"1.0.0">, track: ScaffoldTr
     clip.color = CLIP_COLORS[track.role] ?? 0x888888;
     clip.notes = clipSpec.notes.map(toNoteDescription);
   }
+}
+
+function generatedTracks(context: ExtensionContext<"1.0.0">) {
+  return context.application.song.tracks.filter((track) => isGeneratedTrackName(track.name));
+}
+
+function generatedCuePoints(context: ExtensionContext<"1.0.0">) {
+  return context.application.song.cuePoints.filter((cuePoint) => isGeneratedCuePointName(cuePoint.name));
+}
+
+export function hasGeneratedScaffoldContent(context: ExtensionContext<"1.0.0">, range?: BeatRange) {
+  const tracks = generatedTracks(context);
+  const cuePoints = generatedCuePoints(context);
+
+  if (!range) {
+    return tracks.length > 0 || cuePoints.length > 0;
+  }
+
+  return tracks.some((track) => track.arrangementClips.some((clip) => clipOverlapsRange(clip, range))) ||
+    cuePoints.some((cuePoint) => cuePointInRange(cuePoint, range));
+}
+
+function shouldDeleteWholeTrack(track: Track<"1.0.0">, range?: BeatRange) {
+  if (!range) {
+    return true;
+  }
+  const clips = track.arrangementClips;
+  return clips.length > 0 && clips.every((clip) => clipIsInsideRange(clip, range));
+}
+
+export async function clearGeneratedScaffold(
+  context: ExtensionContext<"1.0.0">,
+  range?: BeatRange
+) {
+  const song = context.application.song;
+  await context.ui.withinProgressDialog(
+    range ? "Clearing Genre Scaffold Selection" : "Clearing Genre Scaffold",
+    { progress: 0 },
+    async (update, signal) => {
+      const tracks = generatedTracks(context);
+      const cuePoints = generatedCuePoints(context);
+      const cuePointsToDelete = cuePoints.filter((cuePoint) => !range || cuePointInRange(cuePoint, range));
+      const tracksToDelete = tracks.filter((track) => shouldDeleteWholeTrack(track, range));
+      const tracksToClear = range
+        ? tracks.filter((track) => !tracksToDelete.includes(track) && track.arrangementClips.some((clip) => clipOverlapsRange(clip, range)))
+        : [];
+      const total = Math.max(1, cuePointsToDelete.length + tracksToDelete.length + tracksToClear.length);
+      let completed = 0;
+
+      for (const cuePoint of cuePointsToDelete) {
+        if (signal.aborted) return;
+        await update(`Removing marker ${cuePoint.name}`, Math.round((completed / total) * 100));
+        try {
+          await song.deleteCuePoint(cuePoint);
+        } catch (error) {
+          console.warn(`Could not delete cue point "${cuePoint.name}".`, error);
+        }
+        completed += 1;
+      }
+
+      for (const track of tracksToClear) {
+        if (signal.aborted || !range) return;
+        await update(`Clearing ${track.name}`, Math.round((completed / total) * 100));
+        try {
+          await track.clearClipsInRange(range.start, range.end);
+        } catch (error) {
+          console.warn(`Could not clear generated clips from "${track.name}".`, error);
+        }
+        completed += 1;
+      }
+
+      for (const track of tracksToDelete) {
+        if (signal.aborted) return;
+        await update(`Removing ${track.name}`, Math.round((completed / total) * 100));
+        try {
+          await song.deleteTrack(track);
+        } catch (error) {
+          console.warn(`Could not delete generated track "${track.name}".`, error);
+        }
+        completed += 1;
+      }
+
+      await update("Done", 100);
+    }
+  );
 }
 
 export async function renderGenreScaffold(
@@ -372,6 +603,11 @@ export async function renderGenreScaffold(
         const deviceReport = await insertStockDevices(context, liveTrack, scaffold, trackSpec);
         liveTrack.name = displayTrackName(scaffold, trackSpec, deviceReport.drumRackLabel);
         await createTrackClips(liveTrack, trackSpec, baseBeat);
+        const fallbackTrackCount = await createAudioFallbackTracks(context, scaffold, trackSpec, deviceReport, baseBeat);
+        if (fallbackTrackCount > 0) {
+          liveTrack.name = displayTrackName(scaffold, trackSpec, "Audio failsafe active");
+          console.warn(`[Genre Scaffold] ${trackSpec.name}: created ${fallbackTrackCount} audio failsafe track(s) so the generated drums are audible.`);
+        }
         if (options.includeTrackNotes ?? true) {
           console.info(`[Genre Scaffold] Track note for "${liveTrack.name}": ${generatedTrackNotes(scaffold, trackSpec, deviceReport)}`);
         }
