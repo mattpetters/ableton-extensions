@@ -13,7 +13,12 @@ import {
 } from "@ableton-extensions/sdk";
 import { generateScaffold } from "../generateScaffold.js";
 import { INSERTABLE_STOCK_DEVICE_SET } from "../stockDevices.js";
-import { resolveDrumSamplePlan, summarizeDrumSamplePlan } from "./coreLibraryDrums.js";
+import {
+  createSimplerTriggerNote,
+  resolveDrumSamplePlan,
+  resolvePocKickSample,
+  summarizeDrumSamplePlan
+} from "./coreLibraryDrums.js";
 
 const GENRE_SCAFFOLD_VERSION = "0.1.4";
 
@@ -110,6 +115,17 @@ type DrumSampleAssignment = {
   role: string;
   filePath: string;
   fileName: string;
+};
+
+type SimplerInsertTarget = MidiTrack<"1.0.0"> | Chain<"1.0.0">;
+
+type SimplerSampleLoadResult = {
+  ok: boolean;
+  device?: Simpler<"1.0.0">;
+  importedPath?: string;
+  loadedSamplePath?: string;
+  failureReason?: string;
+  error?: unknown;
 };
 
 const DEVICE_TUNINGS: Record<string, ParameterTuning[]> = {
@@ -284,17 +300,84 @@ function reportFromSamplePlan(samplePlan: ReturnType<typeof resolveDrumSamplePla
   };
 }
 
+function errorMessage(error: unknown) {
+  return error instanceof Error ? error.message : String(error);
+}
+
+function asSimpler(device: Device<"1.0.0">): Simpler<"1.0.0"> | null {
+  const candidate = device as Simpler<"1.0.0">;
+  if (device instanceof Simpler || typeof candidate.replaceSample === "function") {
+    return candidate;
+  }
+  return null;
+}
+
+export async function insertSimplerWithSample(
+  context: ExtensionContext<"1.0.0">,
+  target: SimplerInsertTarget,
+  samplePath: string
+) : Promise<SimplerSampleLoadResult> {
+  let inserted: Device<"1.0.0">;
+  try {
+    inserted = await target.insertDevice("Simpler", 0);
+  } catch (error) {
+    return {
+      ok: false,
+      failureReason: `Could not insert Simpler: ${errorMessage(error)}`,
+      error
+    };
+  }
+
+  const simpler = asSimpler(inserted);
+  if (!simpler) {
+    return {
+      ok: false,
+      failureReason: "Live inserted Simpler, but the SDK did not expose it as a Simpler object.",
+      error: inserted
+    };
+  }
+
+  let importedPath: string;
+  try {
+    importedPath = await context.resources.importIntoProject(samplePath);
+  } catch (error) {
+    return {
+      ok: false,
+      device: simpler,
+      failureReason: `Could not import sample into the Live project: ${errorMessage(error)}`,
+      error
+    };
+  }
+
+  try {
+    const sample = await simpler.replaceSample(importedPath);
+    const loadedSamplePath = simpler.sample?.filePath ?? sample.filePath;
+    return {
+      ok: true,
+      device: simpler,
+      importedPath,
+      loadedSamplePath
+    };
+  } catch (error) {
+    return {
+      ok: false,
+      device: simpler,
+      importedPath,
+      failureReason: `Could not replace Simpler sample: ${errorMessage(error)}`,
+      error
+    };
+  }
+}
+
 async function insertSimplerSample(
   context: ExtensionContext<"1.0.0">,
   chain: Chain<"1.0.0">,
   samplePath: string
 ) {
-  const inserted = await chain.insertDevice("Simpler", 0);
-  if (!(inserted instanceof Simpler) && typeof (inserted as Simpler<"1.0.0">).replaceSample !== "function") {
-    throw new Error("Live inserted Simpler but the SDK did not return a Simpler object.");
+  const result = await insertSimplerWithSample(context, chain, samplePath);
+  if (!result.ok) {
+    throw new Error(result.failureReason ?? "Could not load sample into Simpler.");
   }
-  const importedSamplePath = await context.resources.importIntoProject(samplePath);
-  await (inserted as Simpler<"1.0.0">).replaceSample(importedSamplePath);
 }
 
 function isWritableDrumRack(device: Device<"1.0.0">): device is DrumRack<"1.0.0"> {
@@ -482,6 +565,66 @@ async function createTrackClips(liveTrack: MidiTrack<"1.0.0">, track: ScaffoldTr
     clip.color = CLIP_COLORS[track.role] ?? 0x888888;
     clip.notes = clipSpec.notes.map(toNoteDescription);
   }
+}
+
+export async function createPocKickTriggerClip(liveTrack: MidiTrack<"1.0.0">, baseBeat = 0) {
+  const clip = await liveTrack.createMidiClip(baseBeat, 4);
+  clip.name = "POC Kick Simpler Trigger";
+  clip.looping = true;
+  clip.color = CLIP_COLORS.drums;
+  clip.notes = [createSimplerTriggerNote(0) as NoteDescription];
+  return clip;
+}
+
+export async function renderPocKickSimpler(
+  context: ExtensionContext<"1.0.0">,
+  baseBeat = 0
+) {
+  const kickSample = resolvePocKickSample();
+  for (const warning of kickSample.warnings ?? []) {
+    console.warn(`[Genre Scaffold] POC Kick Simpler: ${warning}`);
+  }
+  if (!kickSample.samplePath) {
+    throw new Error("POC Kick Simpler could not find a Core Library kick sample.");
+  }
+
+  let createdTrack: MidiTrack<"1.0.0"> | null = null;
+  let loadResult: SimplerSampleLoadResult | undefined;
+
+  await context.ui.withinProgressDialog(
+    "POC Load Kick Simpler",
+    { progress: 0 },
+    async (update, signal) => {
+      await update("Creating kick track", 20);
+      if (signal.aborted) return;
+      createdTrack = await context.application.song.createMidiTrack();
+      createdTrack.name = `POC | Kick Simpler | ${kickSample.fileName ?? "Core Library kick"} | GS ${GENRE_SCAFFOLD_VERSION}`;
+      createdTrack.mixer.volume.setValue(0.85);
+
+      await update("Loading kick sample into Simpler", 55);
+      if (signal.aborted) return;
+      loadResult = await insertSimplerWithSample(context, createdTrack, kickSample.samplePath);
+      if (!loadResult.ok) {
+        throw new Error(loadResult.failureReason ?? "Could not load kick sample into Simpler.");
+      }
+
+      await update("Writing trigger clip", 85);
+      if (signal.aborted) return;
+      await createPocKickTriggerClip(createdTrack, baseBeat);
+      await update("Done", 100);
+    }
+  );
+
+  console.info(
+    [
+      "[Genre Scaffold] POC Kick Simpler loaded.",
+      `source=${kickSample.samplePath}`,
+      `imported=${loadResult?.importedPath ?? "unknown"}`,
+      `loaded=${loadResult?.loadedSamplePath ?? "unverified"}`
+    ].join(" ")
+  );
+
+  return createdTrack;
 }
 
 function generatedTracks(context: ExtensionContext<"1.0.0">) {

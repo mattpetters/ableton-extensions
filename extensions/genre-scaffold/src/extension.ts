@@ -9,6 +9,7 @@ import path from "node:path";
 import {
   clearGeneratedScaffold,
   hasGeneratedScaffoldContent,
+  renderPocKickSimpler,
   renderGenreScaffold,
   type ScaffoldOptions
 } from "./adapter/liveAdapter.js";
@@ -16,9 +17,11 @@ import optionsDialog from "./ui/options.html";
 
 const GENERATE_COMMAND_ID = "genreScaffold.generate";
 const CLEAR_COMMAND_ID = "genreScaffold.clear";
+const POC_KICK_SIMPLER_COMMAND_ID = "genreScaffold.pocKickSimpler";
 type Api = ExtensionContext<"1.0.0">;
 const GENERATE_MENU_LABEL = "Generate Genre Scaffold";
 const CLEAR_MENU_LABEL = "Clear Genre Scaffold";
+const POC_KICK_SIMPLER_MENU_LABEL = "POC Load Kick Simpler";
 const GENERATE_MENU_SCOPES = [
   "MidiTrack",
   "MidiTrack.ArrangementSelection",
@@ -33,6 +36,13 @@ const CLEAR_MENU_SCOPES = [
   "MidiClip",
   "MidiTrack",
   "MidiTrack.ArrangementSelection",
+  "ClipSlot",
+  "ClipSlotSelection"
+] as const;
+const POC_KICK_SIMPLER_MENU_SCOPES = [
+  "MidiTrack",
+  "MidiTrack.ArrangementSelection",
+  "MidiClip",
   "ClipSlot",
   "ClipSlotSelection"
 ] as const;
@@ -305,11 +315,21 @@ export function activate(activation: ActivationContext) {
     });
   });
 
+  api.commands.registerCommand(POC_KICK_SIMPLER_COMMAND_ID, (arg: unknown) => {
+    void renderPocKickSimpler(api, baseBeatFromArgument(arg)).catch((error) => {
+      console.error("POC Kick Simpler failed", error);
+    });
+  });
+
   for (const scope of GENERATE_MENU_SCOPES) {
     void api.ui.registerContextMenuAction(scope, GENERATE_MENU_LABEL, GENERATE_COMMAND_ID);
   }
 
   for (const scope of CLEAR_MENU_SCOPES) {
     void api.ui.registerContextMenuAction(scope, CLEAR_MENU_LABEL, CLEAR_COMMAND_ID);
+  }
+
+  for (const scope of POC_KICK_SIMPLER_MENU_SCOPES) {
+    void api.ui.registerContextMenuAction(scope, POC_KICK_SIMPLER_MENU_LABEL, POC_KICK_SIMPLER_COMMAND_ID);
   }
 }
