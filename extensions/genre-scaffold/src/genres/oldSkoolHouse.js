@@ -11,9 +11,10 @@ const progressions = [
 function createDrums(ctx) {
   return createTrack({
     id: "old-skool-house-drums",
-    name: "Drums - 909 House Kit",
+    name: "Drums - 909 House Pattern",
     role: "drums",
-    stockDevices: ["Drum Rack", "Core Library 909-style kit", "Drum Buss", "EQ Eight"],
+    stockDevices: ["Drum Rack", "Drum Buss", "EQ Eight"],
+    suggestedPreset: "Swap the empty Drum Rack for a 909-style Core Library kit.",
     description: "Four-on-the-floor kick, claps on 2 and 4, and offbeat hats for the classic boots-and-cats engine.",
     clips: sectionClips(ctx, "Drums", (section, rng) => {
       const notes = [];
@@ -85,7 +86,8 @@ function createPerc(ctx) {
     id: "old-skool-house-perc",
     name: "Perc - Conga Push",
     role: "perc",
-    stockDevices: ["Drum Rack", "Core Library percussion", "Auto Filter"],
+    stockDevices: ["Drum Rack", "Auto Filter"],
+    suggestedPreset: "Use conga, shaker, or classic house percussion Drum Rack pads.",
     description: "Light conga and shaker movement gives the loop a human old-school house push.",
     clips: sectionClips(ctx, "Perc", (section, rng) => {
       const notes = [];
@@ -149,10 +151,11 @@ function createChords(ctx) {
   const progression = pickProgression(ctx, progressions);
   return createTrack({
     id: "old-skool-house-chords",
-    name: "Chords - Stock Piano Stabs",
+    name: "Chords - Electric Piano Stabs",
     role: "chords",
-    stockDevices: ["Instrument Rack", "Grand Piano or Electric stock preset", "Auto Filter", "Reverb"],
-    description: "Short piano-style chord stabs reinforce the groove without writing a full song for the user.",
+    stockDevices: ["Electric", "Auto Filter", "Reverb"],
+    suggestedPreset: "Electric piano or house piano stock preset; keep reverb short and low.",
+    description: "Short electric-piano-style chord stabs reinforce the groove without writing a full song for the user.",
     clips: sectionClips(ctx, "Chords", (section, rng) => {
       const notes = [];
       const breakSection = section.tags.includes("break");

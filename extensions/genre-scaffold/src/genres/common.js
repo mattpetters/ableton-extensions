@@ -1,11 +1,13 @@
 import { makeClip } from "../lib/patterns.js";
 
-export function createTrack({ id, name, role, stockDevices, description, clips }) {
+export function createTrack({ id, name, role, stockDevices, suggestedPreset, soundNotes, description, clips }) {
   return {
     id,
     name,
     role,
     stockDevices,
+    ...(suggestedPreset ? { suggestedPreset } : {}),
+    ...(soundNotes ? { soundNotes } : {}),
     description,
     clips: clips.filter((clip) => clip.notes.length > 0)
   };

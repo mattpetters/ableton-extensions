@@ -24,9 +24,10 @@ function addHatRolls(notes, section, rng) {
 function createDrums(ctx) {
   return createTrack({
     id: "trap-drums",
-    name: "Drums - 808 Trap Kit",
+    name: "Drums - 808 Trap Pattern",
     role: "drums",
-    stockDevices: ["Drum Rack", "Core Library 808-style kit", "Drum Buss", "Saturator"],
+    stockDevices: ["Drum Rack", "Drum Buss", "Saturator"],
+    suggestedPreset: "Swap the empty Drum Rack for an 808-style Core Library kit.",
     description: "Half-time snare, sparse kicks, and hat rolls give the scaffold its trap grid.",
     clips: sectionClips(ctx, "Drums", (section, rng) => {
       const notes = [];
@@ -92,7 +93,8 @@ function createPerc(ctx) {
     id: "trap-perc",
     name: "Perc - Sparse Ear Candy",
     role: "perc",
-    stockDevices: ["Drum Rack", "Echo", "Hybrid Reverb"],
+    stockDevices: ["Drum Rack", "Echo", "Auto Filter"],
+    suggestedPreset: "Use short snaps, rims, and percs; keep space effects subtle.",
     description: "Sparse snaps and percussion leave negative space around the 808 and vocal lane.",
     clips: sectionClips(ctx, "Perc", (section, rng) => {
       const notes = [];
@@ -157,7 +159,7 @@ function createChords(ctx) {
     id: "trap-chords",
     name: "Chords - Dark Wavetable Pad",
     role: "chords",
-    stockDevices: ["Wavetable", "Auto Filter", "Hybrid Reverb", "Utility"],
+    stockDevices: ["Wavetable", "Auto Filter", "Reverb", "Utility"],
     description: "Slow minor pads set the key and mood without crowding the drums.",
     clips: sectionClips(ctx, "Chords", (section, rng) => {
       const notes = [];

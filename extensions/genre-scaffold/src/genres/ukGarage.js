@@ -11,10 +11,12 @@ const progressions = [
 function createDrums(ctx) {
   return createTrack({
     id: "uk-garage-drums",
-    name: "Drums - 2-Step Kit",
+    name: "Drums - Dry 2-Step Pattern",
     role: "drums",
-    stockDevices: ["Drum Rack", "Core Library electronic kit", "Drum Buss", "Hybrid Reverb"],
-    description: "A swung 2-step pattern with syncopated kicks, snappy backbeats, and shuffled hats.",
+    stockDevices: ["Drum Rack", "Drum Buss", "EQ Eight"],
+    suggestedPreset: "Swap the empty Drum Rack for a Garage, 606, 707, or short 909-style kit.",
+    soundNotes: "Intentionally dry by default; add roomy reverb only for niche distant/atmospheric UKG.",
+    description: "A dry swung 2-step pattern with syncopated kicks, snappy backbeats, and shuffled hats.",
     clips: sectionClips(ctx, "Drums", (section, rng) => {
       const notes = [];
       const intensity = sectionIntensity(ctx, section);
@@ -91,6 +93,7 @@ function createPerc(ctx) {
     name: "Perc - Shuffled Tops",
     role: "perc",
     stockDevices: ["Drum Rack", "Auto Pan", "Echo"],
+    suggestedPreset: "Use short shuffled hats, snaps, and rim samples; keep delay low.",
     description: "Extra shuffled tops and small percussive answers reinforce the garage feel.",
     clips: sectionClips(ctx, "Perc", (section, rng) => {
       const notes = [];
@@ -128,9 +131,9 @@ function createBass(ctx) {
   const progression = pickProgression(ctx, progressions);
   return createTrack({
     id: "uk-garage-bass",
-    name: "Bass - Shuffled Sub",
+    name: "Bass - Operator Shuffled Sub",
     role: "bass",
-    stockDevices: ["Operator", "Saturator", "EQ Eight", "Sidechain Compressor"],
+    stockDevices: ["Operator", "Saturator", "EQ Eight", "Compressor"],
     description: "A swung sub pattern answers the kick rather than simply following it.",
     clips: sectionClips(ctx, "Bass", (section, rng) => {
       const notes = [];
@@ -160,9 +163,10 @@ function createChords(ctx) {
   const progression = pickProgression(ctx, progressions);
   return createTrack({
     id: "uk-garage-chords",
-    name: "Chords - Organ Seventh Stabs",
+    name: "Chords - Wavetable Seventh Stabs",
     role: "chords",
     stockDevices: ["Wavetable", "Chord", "Auto Filter", "Echo"],
+    suggestedPreset: "Dial Wavetable toward organ/M1-style stabs or swap for a stock organ/electric preset.",
     description: "Seventh-chord stabs supply the soulful UKG color and leave rhythmic gaps for the drums.",
     clips: sectionClips(ctx, "Chords", (section, rng) => {
       const notes = [];

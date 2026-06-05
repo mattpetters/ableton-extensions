@@ -90,14 +90,14 @@
   "tracks": [
     {
       "id": "trap-drums",
-      "name": "Drums - 808 Trap Kit",
+      "name": "Drums - 808 Trap Pattern",
       "role": "drums",
       "stockDevices": [
         "Drum Rack",
-        "Core Library 808-style kit",
         "Drum Buss",
         "Saturator"
       ],
+      "suggestedPreset": "Swap the empty Drum Rack for an 808-style Core Library kit.",
       "description": "Half-time snare, sparse kicks, and hat rolls give the scaffold its trap grid.",
       "clips": [
         {
@@ -1138,8 +1138,9 @@
       "stockDevices": [
         "Drum Rack",
         "Echo",
-        "Hybrid Reverb"
+        "Auto Filter"
       ],
+      "suggestedPreset": "Use short snaps, rims, and percs; keep space effects subtle.",
       "description": "Sparse snaps and percussion leave negative space around the 808 and vocal lane.",
       "clips": [
         {
@@ -1781,7 +1782,7 @@
       "stockDevices": [
         "Wavetable",
         "Auto Filter",
-        "Hybrid Reverb",
+        "Reverb",
         "Utility"
       ],
       "description": "Slow minor pads set the key and mood without crowding the drums.",

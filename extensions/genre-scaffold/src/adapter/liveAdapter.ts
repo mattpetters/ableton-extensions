@@ -1,9 +1,12 @@
 import type {
+  Device,
+  DeviceParameter,
   ExtensionContext,
   MidiTrack,
   NoteDescription
 } from "@ableton-extensions/sdk";
 import { generateScaffold } from "../generateScaffold.js";
+import { INSERTABLE_STOCK_DEVICE_SET } from "../stockDevices.js";
 
 type ScaffoldOptions = {
   genre: string;
@@ -33,6 +36,8 @@ type ScaffoldTrack = {
   name: string;
   role: string;
   stockDevices: string[];
+  suggestedPreset?: string;
+  soundNotes?: string;
   clips: ScaffoldClip[];
 };
 
@@ -55,25 +60,59 @@ const CLIP_COLORS: Record<string, number> = {
   hook: 0xd56bff
 };
 
-const INSERTABLE_DEVICES = new Set([
-  "Auto Filter",
-  "Compressor",
-  "Delay",
-  "Drift",
-  "Drum Buss",
-  "Drum Rack",
-  "Echo",
-  "Electric",
-  "EQ Eight",
-  "Glue Compressor",
-  "Hybrid Reverb",
-  "Operator",
-  "Reverb",
-  "Saturator",
-  "Utility",
-  "Vinyl Distortion",
-  "Wavetable"
-]);
+type ParameterTuning = {
+  names: string[];
+  normalized: number;
+};
+
+const DEVICE_TUNINGS: Record<string, ParameterTuning[]> = {
+  "Auto Filter": [
+    { names: ["Resonance"], normalized: 0.18 }
+  ],
+  "Auto Pan": [
+    { names: ["Amount"], normalized: 0.18 },
+    { names: ["Rate"], normalized: 0.25 }
+  ],
+  Compressor: [
+    { names: ["Threshold"], normalized: 0.58 },
+    { names: ["Ratio"], normalized: 0.28 }
+  ],
+  Delay: [
+    { names: ["Dry/Wet"], normalized: 0.12 },
+    { names: ["Feedback"], normalized: 0.16 }
+  ],
+  "Drum Buss": [
+    { names: ["Drive"], normalized: 0.18 },
+    { names: ["Boom"], normalized: 0 },
+    { names: ["Damp"], normalized: 0.55 },
+    { names: ["Dry/Wet"], normalized: 0.62 }
+  ],
+  Echo: [
+    { names: ["Dry/Wet"], normalized: 0.12 },
+    { names: ["Feedback"], normalized: 0.16 }
+  ],
+  "Glue Compressor": [
+    { names: ["Threshold"], normalized: 0.58 },
+    { names: ["Makeup"], normalized: 0.5 },
+    { names: ["Dry/Wet"], normalized: 0.7 }
+  ],
+  "Hybrid Reverb": [
+    { names: ["Dry/Wet"], normalized: 0.08 },
+    { names: ["Decay", "Decay Time"], normalized: 0.18 }
+  ],
+  Reverb: [
+    { names: ["Dry/Wet"], normalized: 0.1 },
+    { names: ["Decay", "Decay Time"], normalized: 0.2 }
+  ],
+  Saturator: [
+    { names: ["Drive"], normalized: 0.14 },
+    { names: ["Dry/Wet"], normalized: 0.55 }
+  ],
+  "Vinyl Distortion": [
+    { names: ["Drive"], normalized: 0.16 },
+    { names: ["Crackle"], normalized: 0.08 }
+  ]
+};
 
 function toNoteDescription(note: ScaffoldNote): NoteDescription {
   return {
@@ -85,20 +124,61 @@ function toNoteDescription(note: ScaffoldNote): NoteDescription {
 }
 
 function displayTrackName(scaffold: Scaffold, track: ScaffoldTrack) {
-  return `${scaffold.genre.label} | ${track.name}`;
+  const primaryDevice = track.stockDevices[0] ?? "MIDI";
+  const deviceLabel = primaryDevice === "Drum Rack" ? "Init Drum Rack" : `Init ${primaryDevice}`;
+  return `${scaffold.genre.label} | ${track.name} | ${deviceLabel}`;
 }
 
 function preferredDevices(track: ScaffoldTrack) {
   return track.stockDevices
-    .filter((name) => INSERTABLE_DEVICES.has(name))
-    .slice(0, 3);
+    .filter((name) => INSERTABLE_STOCK_DEVICE_SET.has(name))
+    .slice(0, 4);
+}
+
+function normalizedName(name: string) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "");
+}
+
+function findParameter(parameters: DeviceParameter<"1.0.0">[], aliases: string[]) {
+  const normalizedAliases = aliases.map(normalizedName);
+  return parameters.find((parameter) => {
+    const parameterName = normalizedName(parameter.name);
+    return normalizedAliases.some((alias) => parameterName === alias);
+  }) ?? parameters.find((parameter) => {
+    const parameterName = normalizedName(parameter.name);
+    return normalizedAliases.some((alias) => parameterName.includes(alias));
+  });
+}
+
+async function setParameterNormalized(parameter: DeviceParameter<"1.0.0">, normalized: number) {
+  const clamped = Math.min(1, Math.max(0, normalized));
+  const min = parameter.min;
+  const max = parameter.max;
+  if (!Number.isFinite(min) || !Number.isFinite(max) || min === max) return;
+  await parameter.setValue(min + (max - min) * clamped);
+}
+
+async function tuneInsertedDevice(device: Device<"1.0.0">, requestedName: string, track: ScaffoldTrack) {
+  const tunings = DEVICE_TUNINGS[requestedName];
+  if (!tunings) return;
+
+  for (const tuning of tunings) {
+    const parameter = findParameter(device.parameters, tuning.names);
+    if (!parameter) continue;
+    try {
+      await setParameterNormalized(parameter, tuning.normalized);
+    } catch (error) {
+      console.warn(`Could not tune "${parameter.name}" on "${track.name}".`, error);
+    }
+  }
 }
 
 async function insertStockDevices(liveTrack: MidiTrack<"1.0.0">, track: ScaffoldTrack) {
   const devices = preferredDevices(track);
   for (const [index, deviceName] of devices.entries()) {
     try {
-      await liveTrack.insertDevice(deviceName, index);
+      const device = await liveTrack.insertDevice(deviceName, index);
+      await tuneInsertedDevice(device, deviceName, track);
     } catch (error) {
       console.warn(`Could not insert stock device "${deviceName}" on "${track.name}".`, error);
     }

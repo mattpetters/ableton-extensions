@@ -10,13 +10,13 @@ Each extension lives in `extensions/<extension-name>` with its own setup notes, 
 
 ![Genre Scaffold UI](assets/screenshots/genre-scaffold-ui.png)
 
-**Status:** MVP packaged, browser QA passing, generation validation passing. Needs one final in-Live import smoke pass before a public release tag.
+**Status:** MVP packaged and in-Live smoke tested. Current pass is polishing stock-device mapping, key selection, and musical defaults before a public release tag.
 
 **Path:** [extensions/genre-scaffold](extensions/genre-scaffold)
 
 **Setup:** [Genre Scaffold setup instructions](extensions/genre-scaffold/README.md#setup)
 
-**What it does:** Generates a stock-only MIDI and arrangement scaffold in Ableton Live. Choose a genre, key, length, tempo behavior, energy, density, and seed; the extension creates tracks, clips, MIDI notes, section markers, and stock-device hints.
+**What it does:** Generates a stock-only MIDI and arrangement scaffold in Ableton Live. Choose a genre, root, scale, length, tempo behavior, energy, density, and seed; the extension creates tracks, clips, MIDI notes, section markers, and insertable stock-device chains.
 
 **Current genres:**
 
@@ -30,11 +30,13 @@ Each extension lives in `extensions/<extension-name>` with its own setup notes, 
 
 - Modal Ableton-style UI for generation options
 - Deterministic seeds for repeatable variations
-- Key, scale, tempo, section, arrangement, density, and energy controls
+- Root, scale, tempo, section, arrangement, density, and energy controls
 - MIDI tracks for drums, bass, harmony, lead/chop, and percussion or FX roles
-- Stock-only Ableton device hints, with third-party samples/VSTs deferred
+- Stock-only Ableton devices with explicit initial-device labels and conservative effect tuning
 - CLI fallback that emits `.json` and multitrack `.mid` examples
 - Browser-tested UI at intended and narrow modal sizes
+
+**Next up:** Advanced mode with per-role instrument choices, stock preset/rack preferences, and later user-selected samples or VST presets once the SDK exposes a reliable loading path.
 
 ## Repo Layout
 

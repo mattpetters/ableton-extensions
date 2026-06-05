@@ -8,22 +8,24 @@ Genre Scaffold creates a useful starting session from a small set of musical cho
 
 ## Status
 
-MVP packaged and browser-tested. Generation tests pass across all five MVP genres, including two seeded rounds per genre to confirm meaningful variation.
+MVP packaged, browser-tested, and in-Live smoke tested. Generation tests pass across all five MVP genres, including two seeded rounds per genre to confirm meaningful variation.
 
 Remaining release checks:
 
-- Import the packaged `.ablx` into Ableton Live 12 Beta
-- Run one generation per genre in Live
+- Reinstall the latest versioned `.ablx`
+- Run one generation per genre in Live with the stock-device polish pass
 - Run a second generation per genre in Live and inspect the musical difference
 
 ## Features
 
-- Ableton modal UI with genre, key, length, tempo, energy, density, and seed controls
+- Ableton modal UI with genre, root, scale, length, tempo, energy, density, and seed controls
 - Generates drums, bass, harmony, lead/chop, and percussion or FX MIDI roles
 - Creates arrangement sections and cue points
 - Sets project tempo from the selected genre or manual override
 - Uses deterministic seeds for repeatable variations
-- Stays stock-only for V0, with Ableton stock device hints
+- Stays stock-only for V0, with insertable Ableton stock-device chains
+- Labels generated tracks with the actual initial stock device, such as `Init Drum Rack`
+- Applies conservative parameter tuning to inserted effects when Live exposes matching parameters
 - Ships with a CLI that writes `.json` scaffold data and multitrack `.mid` files
 
 ## Genres
@@ -131,7 +133,7 @@ This writes:
 Useful options:
 
 - `--genre`: `old-skool-house`, `tech-house`, `uk-garage`, `trap`, `90s-hip-hop`
-- `--key`: root and optional scale, such as `C minor`, `F# minor`, `D dorian`, `A major`
+- `--key`: root and optional scale, such as `C minor`, `F# minor`, `D dorian`, `A major`, or `G mixolydian`
 - `--scale`: override the scale in `--key`
 - `--tempo`: exact BPM, otherwise the genre default is used
 - `--bars`: usually `8`, `16`, `32`, or `64`
@@ -160,4 +162,6 @@ The validation checks that every MVP genre generates enough MIDI material, keeps
 
 - V0 does not require third-party samples, packs, or VSTs.
 - The SDK beta exposes song key/scale as read-only, so key currently controls generated MIDI but does not update Live's global key/scale UI.
-- Stock devices are inserted defensively by built-in device name when the Live API accepts them.
+- The SDK beta can insert built-in Live devices by name, but does not currently expose reliable ADG/preset or third-party VST loading.
+- Drum Rack tracks are labeled as initialized racks and carry suggested kit/preset notes in the scaffold data for future advanced-mode selection.
+- Advanced mode is planned for per-role stock instrument choices, preferred racks/presets, user sample packs, and VST preset swaps once those loading paths are validated.

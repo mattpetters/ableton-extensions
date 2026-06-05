@@ -11,9 +11,10 @@ const progressions = [
 function createDrums(ctx) {
   return createTrack({
     id: "tech-house-drums",
-    name: "Drums - Tight Club Kit",
+    name: "Drums - Tight Club Pattern",
     role: "drums",
-    stockDevices: ["Drum Rack", "Core Library electronic kit", "Drum Buss", "Glue Compressor"],
+    stockDevices: ["Drum Rack", "Drum Buss", "Glue Compressor"],
+    suggestedPreset: "Swap the empty Drum Rack for a tight 909, 707, or modern electronic kit.",
     description: "A straight, loud club groove: four-on-floor kick, sharp clap, offbeat hats, and phrase fills.",
     clips: sectionClips(ctx, "Drums", (section, rng) => {
       const notes = [];
@@ -81,6 +82,7 @@ function createPerc(ctx) {
     name: "Perc - Minimal Top Loop",
     role: "perc",
     stockDevices: ["Drum Rack", "Auto Pan", "Auto Filter"],
+    suggestedPreset: "Use short rims, toms, and dry top-loop samples for this Drum Rack.",
     description: "Small syncopated percussion gives the groove its rolling club motion.",
     clips: sectionClips(ctx, "Perc", (section, rng) => {
       const notes = [];

@@ -90,14 +90,14 @@
   "tracks": [
     {
       "id": "old-skool-house-drums",
-      "name": "Drums - 909 House Kit",
+      "name": "Drums - 909 House Pattern",
       "role": "drums",
       "stockDevices": [
         "Drum Rack",
-        "Core Library 909-style kit",
         "Drum Buss",
         "EQ Eight"
       ],
+      "suggestedPreset": "Swap the empty Drum Rack for a 909-style Core Library kit.",
       "description": "Four-on-the-floor kick, claps on 2 and 4, and offbeat hats for the classic boots-and-cats engine.",
       "clips": [
         {
@@ -1452,9 +1452,9 @@
       "role": "perc",
       "stockDevices": [
         "Drum Rack",
-        "Core Library percussion",
         "Auto Filter"
       ],
+      "suggestedPreset": "Use conga, shaker, or classic house percussion Drum Rack pads.",
       "description": "Light conga and shaker movement gives the loop a human old-school house push.",
       "clips": [
         {
@@ -2244,15 +2244,15 @@
     },
     {
       "id": "old-skool-house-chords",
-      "name": "Chords - Stock Piano Stabs",
+      "name": "Chords - Electric Piano Stabs",
       "role": "chords",
       "stockDevices": [
-        "Instrument Rack",
-        "Grand Piano or Electric stock preset",
+        "Electric",
         "Auto Filter",
         "Reverb"
       ],
-      "description": "Short piano-style chord stabs reinforce the groove without writing a full song for the user.",
+      "suggestedPreset": "Electric piano or house piano stock preset; keep reverb short and low.",
+      "description": "Short electric-piano-style chord stabs reinforce the groove without writing a full song for the user.",
       "clips": [
         {
           "name": "Old Skool House Chords - Intro groove",

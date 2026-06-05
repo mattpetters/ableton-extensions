@@ -1,6 +1,6 @@
 {
   "name": "ableton-genre-scaffold",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "type": "module",
   "description": "Stock-first MIDI and arrangement scaffold generator for Ableton Live Extensions.",

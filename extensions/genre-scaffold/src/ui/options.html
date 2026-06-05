@@ -29,11 +29,99 @@
       return Math.random().toString(36).slice(2, 10);
     }
 
+    const KEY_ROOT_OPTIONS = [
+      ["C", "C"],
+      ["C#/Db", "C#"],
+      ["D", "D"],
+      ["D#/Eb", "D#"],
+      ["E", "E"],
+      ["F", "F"],
+      ["F#/Gb", "F#"],
+      ["G", "G"],
+      ["G#/Ab", "G#"],
+      ["A", "A"],
+      ["A#/Bb", "A#"],
+      ["B", "B"]
+    ];
+
+    const KEY_SCALE_OPTIONS = [
+      ["Major", "major"],
+      ["Minor", "minor"],
+      ["Dorian", "dorian"],
+      ["Mixolydian", "mixolydian"],
+      ["Lydian", "lydian"],
+      ["Phrygian", "phrygian"],
+      ["Locrian", "locrian"],
+      ["Minor Blues", "minor blues"],
+      ["Minor Pentatonic", "minor pentatonic"],
+      ["Major Pentatonic", "major pentatonic"],
+      ["Whole Tone", "whole tone"],
+      ["Harmonic Minor", "harmonic minor"],
+      ["Melodic Minor", "melodic minor"],
+      ["Phrygian Dominant", "phrygian dominant"],
+      ["Lydian Dominant", "lydian dominant"],
+      ["Half-whole Dim.", "half-whole dim"],
+      ["Whole-half Dim.", "whole-half dim"],
+      ["Harmonic Major", "harmonic major"],
+      ["Dorian #4", "dorian #4"],
+      ["Lydian Augmented", "lydian augmented"],
+      ["Super Locrian", "super locrian"],
+      ["8-Tone Spanish", "8-tone spanish"],
+      ["Bhairav", "bhairav"],
+      ["Hungarian Minor", "hungarian minor"],
+      ["Hirajoshi", "hirajoshi"],
+      ["In-Sen", "in-sen"],
+      ["Iwato", "iwato"],
+      ["Kumoi", "kumoi"],
+      ["Pelog Selisir", "pelog selisir"],
+      ["Pelog Tembung", "pelog tembung"],
+      ["Messiaen 3", "messiaen 3"],
+      ["Messiaen 4", "messiaen 4"],
+      ["Messiaen 5", "messiaen 5"],
+      ["Messiaen 6", "messiaen 6"],
+      ["Messiaen 7", "messiaen 7"]
+    ];
+
+    const GENRE_DEFAULTS = {
+      "old-skool-house": { key: "C minor", tempo: 122 },
+      "tech-house": { key: "A minor", tempo: 126 },
+      "uk-garage": { key: "F minor", tempo: 132 },
+      trap: { key: "F# minor", tempo: 140 },
+      "90s-hip-hop": { key: "D minor", tempo: 88 }
+    };
+
+    let keyTouched = false;
+
+    function populateSelect(select, options) {
+      select.replaceChildren(...options.map(([label, value]) => {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = label;
+        return option;
+      }));
+    }
+
+    function setKey(value) {
+      const [root, ...scaleParts] = String(value).split(/\s+/);
+      document.getElementById("keyRoot").value = root || "C";
+      document.getElementById("keyScale").value = scaleParts.join(" ") || "minor";
+    }
+
+    function updateGenreDefaults() {
+      const defaults = GENRE_DEFAULTS[document.getElementById("genre").value] ?? GENRE_DEFAULTS["old-skool-house"];
+      if (!keyTouched) setKey(defaults.key);
+      if (document.getElementById("useDefaultTempo").checked) {
+        document.getElementById("tempo").value = String(defaults.tempo);
+      }
+    }
+
     function readForm() {
       const useDefaultTempo = document.getElementById("useDefaultTempo").checked;
+      const root = document.getElementById("keyRoot").value;
+      const scale = document.getElementById("keyScale").value;
       return {
         genre: document.getElementById("genre").value,
-        key: document.getElementById("key").value,
+        key: `${root} ${scale}`,
         bars: Number(document.querySelector("input[name='bars']:checked").value),
         energy: document.querySelector("input[name='energy']:checked").value,
         density: document.querySelector("input[name='density']:checked").value,
@@ -59,7 +147,16 @@
     }
 
     document.addEventListener("DOMContentLoaded", () => {
+      populateSelect(document.getElementById("keyRoot"), KEY_ROOT_OPTIONS);
+      populateSelect(document.getElementById("keyScale"), KEY_SCALE_OPTIONS);
       document.getElementById("seed").value = randomSeed();
+      document.getElementById("genre").addEventListener("change", updateGenreDefaults);
+      document.getElementById("keyRoot").addEventListener("change", () => {
+        keyTouched = true;
+      });
+      document.getElementById("keyScale").addEventListener("change", () => {
+        keyTouched = true;
+      });
       document.getElementById("useDefaultTempo").addEventListener("change", updateTempoState);
       document.getElementById("shuffleSeed").addEventListener("click", () => {
         document.getElementById("seed").value = randomSeed();
@@ -69,6 +166,7 @@
         if (event.key === "Enter" && event.metaKey) generate();
       });
       updateTempoState();
+      updateGenreDefaults();
     });
   </script>
   <style>
@@ -152,6 +250,20 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+    }
+
+    .key-row {
+      display: grid;
+      grid-template-columns: minmax(70px, 0.85fr) minmax(0, 1.15fr);
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .sub-field {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      min-width: 0;
     }
 
     input[type="text"],
@@ -278,7 +390,7 @@
 <body>
   <header>
     <h1>Genre Scaffold</h1>
-    <div class="status">MIDI, arrangement, tempo</div>
+    <div class="status">MIDI, key, tempo</div>
   </header>
 
   <main class="grid">
@@ -293,10 +405,19 @@
       </select>
     </label>
 
-    <label>
+    <div class="field">
       <span>Key</span>
-      <input id="key" data-testid="key-input" type="text" value="C minor" spellcheck="false">
-    </label>
+      <div class="key-row">
+        <label class="sub-field">
+          <span class="hint">Root</span>
+          <select id="keyRoot" data-testid="key-root-select"></select>
+        </label>
+        <label class="sub-field">
+          <span class="hint">Scale</span>
+          <select id="keyScale" data-testid="key-scale-select"></select>
+        </label>
+      </div>
+    </div>
 
     <div class="field">
       <div class="label-row">

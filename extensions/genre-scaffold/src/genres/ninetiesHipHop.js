@@ -11,9 +11,10 @@ const progressions = [
 function createDrums(ctx) {
   return createTrack({
     id: "90s-hip-hop-drums",
-    name: "Drums - Boom Bap Kit",
+    name: "Drums - Boom Bap Pattern",
     role: "drums",
-    stockDevices: ["Drum Rack", "Core Library acoustic/electronic kit", "Drum Buss", "Saturator"],
+    stockDevices: ["Drum Rack", "Drum Buss", "Saturator"],
+    suggestedPreset: "Swap the empty Drum Rack for an acoustic/electronic boom-bap kit.",
     description: "Swung hats, heavy snare on 2 and 4, and syncopated kicks for a boom-bap pocket.",
     clips: sectionClips(ctx, "Drums", (section, rng) => {
       const notes = [];
@@ -90,6 +91,7 @@ function createPerc(ctx) {
     name: "Perc - Vinyl Top Texture",
     role: "perc",
     stockDevices: ["Drum Rack", "Vinyl Distortion", "Auto Filter"],
+    suggestedPreset: "Use dusty shaker, rim, and vinyl-noise samples for this Drum Rack.",
     description: "Subtle shaker and rim details create a sampled-loop feel while staying stock-only.",
     clips: sectionClips(ctx, "Perc", (section, rng) => {
       const notes = [];

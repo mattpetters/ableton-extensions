@@ -1,8 +1,11 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { generateScaffold, writeMidiFile } from "../src/index.js";
-import { isPitchInScale } from "../src/lib/theory.js";
+import { isPitchInScale, parseKey, SCALES } from "../src/lib/theory.js";
 import { listGenres } from "../src/genres/index.js";
+import { INSERTABLE_STOCK_DEVICE_SET } from "../src/stockDevices.js";
+
+const LIVE_ROOT_VALUES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
 
 test("all MVP genres generate non-empty stock-only scaffolds", () => {
   for (const genre of listGenres()) {
@@ -20,7 +23,13 @@ test("all MVP genres generate non-empty stock-only scaffolds", () => {
     assert.equal(scaffold.tracks.length, 5);
 
     for (const track of scaffold.tracks) {
-      assert.ok(track.stockDevices.length > 0, `${genre} ${track.name} should include stock device hints`);
+      assert.ok(track.stockDevices.length > 0, `${genre} ${track.name} should include stock devices`);
+      for (const deviceName of track.stockDevices) {
+        assert.ok(
+          INSERTABLE_STOCK_DEVICE_SET.has(deviceName),
+          `${genre} ${track.name} uses non-insertable stock device "${deviceName}"`
+        );
+      }
       assert.ok(track.clips.length > 0, `${genre} ${track.name} should include clips`);
       const noteCount = track.clips.reduce((sum, clip) => sum + clip.notes.length, 0);
       assert.ok(noteCount > 0, `${genre} ${track.name} should include notes`);
@@ -38,6 +47,16 @@ test("different seeds produce useful variation", () => {
   const first = generateScaffold({ genre: "tech-house", key: "A minor", bars: 16, seed: "one" });
   const second = generateScaffold({ genre: "tech-house", key: "A minor", bars: 16, seed: "two" });
   assert.notDeepEqual(first.tracks, second.tracks);
+});
+
+test("Live-style root values and supported scale names parse cleanly", () => {
+  for (const root of LIVE_ROOT_VALUES) {
+    for (const scaleName of Object.keys(SCALES)) {
+      const key = parseKey(`${root} ${scaleName}`);
+      assert.equal(key.root, root);
+      assert.equal(key.scaleName, scaleName);
+    }
+  }
 });
 
 test("melodic tracks mostly stay inside the requested scale", () => {
