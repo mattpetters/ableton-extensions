@@ -1,0 +1,31 @@
+{
+  "name": "ableton-genre-scaffold",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Stock-first MIDI and arrangement scaffold generator for Ableton Live Extensions.",
+  "engines": {
+    "node": ">=24.14.1"
+  },
+  "scripts": {
+    "build": "npm run build:production",
+    "build:dev": "tsc --noEmit && tsx build.ts",
+    "build:production": "tsc --noEmit && tsx build.ts --production",
+    "package": "npm run build:production && extensions-cli package -o dist/genre-scaffold.ablx",
+    "start": "npm run build:dev && extensions-cli run",
+    "test": "node --test",
+    "validate:generations": "node test/variation-report.js",
+    "generate": "node src/cli.js",
+    "example": "node src/cli.js --genre uk-garage --key \"F minor\" --bars 16 --seed hot-iron --out examples/uk-garage-f-minor"
+  },
+  "dependencies": {
+    "@ableton-extensions/sdk": "file:vendor/ableton-extensions-sdk-1.0.0-beta.0.tgz"
+  },
+  "devDependencies": {
+    "@ableton-extensions/cli": "file:vendor/ableton-extensions-cli-1.0.0-beta.0.tgz",
+    "@types/node": "^25.9.1",
+    "esbuild": "0.28.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.3"
+  }
+}

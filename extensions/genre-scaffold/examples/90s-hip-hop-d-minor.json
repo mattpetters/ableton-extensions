@@ -1,0 +1,3749 @@
+{
+  "meta": {
+    "id": "90s-hip-hop:hot-iron",
+    "label": "90s Hip Hop in D minor",
+    "generator": "ableton-genre-scaffold",
+    "stockOnly": true,
+    "seed": "hot-iron",
+    "density": "balanced",
+    "energy": "medium"
+  },
+  "genre": {
+    "id": "90s-hip-hop",
+    "label": "90s Hip Hop"
+  },
+  "key": {
+    "root": "D",
+    "rootSemitone": 2,
+    "scaleName": "minor",
+    "intervals": [
+      0,
+      2,
+      3,
+      5,
+      7,
+      8,
+      10
+    ],
+    "label": "D minor"
+  },
+  "tempo": 88,
+  "bars": 16,
+  "sections": [
+    {
+      "index": 0,
+      "name": "Crate intro",
+      "startBar": 0,
+      "bars": 3,
+      "endBar": 3,
+      "energy": 0.48,
+      "tags": [
+        "intro"
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Verse pocket",
+      "startBar": 3,
+      "bars": 5,
+      "endBar": 8,
+      "energy": 0.82,
+      "tags": [
+        "groove"
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Hook lift",
+      "startBar": 8,
+      "bars": 4,
+      "endBar": 12,
+      "energy": 0.95,
+      "tags": [
+        "peak"
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Drum break",
+      "startBar": 12,
+      "bars": 2,
+      "endBar": 14,
+      "energy": 0.42,
+      "tags": [
+        "break"
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Outro pocket",
+      "startBar": 14,
+      "bars": 2,
+      "endBar": 16,
+      "energy": 0.65,
+      "tags": [
+        "outro"
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "90s-hip-hop-drums",
+      "name": "Drums - Boom Bap Kit",
+      "role": "drums",
+      "stockDevices": [
+        "Drum Rack",
+        "Core Library acoustic/electronic kit",
+        "Drum Buss",
+        "Saturator"
+      ],
+      "description": "Swung hats, heavy snare on 2 and 4, and syncopated kicks for a boom-bap pocket.",
+      "clips": [
+        {
+          "name": "90s Hip Hop Drums - Crate intro",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.13,
+              "velocity": 101,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 0,
+              "duration": 0.055,
+              "velocity": 56,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 1,
+              "duration": 0.12,
+              "velocity": 108,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 36,
+              "start": 1.5,
+              "duration": 0.13,
+              "velocity": 97,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 36,
+              "start": 2.5,
+              "duration": 0.13,
+              "velocity": 111,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 2.5,
+              "duration": 0.055,
+              "velocity": 53,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 3,
+              "duration": 0.12,
+              "velocity": 105,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 3,
+              "duration": 0.055,
+              "velocity": 60,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 3.5,
+              "duration": 0.13,
+              "velocity": 108,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 3.5,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.13,
+              "velocity": 109,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 4.5,
+              "duration": 0.055,
+              "velocity": 58,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 5,
+              "duration": 0.12,
+              "velocity": 108,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 36,
+              "start": 5.5,
+              "duration": 0.13,
+              "velocity": 98,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.13,
+              "velocity": 107,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 6.5,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 7,
+              "duration": 0.12,
+              "velocity": 108,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 36,
+              "start": 7.5,
+              "duration": 0.13,
+              "velocity": 104,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 7.5,
+              "duration": 0.055,
+              "velocity": 53,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.13,
+              "velocity": 98,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 8.5,
+              "duration": 0.055,
+              "velocity": 64,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 9,
+              "duration": 0.12,
+              "velocity": 108,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 36,
+              "start": 9.5,
+              "duration": 0.13,
+              "velocity": 107,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 36,
+              "start": 10.5,
+              "duration": 0.13,
+              "velocity": 99,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 10.5,
+              "duration": 0.055,
+              "velocity": 53,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 11,
+              "duration": 0.12,
+              "velocity": 106,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 36,
+              "start": 11.5,
+              "duration": 0.13,
+              "velocity": 100,
+              "label": "boom-bap kick"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Drums - Verse pocket",
+          "startBar": 3,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.13,
+              "velocity": 108,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 0,
+              "duration": 0.055,
+              "velocity": 62,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 1,
+              "duration": 0.12,
+              "velocity": 109,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 1,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 1.5,
+              "duration": 0.13,
+              "velocity": 97,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 1.5,
+              "duration": 0.055,
+              "velocity": 36,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 42,
+              "start": 2,
+              "duration": 0.055,
+              "velocity": 53,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 2.5,
+              "duration": 0.13,
+              "velocity": 106,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 2.5,
+              "duration": 0.055,
+              "velocity": 57,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 3,
+              "duration": 0.12,
+              "velocity": 106,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 3,
+              "duration": 0.055,
+              "velocity": 61,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 3.5,
+              "duration": 0.13,
+              "velocity": 100,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 3.5,
+              "duration": 0.055,
+              "velocity": 62,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.13,
+              "velocity": 107,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 4.5,
+              "duration": 0.055,
+              "velocity": 61,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 5,
+              "duration": 0.12,
+              "velocity": 104,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 36,
+              "start": 5.5,
+              "duration": 0.13,
+              "velocity": 101,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 37,
+              "start": 5.5,
+              "duration": 0.06,
+              "velocity": 46,
+              "label": "ghost snare"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.13,
+              "velocity": 107,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 38,
+              "start": 7,
+              "duration": 0.12,
+              "velocity": 112,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 7,
+              "duration": 0.055,
+              "velocity": 63,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 7.5,
+              "duration": 0.13,
+              "velocity": 103,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 7.5,
+              "duration": 0.055,
+              "velocity": 53,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.13,
+              "velocity": 103,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 8,
+              "duration": 0.055,
+              "velocity": 56,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 42,
+              "start": 8.5,
+              "duration": 0.055,
+              "velocity": 36,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 9,
+              "duration": 0.12,
+              "velocity": 105,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 9,
+              "duration": 0.055,
+              "velocity": 38,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 9.5,
+              "duration": 0.13,
+              "velocity": 108,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 36,
+              "start": 10.5,
+              "duration": 0.13,
+              "velocity": 97,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 38,
+              "start": 11,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 11,
+              "duration": 0.055,
+              "velocity": 40,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 11.5,
+              "duration": 0.13,
+              "velocity": 101,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 36,
+              "start": 12,
+              "duration": 0.13,
+              "velocity": 102,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 12,
+              "duration": 0.055,
+              "velocity": 48,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 42,
+              "start": 12.5,
+              "duration": 0.055,
+              "velocity": 46,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 13,
+              "duration": 0.12,
+              "velocity": 107,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 13,
+              "duration": 0.055,
+              "velocity": 38,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 13.5,
+              "duration": 0.13,
+              "velocity": 100,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 37,
+              "start": 13.5,
+              "duration": 0.06,
+              "velocity": 35,
+              "label": "ghost snare"
+            },
+            {
+              "pitch": 42,
+              "start": 13.5,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 42,
+              "start": 14,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 14.5,
+              "duration": 0.13,
+              "velocity": 100,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 38,
+              "start": 15,
+              "duration": 0.12,
+              "velocity": 112,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 15,
+              "duration": 0.055,
+              "velocity": 64,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 15.5,
+              "duration": 0.13,
+              "velocity": 109,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 36,
+              "start": 16,
+              "duration": 0.13,
+              "velocity": 104,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 16,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 17,
+              "duration": 0.12,
+              "velocity": 108,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 17,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 17.5,
+              "duration": 0.13,
+              "velocity": 107,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 17.5,
+              "duration": 0.055,
+              "velocity": 39,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 42,
+              "start": 18,
+              "duration": 0.055,
+              "velocity": 60,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 18.5,
+              "duration": 0.13,
+              "velocity": 98,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 18.5,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 19,
+              "duration": 0.12,
+              "velocity": 108,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 36,
+              "start": 19.5,
+              "duration": 0.13,
+              "velocity": 99,
+              "label": "boom-bap kick"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Drums - Hook lift",
+          "startBar": 8,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.13,
+              "velocity": 104,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 0,
+              "duration": 0.055,
+              "velocity": 59,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 42,
+              "start": 0.5,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 0.79,
+              "duration": 0.13,
+              "velocity": 110,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 38,
+              "start": 1,
+              "duration": 0.12,
+              "velocity": 112,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 1,
+              "duration": 0.055,
+              "velocity": 43,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 37,
+              "start": 1.5,
+              "duration": 0.06,
+              "velocity": 38,
+              "label": "ghost snare"
+            },
+            {
+              "pitch": 42,
+              "start": 1.5,
+              "duration": 0.055,
+              "velocity": 43,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 1.79,
+              "duration": 0.13,
+              "velocity": 106,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 2,
+              "duration": 0.055,
+              "velocity": 58,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 2.5,
+              "duration": 0.13,
+              "velocity": 108,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 2.5,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 3,
+              "duration": 0.12,
+              "velocity": 107,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 3,
+              "duration": 0.055,
+              "velocity": 57,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.13,
+              "velocity": 107,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 4.5,
+              "duration": 0.055,
+              "velocity": 46,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 4.79,
+              "duration": 0.13,
+              "velocity": 100,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 38,
+              "start": 5,
+              "duration": 0.12,
+              "velocity": 109,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 5,
+              "duration": 0.055,
+              "velocity": 40,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 37,
+              "start": 5.5,
+              "duration": 0.06,
+              "velocity": 46,
+              "label": "ghost snare"
+            },
+            {
+              "pitch": 42,
+              "start": 5.5,
+              "duration": 0.055,
+              "velocity": 36,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 5.79,
+              "duration": 0.13,
+              "velocity": 105,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 6,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.13,
+              "velocity": 110,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 6.5,
+              "duration": 0.055,
+              "velocity": 43,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 7,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 7.5,
+              "duration": 0.055,
+              "velocity": 58,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.13,
+              "velocity": 97,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 8,
+              "duration": 0.055,
+              "velocity": 48,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 42,
+              "start": 8.5,
+              "duration": 0.055,
+              "velocity": 58,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 8.79,
+              "duration": 0.13,
+              "velocity": 99,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 38,
+              "start": 9,
+              "duration": 0.12,
+              "velocity": 109,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 9.5,
+              "duration": 0.055,
+              "velocity": 39,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 9.79,
+              "duration": 0.13,
+              "velocity": 108,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 10,
+              "duration": 0.055,
+              "velocity": 57,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 10.5,
+              "duration": 0.13,
+              "velocity": 106,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 10.5,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 11,
+              "duration": 0.12,
+              "velocity": 105,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 11,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 37,
+              "start": 11.5,
+              "duration": 0.06,
+              "velocity": 39,
+              "label": "ghost snare"
+            },
+            {
+              "pitch": 42,
+              "start": 11.5,
+              "duration": 0.055,
+              "velocity": 63,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 12,
+              "duration": 0.13,
+              "velocity": 101,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 12,
+              "duration": 0.055,
+              "velocity": 63,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 12.79,
+              "duration": 0.13,
+              "velocity": 103,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 38,
+              "start": 13,
+              "duration": 0.12,
+              "velocity": 112,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 13.5,
+              "duration": 0.055,
+              "velocity": 58,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 13.79,
+              "duration": 0.13,
+              "velocity": 105,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 14,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 14.5,
+              "duration": 0.13,
+              "velocity": 102,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 38,
+              "start": 15,
+              "duration": 0.12,
+              "velocity": 106,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 15.5,
+              "duration": 0.055,
+              "velocity": 44,
+              "label": "swung hat pocket"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Drums - Drum break",
+          "startBar": 12,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.13,
+              "velocity": 105,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 38,
+              "start": 1,
+              "duration": 0.12,
+              "velocity": 104,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 1,
+              "duration": 0.055,
+              "velocity": 45,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 2.5,
+              "duration": 0.13,
+              "velocity": 103,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 2.5,
+              "duration": 0.055,
+              "velocity": 43,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 3,
+              "duration": 0.12,
+              "velocity": 105,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 3,
+              "duration": 0.055,
+              "velocity": 41,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.13,
+              "velocity": 108,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 38,
+              "start": 5,
+              "duration": 0.12,
+              "velocity": 104,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 37,
+              "start": 5.5,
+              "duration": 0.06,
+              "velocity": 44,
+              "label": "ghost snare"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.13,
+              "velocity": 106,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 38,
+              "start": 7,
+              "duration": 0.12,
+              "velocity": 105,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 7,
+              "duration": 0.055,
+              "velocity": 54,
+              "label": "swung hat pocket"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Drums - Outro pocket",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.13,
+              "velocity": 107,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 0.5,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 0.79,
+              "duration": 0.13,
+              "velocity": 110,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 38,
+              "start": 1,
+              "duration": 0.12,
+              "velocity": 107,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 1,
+              "duration": 0.055,
+              "velocity": 54,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 42,
+              "start": 1.5,
+              "duration": 0.055,
+              "velocity": 53,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 1.79,
+              "duration": 0.13,
+              "velocity": 99,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 2,
+              "duration": 0.055,
+              "velocity": 59,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 2.5,
+              "duration": 0.13,
+              "velocity": 111,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 2.5,
+              "duration": 0.055,
+              "velocity": 45,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 3,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 37,
+              "start": 3.5,
+              "duration": 0.06,
+              "velocity": 43,
+              "label": "ghost snare"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.13,
+              "velocity": 98,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 36,
+              "start": 4.79,
+              "duration": 0.13,
+              "velocity": 108,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 38,
+              "start": 5,
+              "duration": 0.12,
+              "velocity": 112,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 5,
+              "duration": 0.055,
+              "velocity": 36,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 37,
+              "start": 5.5,
+              "duration": 0.06,
+              "velocity": 38,
+              "label": "ghost snare"
+            },
+            {
+              "pitch": 42,
+              "start": 5.5,
+              "duration": 0.055,
+              "velocity": 64,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 36,
+              "start": 5.79,
+              "duration": 0.13,
+              "velocity": 106,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.13,
+              "velocity": 106,
+              "label": "boom-bap kick"
+            },
+            {
+              "pitch": 42,
+              "start": 6.5,
+              "duration": 0.055,
+              "velocity": 43,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 38,
+              "start": 7,
+              "duration": 0.12,
+              "velocity": 106,
+              "label": "heavy snare backbeat"
+            },
+            {
+              "pitch": 42,
+              "start": 7,
+              "duration": 0.055,
+              "velocity": 41,
+              "label": "swung hat pocket"
+            },
+            {
+              "pitch": 42,
+              "start": 7.5,
+              "duration": 0.055,
+              "velocity": 64,
+              "label": "swung hat pocket"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90s-hip-hop-perc",
+      "name": "Perc - Vinyl Top Texture",
+      "role": "perc",
+      "stockDevices": [
+        "Drum Rack",
+        "Vinyl Distortion",
+        "Auto Filter"
+      ],
+      "description": "Subtle shaker and rim details create a sampled-loop feel while staying stock-only.",
+      "clips": [
+        {
+          "name": "90s Hip Hop Perc - Crate intro",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 70,
+              "start": 0.29,
+              "duration": 0.05,
+              "velocity": 48,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 1.29,
+              "duration": 0.05,
+              "velocity": 33,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 2.29,
+              "duration": 0.05,
+              "velocity": 40,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 37,
+              "start": 3.79,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "rim detail"
+            },
+            {
+              "pitch": 37,
+              "start": 7.79,
+              "duration": 0.055,
+              "velocity": 50,
+              "label": "rim detail"
+            },
+            {
+              "pitch": 70,
+              "start": 8.29,
+              "duration": 0.05,
+              "velocity": 31,
+              "label": "dusty shaker"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Perc - Verse pocket",
+          "startBar": 3,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 70,
+              "start": 0.29,
+              "duration": 0.05,
+              "velocity": 44,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 2.29,
+              "duration": 0.05,
+              "velocity": 33,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 5.29,
+              "duration": 0.05,
+              "velocity": 35,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 7.29,
+              "duration": 0.05,
+              "velocity": 33,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 8.29,
+              "duration": 0.05,
+              "velocity": 47,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 10.29,
+              "duration": 0.05,
+              "velocity": 48,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 37,
+              "start": 10.79,
+              "duration": 0.055,
+              "velocity": 37,
+              "label": "rim detail"
+            },
+            {
+              "pitch": 70,
+              "start": 11.29,
+              "duration": 0.05,
+              "velocity": 48,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 37,
+              "start": 11.79,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "rim detail"
+            },
+            {
+              "pitch": 70,
+              "start": 12.29,
+              "duration": 0.05,
+              "velocity": 41,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 14.29,
+              "duration": 0.05,
+              "velocity": 30,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 37,
+              "start": 15.79,
+              "duration": 0.055,
+              "velocity": 40,
+              "label": "rim detail"
+            },
+            {
+              "pitch": 70,
+              "start": 16.29,
+              "duration": 0.05,
+              "velocity": 37,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 19.29,
+              "duration": 0.05,
+              "velocity": 39,
+              "label": "dusty shaker"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Perc - Hook lift",
+          "startBar": 8,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 70,
+              "start": 3.29,
+              "duration": 0.05,
+              "velocity": 37,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 37,
+              "start": 3.79,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "rim detail"
+            },
+            {
+              "pitch": 70,
+              "start": 6.29,
+              "duration": 0.05,
+              "velocity": 37,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 37,
+              "start": 7.79,
+              "duration": 0.055,
+              "velocity": 45,
+              "label": "rim detail"
+            },
+            {
+              "pitch": 70,
+              "start": 8.29,
+              "duration": 0.05,
+              "velocity": 34,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 37,
+              "start": 8.79,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "rim detail"
+            },
+            {
+              "pitch": 70,
+              "start": 9.29,
+              "duration": 0.05,
+              "velocity": 40,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 11.29,
+              "duration": 0.05,
+              "velocity": 46,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 13.29,
+              "duration": 0.05,
+              "velocity": 38,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 37,
+              "start": 14.79,
+              "duration": 0.055,
+              "velocity": 44,
+              "label": "rim detail"
+            },
+            {
+              "pitch": 37,
+              "start": 15.79,
+              "duration": 0.055,
+              "velocity": 50,
+              "label": "rim detail"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Perc - Drum break",
+          "startBar": 12,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 37,
+              "start": 0.79,
+              "duration": 0.055,
+              "velocity": 50,
+              "label": "rim detail"
+            },
+            {
+              "pitch": 70,
+              "start": 1.29,
+              "duration": 0.05,
+              "velocity": 32,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 5.29,
+              "duration": 0.05,
+              "velocity": 32,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 7.29,
+              "duration": 0.05,
+              "velocity": 35,
+              "label": "dusty shaker"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Perc - Outro pocket",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 37,
+              "start": 0.79,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "rim detail"
+            },
+            {
+              "pitch": 70,
+              "start": 2.29,
+              "duration": 0.05,
+              "velocity": 42,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 3.29,
+              "duration": 0.05,
+              "velocity": 46,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 5.29,
+              "duration": 0.05,
+              "velocity": 50,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 6.29,
+              "duration": 0.05,
+              "velocity": 40,
+              "label": "dusty shaker"
+            },
+            {
+              "pitch": 37,
+              "start": 7.79,
+              "duration": 0.055,
+              "velocity": 38,
+              "label": "rim detail"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90s-hip-hop-bass",
+      "name": "Bass - Warm Sampled Sub",
+      "role": "bass",
+      "stockDevices": [
+        "Operator",
+        "Saturator",
+        "EQ Eight"
+      ],
+      "description": "A simple root-and-fifth bassline supports the drums and chord sample.",
+      "clips": [
+        {
+          "name": "90s Hip Hop Bass - Crate intro",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 38,
+              "start": 0,
+              "duration": 0.55,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 45,
+              "start": 1.45,
+              "duration": 0.38,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 38,
+              "start": 2.35,
+              "duration": 0.42,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 45,
+              "start": 3.1,
+              "duration": 0.32,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 48,
+              "start": 4,
+              "duration": 0.55,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 55,
+              "start": 5.45,
+              "duration": 0.38,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 48,
+              "start": 6.35,
+              "duration": 0.42,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 55,
+              "start": 7.1,
+              "duration": 0.32,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 46,
+              "start": 8,
+              "duration": 0.55,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 53,
+              "start": 9.45,
+              "duration": 0.38,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 46,
+              "start": 10.35,
+              "duration": 0.42,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 53,
+              "start": 11.1,
+              "duration": 0.32,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Bass - Verse pocket",
+          "startBar": 3,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 45,
+              "start": 0,
+              "duration": 0.55,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 52,
+              "start": 1.45,
+              "duration": 0.38,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 45,
+              "start": 2.35,
+              "duration": 0.42,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 57,
+              "start": 3.1,
+              "duration": 0.32,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 38,
+              "start": 4,
+              "duration": 0.55,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 45,
+              "start": 5.45,
+              "duration": 0.38,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 38,
+              "start": 6.35,
+              "duration": 0.42,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 45,
+              "start": 7.1,
+              "duration": 0.32,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 48,
+              "start": 8,
+              "duration": 0.55,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 55,
+              "start": 9.45,
+              "duration": 0.38,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 48,
+              "start": 10.35,
+              "duration": 0.42,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 55,
+              "start": 11.1,
+              "duration": 0.32,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 46,
+              "start": 12,
+              "duration": 0.55,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 53,
+              "start": 13.45,
+              "duration": 0.38,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 46,
+              "start": 14.35,
+              "duration": 0.42,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 53,
+              "start": 15.1,
+              "duration": 0.32,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 45,
+              "start": 16,
+              "duration": 0.55,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 52,
+              "start": 17.45,
+              "duration": 0.38,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 45,
+              "start": 18.35,
+              "duration": 0.42,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 57,
+              "start": 19.1,
+              "duration": 0.32,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Bass - Hook lift",
+          "startBar": 8,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 38,
+              "start": 0,
+              "duration": 0.55,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 45,
+              "start": 1.45,
+              "duration": 0.38,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 38,
+              "start": 2.35,
+              "duration": 0.42,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 50,
+              "start": 3.1,
+              "duration": 0.32,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 48,
+              "start": 4,
+              "duration": 0.55,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 55,
+              "start": 5.45,
+              "duration": 0.38,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 48,
+              "start": 6.35,
+              "duration": 0.42,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 55,
+              "start": 7.1,
+              "duration": 0.32,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 46,
+              "start": 8,
+              "duration": 0.55,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 53,
+              "start": 9.45,
+              "duration": 0.38,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 46,
+              "start": 10.35,
+              "duration": 0.42,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 53,
+              "start": 11.1,
+              "duration": 0.32,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 45,
+              "start": 12,
+              "duration": 0.55,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 52,
+              "start": 13.45,
+              "duration": 0.38,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 45,
+              "start": 14.35,
+              "duration": 0.42,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 52,
+              "start": 15.1,
+              "duration": 0.32,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Bass - Drum break",
+          "startBar": 12,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 38,
+              "start": 0,
+              "duration": 1.2,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 45,
+              "start": 2.5,
+              "duration": 0.5,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 48,
+              "start": 4,
+              "duration": 1.2,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 55,
+              "start": 6.5,
+              "duration": 0.5,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Bass - Outro pocket",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 46,
+              "start": 0,
+              "duration": 0.55,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 53,
+              "start": 1.45,
+              "duration": 0.38,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 46,
+              "start": 2.35,
+              "duration": 0.42,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 58,
+              "start": 3.1,
+              "duration": 0.32,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 45,
+              "start": 4,
+              "duration": 0.55,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 52,
+              "start": 5.45,
+              "duration": 0.38,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 45,
+              "start": 6.35,
+              "duration": 0.42,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            },
+            {
+              "pitch": 52,
+              "start": 7.1,
+              "duration": 0.32,
+              "velocity": 84,
+              "label": "root-and-fifth boom-bap bass"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90s-hip-hop-chops",
+      "name": "Chords - Dusty Key Chops",
+      "role": "chords",
+      "stockDevices": [
+        "Electric",
+        "Vinyl Distortion",
+        "Auto Filter",
+        "Reverb"
+      ],
+      "description": "Short chord chops imply a sample without requiring any third-party audio.",
+      "clips": [
+        {
+          "name": "90s Hip Hop Chops - Crate intro",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 57,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 57,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 57,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 9.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 9.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 9.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 9.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 10.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 10.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 10.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 10.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Chops - Verse pocket",
+          "startBar": 3,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 57,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 57,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 57,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 57,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 57,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 57,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 72,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 9.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 9.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 9.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 72,
+              "start": 9.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 10.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 10.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 10.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 72,
+              "start": 10.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 58,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 58,
+              "start": 13.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 13.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 13.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 13.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 58,
+              "start": 14.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 14.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 14.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 14.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 16,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 16,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 16,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 72,
+              "start": 16,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 17.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 17.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 17.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 72,
+              "start": 17.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 18.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 18.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 18.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 72,
+              "start": 18.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Chops - Hook lift",
+          "startBar": 8,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 57,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 57,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 57,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 72,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 72,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 72,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 74,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 9.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 9.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 9.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 74,
+              "start": 9.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 10.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 10.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 10.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 74,
+              "start": 10.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 72,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 13.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 13.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 13.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 72,
+              "start": 13.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 14.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 14.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 14.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 72,
+              "start": 14.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Chops - Drum break",
+          "startBar": 12,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 53,
+              "start": 0,
+              "duration": 1.4,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 57,
+              "start": 0,
+              "duration": 1.4,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 0,
+              "duration": 1.4,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 0,
+              "duration": 1.4,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 4,
+              "duration": 1.4,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 4,
+              "duration": 1.4,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 4,
+              "duration": 1.4,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 72,
+              "start": 4,
+              "duration": 1.4,
+              "velocity": 62,
+              "label": "dusty key chop"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Chops - Outro pocket",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 62,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 1.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 62,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 65,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 70,
+              "start": 2.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 5.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 60,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 64,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 67,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            },
+            {
+              "pitch": 69,
+              "start": 6.75,
+              "duration": 0.28,
+              "velocity": 62,
+              "label": "dusty key chop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90s-hip-hop-hook",
+      "name": "Hook - Vibey Lead",
+      "role": "hook",
+      "stockDevices": [
+        "Electric",
+        "Echo",
+        "Reverb"
+      ],
+      "description": "A restrained melodic answer gives identity but keeps space for rap vocals.",
+      "clips": [
+        {
+          "name": "90s Hip Hop Hook - Verse pocket",
+          "startBar": 3,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 69,
+              "start": 0.5,
+              "duration": 0.24,
+              "velocity": 58,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 1.5,
+              "duration": 0.24,
+              "velocity": 61,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 62,
+              "start": 2.25,
+              "duration": 0.24,
+              "velocity": 64,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 3.25,
+              "duration": 0.24,
+              "velocity": 67,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 69,
+              "start": 4.5,
+              "duration": 0.24,
+              "velocity": 58,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 5.5,
+              "duration": 0.24,
+              "velocity": 61,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 62,
+              "start": 6.25,
+              "duration": 0.24,
+              "velocity": 64,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 7.25,
+              "duration": 0.24,
+              "velocity": 67,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 69,
+              "start": 8.5,
+              "duration": 0.24,
+              "velocity": 58,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 9.5,
+              "duration": 0.24,
+              "velocity": 61,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 62,
+              "start": 10.25,
+              "duration": 0.24,
+              "velocity": 64,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 11.25,
+              "duration": 0.24,
+              "velocity": 67,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 69,
+              "start": 12.5,
+              "duration": 0.24,
+              "velocity": 58,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 13.5,
+              "duration": 0.24,
+              "velocity": 61,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 62,
+              "start": 14.25,
+              "duration": 0.24,
+              "velocity": 64,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 15.25,
+              "duration": 0.24,
+              "velocity": 67,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 69,
+              "start": 16.5,
+              "duration": 0.24,
+              "velocity": 58,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 17.5,
+              "duration": 0.24,
+              "velocity": 61,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 62,
+              "start": 18.25,
+              "duration": 0.24,
+              "velocity": 64,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 19.25,
+              "duration": 0.24,
+              "velocity": 67,
+              "label": "laid-back melodic answer"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Hook - Hook lift",
+          "startBar": 8,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 65,
+              "start": 0.5,
+              "duration": 0.24,
+              "velocity": 58,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 69,
+              "start": 1.5,
+              "duration": 0.24,
+              "velocity": 61,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 70,
+              "start": 2.25,
+              "duration": 0.24,
+              "velocity": 64,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 69,
+              "start": 3.25,
+              "duration": 0.24,
+              "velocity": 67,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 4.5,
+              "duration": 0.24,
+              "velocity": 58,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 69,
+              "start": 5.5,
+              "duration": 0.24,
+              "velocity": 61,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 70,
+              "start": 6.25,
+              "duration": 0.24,
+              "velocity": 64,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 69,
+              "start": 7.25,
+              "duration": 0.24,
+              "velocity": 67,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 8.5,
+              "duration": 0.24,
+              "velocity": 58,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 69,
+              "start": 9.5,
+              "duration": 0.24,
+              "velocity": 61,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 70,
+              "start": 10.25,
+              "duration": 0.24,
+              "velocity": 64,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 69,
+              "start": 11.25,
+              "duration": 0.24,
+              "velocity": 67,
+              "label": "laid-back melodic answer"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Hook - Drum break",
+          "startBar": 12,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 69,
+              "start": 0.5,
+              "duration": 0.24,
+              "velocity": 58,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 1.5,
+              "duration": 0.24,
+              "velocity": 61,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 62,
+              "start": 2.25,
+              "duration": 0.24,
+              "velocity": 64,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 3.25,
+              "duration": 0.24,
+              "velocity": 67,
+              "label": "laid-back melodic answer"
+            }
+          ]
+        },
+        {
+          "name": "90s Hip Hop Hook - Outro pocket",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 74,
+              "start": 0.5,
+              "duration": 0.24,
+              "velocity": 58,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 72,
+              "start": 1.5,
+              "duration": 0.24,
+              "velocity": 61,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 69,
+              "start": 2.25,
+              "duration": 0.24,
+              "velocity": 64,
+              "label": "laid-back melodic answer"
+            },
+            {
+              "pitch": 65,
+              "start": 3.25,
+              "duration": 0.24,
+              "velocity": 67,
+              "label": "laid-back melodic answer"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

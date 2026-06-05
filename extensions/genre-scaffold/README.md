@@ -1,0 +1,136 @@
+# Genre Scaffold
+
+Stock-first MIDI, composition, tempo, and arrangement generation for Ableton Live Extensions.
+
+Genre Scaffold creates a useful starting session from a small set of musical choices. It is aimed at producers who want a genre-appropriate first draft with enough structure to start editing immediately, while still leaving room for experimentation.
+
+![Genre Scaffold UI](../../assets/screenshots/genre-scaffold-ui.png)
+
+## Status
+
+MVP packaged and browser-tested. Generation tests pass across all five MVP genres, including two seeded rounds per genre to confirm meaningful variation.
+
+Remaining release checks:
+
+- Import the packaged `.ablx` into Ableton Live 12 Beta
+- Run one generation per genre in Live
+- Run a second generation per genre in Live and inspect the musical difference
+
+## Features
+
+- Ableton modal UI with genre, key, length, tempo, energy, density, and seed controls
+- Generates drums, bass, harmony, lead/chop, and percussion or FX MIDI roles
+- Creates arrangement sections and cue points
+- Sets project tempo from the selected genre or manual override
+- Uses deterministic seeds for repeatable variations
+- Stays stock-only for V0, with Ableton stock device hints
+- Ships with a CLI that writes `.json` scaffold data and multitrack `.mid` files
+
+## Genres
+
+- Old Skool House
+- Tech House
+- UK Garage
+- Trap
+- 90s Hip Hop
+
+## Setup
+
+Requirements:
+
+- Ableton Live 12 Beta with Extensions Developer Mode enabled
+- Node.js `24.14.1` or newer
+- The Ableton Extensions SDK and CLI tarballs in `vendor/`; see [vendor/README.md](vendor/README.md)
+
+Install dependencies:
+
+```sh
+cd extensions/genre-scaffold
+npm install
+cp .env.example .env
+```
+
+Update `.env` if your Ableton Live Beta app lives somewhere else:
+
+```sh
+EXTENSION_HOST_PATH=/Applications/Ableton Live 12 Beta.app/Contents/Helpers/ExtensionHost/ExtensionHostNodeModule.node
+```
+
+## Run In Live
+
+Start the extension in development mode:
+
+```sh
+npm start
+```
+
+In Ableton Live Beta, use the extension from a MIDI track or MIDI arrangement selection context menu:
+
+```text
+Generate Genre Scaffold
+```
+
+The extension opens the options modal, then creates tracks, clips, notes, section markers, and tempo.
+
+## Package
+
+Build and package an installable Ableton extension:
+
+```sh
+npm run package
+```
+
+The package is written to:
+
+```text
+dist/genre-scaffold.ablx
+```
+
+Install it by adding the `.ablx` package from Ableton Live Beta Preferences or Settings > Extensions.
+
+## CLI
+
+Generate scaffold JSON and MIDI without Ableton:
+
+```sh
+npm run generate -- --genre uk-garage --key "F minor" --bars 16 --seed hot-iron --out examples/ukg
+```
+
+This writes:
+
+- `examples/ukg.json`
+- `examples/ukg.mid`
+
+Useful options:
+
+- `--genre`: `old-skool-house`, `tech-house`, `uk-garage`, `trap`, `90s-hip-hop`
+- `--key`: root and optional scale, such as `C minor`, `F# minor`, `D dorian`, `A major`
+- `--scale`: override the scale in `--key`
+- `--tempo`: exact BPM, otherwise the genre default is used
+- `--bars`: usually `8`, `16`, `32`, or `64`
+- `--density`: `sparse`, `balanced`, or `busy`
+- `--energy`: `low`, `medium`, or `high`
+- `--seed`: deterministic variation seed
+- `--out`: output path without extension
+
+## Validation
+
+Run unit tests:
+
+```sh
+npm test
+```
+
+Run the two-round variation report:
+
+```sh
+npm run validate:generations
+```
+
+The validation checks that every MVP genre generates enough MIDI material, keeps arrangement length intact, and changes at least two tracks between different seeds.
+
+## Notes
+
+- V0 does not require third-party samples, packs, or VSTs.
+- The SDK beta exposes song key/scale as read-only, so key currently controls generated MIDI but does not update Live's global key/scale UI.
+- Stock devices are inserted defensively by built-in device name when the Live API accepts them.

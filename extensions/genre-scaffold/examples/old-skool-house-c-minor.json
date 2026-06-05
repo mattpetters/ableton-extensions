@@ -1,0 +1,4065 @@
+{
+  "meta": {
+    "id": "old-skool-house:hot-iron",
+    "label": "Old Skool House in C minor",
+    "generator": "ableton-genre-scaffold",
+    "stockOnly": true,
+    "seed": "hot-iron",
+    "density": "balanced",
+    "energy": "medium"
+  },
+  "genre": {
+    "id": "old-skool-house",
+    "label": "Old Skool House"
+  },
+  "key": {
+    "root": "C",
+    "rootSemitone": 0,
+    "scaleName": "minor",
+    "intervals": [
+      0,
+      2,
+      3,
+      5,
+      7,
+      8,
+      10
+    ],
+    "label": "C minor"
+  },
+  "tempo": 122,
+  "bars": 16,
+  "sections": [
+    {
+      "index": 0,
+      "name": "Intro groove",
+      "startBar": 0,
+      "bars": 3,
+      "endBar": 3,
+      "energy": 0.55,
+      "tags": [
+        "intro"
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Piano groove",
+      "startBar": 3,
+      "bars": 4,
+      "endBar": 7,
+      "energy": 0.82,
+      "tags": [
+        "groove"
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Filter break",
+      "startBar": 7,
+      "bars": 3,
+      "endBar": 10,
+      "energy": 0.38,
+      "tags": [
+        "break"
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Full groove",
+      "startBar": 10,
+      "bars": 4,
+      "endBar": 14,
+      "energy": 1,
+      "tags": [
+        "groove",
+        "peak"
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Outro loop",
+      "startBar": 14,
+      "bars": 2,
+      "endBar": 16,
+      "energy": 0.68,
+      "tags": [
+        "outro"
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "old-skool-house-drums",
+      "name": "Drums - 909 House Kit",
+      "role": "drums",
+      "stockDevices": [
+        "Drum Rack",
+        "Core Library 909-style kit",
+        "Drum Buss",
+        "EQ Eight"
+      ],
+      "description": "Four-on-the-floor kick, claps on 2 and 4, and offbeat hats for the classic boots-and-cats engine.",
+      "clips": [
+        {
+          "name": "Old Skool House Drums - Intro groove",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.14,
+              "velocity": 103,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 0.5,
+              "duration": 0.18,
+              "velocity": 80,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 1,
+              "duration": 0.14,
+              "velocity": 107,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 1,
+              "duration": 0.12,
+              "velocity": 95,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 79,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 2,
+              "duration": 0.14,
+              "velocity": 104,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 2.5,
+              "duration": 0.18,
+              "velocity": 84,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 3,
+              "duration": 0.14,
+              "velocity": 107,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 3,
+              "duration": 0.12,
+              "velocity": 94,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 76,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.14,
+              "velocity": 107,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 4.5,
+              "duration": 0.18,
+              "velocity": 83,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 5,
+              "duration": 0.14,
+              "velocity": 105,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 5,
+              "duration": 0.12,
+              "velocity": 90,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 5.5,
+              "duration": 0.18,
+              "velocity": 84,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 6,
+              "duration": 0.14,
+              "velocity": 103,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 6.5,
+              "duration": 0.18,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 7,
+              "duration": 0.14,
+              "velocity": 104,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 7,
+              "duration": 0.12,
+              "velocity": 96,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 7.5,
+              "duration": 0.18,
+              "velocity": 81,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.14,
+              "velocity": 101,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 8.5,
+              "duration": 0.18,
+              "velocity": 72,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 9,
+              "duration": 0.14,
+              "velocity": 104,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 9,
+              "duration": 0.12,
+              "velocity": 94,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 9.5,
+              "duration": 0.18,
+              "velocity": 72,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 10,
+              "duration": 0.14,
+              "velocity": 101,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 10.5,
+              "duration": 0.18,
+              "velocity": 76,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 11,
+              "duration": 0.14,
+              "velocity": 107,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 11,
+              "duration": 0.12,
+              "velocity": 92,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 11.5,
+              "duration": 0.18,
+              "velocity": 82,
+              "label": "offbeat open hat"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Drums - Piano groove",
+          "startBar": 3,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.14,
+              "velocity": 102,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 42,
+              "start": 0,
+              "duration": 0.08,
+              "velocity": 57,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 0.5,
+              "duration": 0.18,
+              "velocity": 72,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 1,
+              "duration": 0.14,
+              "velocity": 107,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 1,
+              "duration": 0.12,
+              "velocity": 92,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 1,
+              "duration": 0.08,
+              "velocity": 56,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 81,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 2,
+              "duration": 0.14,
+              "velocity": 106,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 2.5,
+              "duration": 0.18,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 3,
+              "duration": 0.14,
+              "velocity": 103,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 3,
+              "duration": 0.12,
+              "velocity": 92,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 3,
+              "duration": 0.08,
+              "velocity": 48,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 3.775,
+              "duration": 0.08,
+              "velocity": 51,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.14,
+              "velocity": 102,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 4.5,
+              "duration": 0.18,
+              "velocity": 84,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 5,
+              "duration": 0.14,
+              "velocity": 104,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 5,
+              "duration": 0.12,
+              "velocity": 91,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 5,
+              "duration": 0.08,
+              "velocity": 62,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 5.5,
+              "duration": 0.18,
+              "velocity": 79,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 6,
+              "duration": 0.14,
+              "velocity": 106,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 42,
+              "start": 6,
+              "duration": 0.08,
+              "velocity": 56,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 6.5,
+              "duration": 0.18,
+              "velocity": 77,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 7,
+              "duration": 0.14,
+              "velocity": 103,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 7,
+              "duration": 0.12,
+              "velocity": 92,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 7,
+              "duration": 0.08,
+              "velocity": 58,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 7.5,
+              "duration": 0.18,
+              "velocity": 82,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 7.775,
+              "duration": 0.08,
+              "velocity": 56,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.14,
+              "velocity": 107,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 8.5,
+              "duration": 0.18,
+              "velocity": 82,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 9,
+              "duration": 0.14,
+              "velocity": 105,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 9,
+              "duration": 0.12,
+              "velocity": 93,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 9,
+              "duration": 0.08,
+              "velocity": 61,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 9.5,
+              "duration": 0.18,
+              "velocity": 83,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 10,
+              "duration": 0.14,
+              "velocity": 102,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 10.5,
+              "duration": 0.18,
+              "velocity": 76,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 11,
+              "duration": 0.14,
+              "velocity": 107,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 11,
+              "duration": 0.12,
+              "velocity": 98,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 11.5,
+              "duration": 0.18,
+              "velocity": 73,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 11.775,
+              "duration": 0.08,
+              "velocity": 61,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 36,
+              "start": 12,
+              "duration": 0.14,
+              "velocity": 102,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 42,
+              "start": 12,
+              "duration": 0.08,
+              "velocity": 54,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 12.5,
+              "duration": 0.18,
+              "velocity": 73,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 13,
+              "duration": 0.14,
+              "velocity": 103,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 13,
+              "duration": 0.12,
+              "velocity": 90,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 13.5,
+              "duration": 0.18,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 14,
+              "duration": 0.14,
+              "velocity": 103,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 42,
+              "start": 14,
+              "duration": 0.08,
+              "velocity": 57,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 14.5,
+              "duration": 0.18,
+              "velocity": 83,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 15,
+              "duration": 0.14,
+              "velocity": 106,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 38,
+              "start": 15,
+              "duration": 0.1,
+              "velocity": 67,
+              "label": "end-of-phrase snare lift"
+            },
+            {
+              "pitch": 39,
+              "start": 15,
+              "duration": 0.12,
+              "velocity": 93,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 15,
+              "duration": 0.08,
+              "velocity": 51,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 38,
+              "start": 15.275,
+              "duration": 0.1,
+              "velocity": 67,
+              "label": "end-of-phrase snare lift"
+            },
+            {
+              "pitch": 38,
+              "start": 15.5,
+              "duration": 0.1,
+              "velocity": 67,
+              "label": "end-of-phrase snare lift"
+            },
+            {
+              "pitch": 46,
+              "start": 15.5,
+              "duration": 0.18,
+              "velocity": 77,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 38,
+              "start": 15.775,
+              "duration": 0.1,
+              "velocity": 67,
+              "label": "end-of-phrase snare lift"
+            },
+            {
+              "pitch": 42,
+              "start": 15.775,
+              "duration": 0.08,
+              "velocity": 53,
+              "label": "busy closed hat"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Drums - Filter break",
+          "startBar": 7,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.14,
+              "velocity": 107,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 0.5,
+              "duration": 0.18,
+              "velocity": 82,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 39,
+              "start": 1,
+              "duration": 0.12,
+              "velocity": 76,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 80,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 2,
+              "duration": 0.14,
+              "velocity": 106,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 3,
+              "duration": 0.12,
+              "velocity": 72,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.14,
+              "velocity": 101,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 5,
+              "duration": 0.12,
+              "velocity": 71,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 5.5,
+              "duration": 0.18,
+              "velocity": 80,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 6,
+              "duration": 0.14,
+              "velocity": 107,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 6.5,
+              "duration": 0.18,
+              "velocity": 77,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 39,
+              "start": 7,
+              "duration": 0.12,
+              "velocity": 73,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 7.5,
+              "duration": 0.18,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.14,
+              "velocity": 103,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 8.5,
+              "duration": 0.18,
+              "velocity": 77,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 39,
+              "start": 9,
+              "duration": 0.12,
+              "velocity": 74,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 9.5,
+              "duration": 0.18,
+              "velocity": 76,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 10,
+              "duration": 0.14,
+              "velocity": 103,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 11,
+              "duration": 0.12,
+              "velocity": 70,
+              "label": "backbeat clap"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Drums - Full groove",
+          "startBar": 10,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.14,
+              "velocity": 105,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 42,
+              "start": 0,
+              "duration": 0.08,
+              "velocity": 52,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 0.5,
+              "duration": 0.18,
+              "velocity": 73,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 1,
+              "duration": 0.14,
+              "velocity": 102,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 1,
+              "duration": 0.12,
+              "velocity": 92,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 1,
+              "duration": 0.08,
+              "velocity": 48,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 77,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 2,
+              "duration": 0.14,
+              "velocity": 104,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 42,
+              "start": 2,
+              "duration": 0.08,
+              "velocity": 62,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 2.5,
+              "duration": 0.18,
+              "velocity": 73,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 3,
+              "duration": 0.14,
+              "velocity": 104,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 3,
+              "duration": 0.12,
+              "velocity": 96,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 80,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.14,
+              "velocity": 106,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 42,
+              "start": 4,
+              "duration": 0.08,
+              "velocity": 54,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 4.5,
+              "duration": 0.18,
+              "velocity": 79,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 5,
+              "duration": 0.14,
+              "velocity": 101,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 5,
+              "duration": 0.12,
+              "velocity": 91,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 5,
+              "duration": 0.08,
+              "velocity": 50,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 5.5,
+              "duration": 0.18,
+              "velocity": 74,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 6,
+              "duration": 0.14,
+              "velocity": 105,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 42,
+              "start": 6,
+              "duration": 0.08,
+              "velocity": 57,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 6.5,
+              "duration": 0.18,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 7,
+              "duration": 0.14,
+              "velocity": 105,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 7,
+              "duration": 0.12,
+              "velocity": 92,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 7,
+              "duration": 0.08,
+              "velocity": 54,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 7.5,
+              "duration": 0.18,
+              "velocity": 84,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 7.775,
+              "duration": 0.08,
+              "velocity": 56,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.14,
+              "velocity": 105,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 42,
+              "start": 8,
+              "duration": 0.08,
+              "velocity": 57,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 8.5,
+              "duration": 0.18,
+              "velocity": 84,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 9,
+              "duration": 0.14,
+              "velocity": 107,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 9,
+              "duration": 0.12,
+              "velocity": 96,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 9.5,
+              "duration": 0.18,
+              "velocity": 79,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 10,
+              "duration": 0.14,
+              "velocity": 106,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 42,
+              "start": 10,
+              "duration": 0.08,
+              "velocity": 47,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 10.5,
+              "duration": 0.18,
+              "velocity": 84,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 11,
+              "duration": 0.14,
+              "velocity": 105,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 11,
+              "duration": 0.12,
+              "velocity": 93,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 11.5,
+              "duration": 0.18,
+              "velocity": 84,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 11.775,
+              "duration": 0.08,
+              "velocity": 48,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 36,
+              "start": 12,
+              "duration": 0.14,
+              "velocity": 102,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 42,
+              "start": 12,
+              "duration": 0.08,
+              "velocity": 56,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 12.5,
+              "duration": 0.18,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 13,
+              "duration": 0.14,
+              "velocity": 107,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 13,
+              "duration": 0.12,
+              "velocity": 97,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 13,
+              "duration": 0.08,
+              "velocity": 52,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 13.5,
+              "duration": 0.18,
+              "velocity": 80,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 14,
+              "duration": 0.14,
+              "velocity": 104,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 42,
+              "start": 14,
+              "duration": 0.08,
+              "velocity": 62,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 46,
+              "start": 14.5,
+              "duration": 0.18,
+              "velocity": 82,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 15,
+              "duration": 0.14,
+              "velocity": 101,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 38,
+              "start": 15,
+              "duration": 0.1,
+              "velocity": 67,
+              "label": "end-of-phrase snare lift"
+            },
+            {
+              "pitch": 39,
+              "start": 15,
+              "duration": 0.12,
+              "velocity": 94,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 15,
+              "duration": 0.08,
+              "velocity": 60,
+              "label": "busy closed hat"
+            },
+            {
+              "pitch": 38,
+              "start": 15.275,
+              "duration": 0.1,
+              "velocity": 67,
+              "label": "end-of-phrase snare lift"
+            },
+            {
+              "pitch": 38,
+              "start": 15.5,
+              "duration": 0.1,
+              "velocity": 67,
+              "label": "end-of-phrase snare lift"
+            },
+            {
+              "pitch": 46,
+              "start": 15.5,
+              "duration": 0.18,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 38,
+              "start": 15.775,
+              "duration": 0.1,
+              "velocity": 67,
+              "label": "end-of-phrase snare lift"
+            },
+            {
+              "pitch": 42,
+              "start": 15.775,
+              "duration": 0.08,
+              "velocity": 47,
+              "label": "busy closed hat"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Drums - Outro loop",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.14,
+              "velocity": 105,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 0.5,
+              "duration": 0.18,
+              "velocity": 74,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 1,
+              "duration": 0.14,
+              "velocity": 107,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 1,
+              "duration": 0.12,
+              "velocity": 98,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 80,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 2,
+              "duration": 0.14,
+              "velocity": 107,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 2.5,
+              "duration": 0.18,
+              "velocity": 81,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 3,
+              "duration": 0.14,
+              "velocity": 103,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 3,
+              "duration": 0.12,
+              "velocity": 97,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 77,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.14,
+              "velocity": 106,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 4.5,
+              "duration": 0.18,
+              "velocity": 80,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 5,
+              "duration": 0.14,
+              "velocity": 107,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 5,
+              "duration": 0.12,
+              "velocity": 97,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 5.5,
+              "duration": 0.18,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 6,
+              "duration": 0.14,
+              "velocity": 104,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 46,
+              "start": 6.5,
+              "duration": 0.18,
+              "velocity": 80,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 7,
+              "duration": 0.14,
+              "velocity": 106,
+              "label": "four-on-floor kick"
+            },
+            {
+              "pitch": 39,
+              "start": 7,
+              "duration": 0.12,
+              "velocity": 92,
+              "label": "backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 7.5,
+              "duration": 0.18,
+              "velocity": 72,
+              "label": "offbeat open hat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "old-skool-house-perc",
+      "name": "Perc - Conga Push",
+      "role": "perc",
+      "stockDevices": [
+        "Drum Rack",
+        "Core Library percussion",
+        "Auto Filter"
+      ],
+      "description": "Light conga and shaker movement gives the loop a human old-school house push.",
+      "clips": [
+        {
+          "name": "Old Skool House Perc - Intro groove",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 70,
+              "start": 1.275,
+              "duration": 0.06,
+              "velocity": 47,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 64,
+              "start": 5.775,
+              "duration": 0.09,
+              "velocity": 66,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 64,
+              "start": 7.775,
+              "duration": 0.09,
+              "velocity": 69,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 64,
+              "start": 8.775,
+              "duration": 0.09,
+              "velocity": 58,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 64,
+              "start": 9.775,
+              "duration": 0.09,
+              "velocity": 58,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 64,
+              "start": 11.775,
+              "duration": 0.09,
+              "velocity": 61,
+              "label": "conga skip"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Perc - Piano groove",
+          "startBar": 3,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 70,
+              "start": 1.275,
+              "duration": 0.06,
+              "velocity": 48,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 2.275,
+              "duration": 0.06,
+              "velocity": 43,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 64,
+              "start": 2.775,
+              "duration": 0.09,
+              "velocity": 62,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 64,
+              "start": 3.775,
+              "duration": 0.09,
+              "velocity": 62,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 64,
+              "start": 4.775,
+              "duration": 0.09,
+              "velocity": 59,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 70,
+              "start": 5.275,
+              "duration": 0.06,
+              "velocity": 51,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 6.275,
+              "duration": 0.06,
+              "velocity": 42,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 64,
+              "start": 6.775,
+              "duration": 0.09,
+              "velocity": 61,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 70,
+              "start": 7.275,
+              "duration": 0.06,
+              "velocity": 42,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 8.275,
+              "duration": 0.06,
+              "velocity": 48,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 9.275,
+              "duration": 0.06,
+              "velocity": 45,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 10.275,
+              "duration": 0.06,
+              "velocity": 41,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 12.275,
+              "duration": 0.06,
+              "velocity": 51,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 15.275,
+              "duration": 0.06,
+              "velocity": 45,
+              "label": "swung shaker"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Perc - Filter break",
+          "startBar": 7,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 70,
+              "start": 3.275,
+              "duration": 0.06,
+              "velocity": 47,
+              "label": "swung shaker"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Perc - Full groove",
+          "startBar": 10,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 70,
+              "start": 1.275,
+              "duration": 0.06,
+              "velocity": 51,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 2.275,
+              "duration": 0.06,
+              "velocity": 40,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 3.275,
+              "duration": 0.06,
+              "velocity": 48,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 4.275,
+              "duration": 0.06,
+              "velocity": 41,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 64,
+              "start": 4.775,
+              "duration": 0.09,
+              "velocity": 65,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 64,
+              "start": 5.775,
+              "duration": 0.09,
+              "velocity": 58,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 64,
+              "start": 7.775,
+              "duration": 0.09,
+              "velocity": 51,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 70,
+              "start": 8.275,
+              "duration": 0.06,
+              "velocity": 41,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 70,
+              "start": 9.275,
+              "duration": 0.06,
+              "velocity": 43,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 64,
+              "start": 9.775,
+              "duration": 0.09,
+              "velocity": 59,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 64,
+              "start": 11.775,
+              "duration": 0.09,
+              "velocity": 60,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 64,
+              "start": 13.775,
+              "duration": 0.09,
+              "velocity": 61,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 70,
+              "start": 14.275,
+              "duration": 0.06,
+              "velocity": 53,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 64,
+              "start": 15.775,
+              "duration": 0.09,
+              "velocity": 65,
+              "label": "conga skip"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Perc - Outro loop",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 70,
+              "start": 1.275,
+              "duration": 0.06,
+              "velocity": 45,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 64,
+              "start": 1.775,
+              "duration": 0.09,
+              "velocity": 55,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 70,
+              "start": 2.275,
+              "duration": 0.06,
+              "velocity": 40,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 64,
+              "start": 2.775,
+              "duration": 0.09,
+              "velocity": 51,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 70,
+              "start": 6.275,
+              "duration": 0.06,
+              "velocity": 46,
+              "label": "swung shaker"
+            },
+            {
+              "pitch": 64,
+              "start": 6.775,
+              "duration": 0.09,
+              "velocity": 52,
+              "label": "conga skip"
+            },
+            {
+              "pitch": 64,
+              "start": 7.775,
+              "duration": 0.09,
+              "velocity": 54,
+              "label": "conga skip"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "old-skool-house-bass",
+      "name": "Bass - Operator Offbeat",
+      "role": "bass",
+      "stockDevices": [
+        "Operator",
+        "Saturator",
+        "EQ Eight"
+      ],
+      "description": "Offbeat root bass leaves room for the kick and outlines the chord loop.",
+      "clips": [
+        {
+          "name": "Old Skool House Bass - Intro groove",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 48,
+              "start": 0.5,
+              "duration": 0.34,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 48,
+              "start": 1.5,
+              "duration": 0.34,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 36,
+              "start": 2.5,
+              "duration": 0.34,
+              "velocity": 88,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 43,
+              "start": 3.5,
+              "duration": 0.34,
+              "velocity": 91,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 43,
+              "start": 4.5,
+              "duration": 0.34,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 43,
+              "start": 5.5,
+              "duration": 0.34,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 43,
+              "start": 6.5,
+              "duration": 0.34,
+              "velocity": 88,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 50,
+              "start": 7.5,
+              "duration": 0.34,
+              "velocity": 91,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 44,
+              "start": 8.5,
+              "duration": 0.34,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 44,
+              "start": 9.5,
+              "duration": 0.34,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 44,
+              "start": 10.5,
+              "duration": 0.34,
+              "velocity": 88,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 56,
+              "start": 11.5,
+              "duration": 0.34,
+              "velocity": 91,
+              "label": "offbeat chord-root bass"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Bass - Piano groove",
+          "startBar": 3,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 53,
+              "start": 0.5,
+              "duration": 0.34,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 41,
+              "start": 1.5,
+              "duration": 0.34,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 41,
+              "start": 2.5,
+              "duration": 0.34,
+              "velocity": 88,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 48,
+              "start": 3.5,
+              "duration": 0.34,
+              "velocity": 91,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 36,
+              "start": 4.5,
+              "duration": 0.34,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 36,
+              "start": 5.5,
+              "duration": 0.34,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.34,
+              "velocity": 88,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 36,
+              "start": 7.5,
+              "duration": 0.34,
+              "velocity": 91,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 43,
+              "start": 8.5,
+              "duration": 0.34,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 43,
+              "start": 9.5,
+              "duration": 0.34,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 43,
+              "start": 10.5,
+              "duration": 0.34,
+              "velocity": 88,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 43,
+              "start": 11.5,
+              "duration": 0.34,
+              "velocity": 91,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 56,
+              "start": 12.5,
+              "duration": 0.34,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 44,
+              "start": 13.5,
+              "duration": 0.34,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 44,
+              "start": 14.5,
+              "duration": 0.34,
+              "velocity": 88,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 44,
+              "start": 15.5,
+              "duration": 0.34,
+              "velocity": 91,
+              "label": "offbeat chord-root bass"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Bass - Filter break",
+          "startBar": 7,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 41,
+              "start": 0,
+              "duration": 0.72,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 48,
+              "start": 2.5,
+              "duration": 0.72,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 48,
+              "start": 4,
+              "duration": 0.72,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.72,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 43,
+              "start": 8,
+              "duration": 0.72,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 43,
+              "start": 10.5,
+              "duration": 0.72,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Bass - Full groove",
+          "startBar": 10,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 44,
+              "start": 0.5,
+              "duration": 0.34,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 44,
+              "start": 1.5,
+              "duration": 0.34,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 44,
+              "start": 2.5,
+              "duration": 0.34,
+              "velocity": 88,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 44,
+              "start": 3.5,
+              "duration": 0.34,
+              "velocity": 91,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 53,
+              "start": 4.5,
+              "duration": 0.34,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 41,
+              "start": 5.5,
+              "duration": 0.34,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 53,
+              "start": 6.5,
+              "duration": 0.34,
+              "velocity": 88,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 41,
+              "start": 7.5,
+              "duration": 0.34,
+              "velocity": 91,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 36,
+              "start": 8.5,
+              "duration": 0.34,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 36,
+              "start": 9.5,
+              "duration": 0.34,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 36,
+              "start": 10.5,
+              "duration": 0.34,
+              "velocity": 88,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 36,
+              "start": 11.5,
+              "duration": 0.34,
+              "velocity": 91,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 55,
+              "start": 12.5,
+              "duration": 0.34,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 43,
+              "start": 13.5,
+              "duration": 0.34,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 43,
+              "start": 14.5,
+              "duration": 0.34,
+              "velocity": 88,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 43,
+              "start": 15.5,
+              "duration": 0.34,
+              "velocity": 91,
+              "label": "offbeat chord-root bass"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Bass - Outro loop",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 44,
+              "start": 0.5,
+              "duration": 0.34,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 44,
+              "start": 1.5,
+              "duration": 0.34,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 44,
+              "start": 2.5,
+              "duration": 0.34,
+              "velocity": 88,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 44,
+              "start": 3.5,
+              "duration": 0.34,
+              "velocity": 91,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 41,
+              "start": 4.5,
+              "duration": 0.34,
+              "velocity": 82,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 41,
+              "start": 5.5,
+              "duration": 0.34,
+              "velocity": 85,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 53,
+              "start": 6.5,
+              "duration": 0.34,
+              "velocity": 88,
+              "label": "offbeat chord-root bass"
+            },
+            {
+              "pitch": 48,
+              "start": 7.5,
+              "duration": 0.34,
+              "velocity": 91,
+              "label": "offbeat chord-root bass"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "old-skool-house-chords",
+      "name": "Chords - Stock Piano Stabs",
+      "role": "chords",
+      "stockDevices": [
+        "Instrument Rack",
+        "Grand Piano or Electric stock preset",
+        "Auto Filter",
+        "Reverb"
+      ],
+      "description": "Short piano-style chord stabs reinforce the groove without writing a full song for the user.",
+      "clips": [
+        {
+          "name": "Old Skool House Chords - Intro groove",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 48,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 51,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 48,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 51,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 48,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 51,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 55,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 74,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 55,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 74,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 55,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 74,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 75,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 9.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 9.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 9.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 75,
+              "start": 9.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 75,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Chords - Piano groove",
+          "startBar": 3,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 56,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 63,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 72,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 63,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 72,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 63,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 72,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 51,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 51,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 51,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 55,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 74,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 55,
+              "start": 9.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 9.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 9.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 74,
+              "start": 9.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 55,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 74,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 75,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 13.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 13.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 13.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 75,
+              "start": 13.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 75,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Chords - Filter break",
+          "startBar": 7,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 53,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 58,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 58,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 63,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 58,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 72,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 58,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 48,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 58,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 51,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 58,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 58,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 58,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 55,
+              "start": 8,
+              "duration": 2.8,
+              "velocity": 58,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 8,
+              "duration": 2.8,
+              "velocity": 58,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 8,
+              "duration": 2.8,
+              "velocity": 58,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 74,
+              "start": 8,
+              "duration": 2.8,
+              "velocity": 58,
+              "label": "house piano stab"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Chords - Full groove",
+          "startBar": 10,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 60,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 68,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 75,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 68,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 75,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 68,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 75,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 53,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 63,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 72,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 53,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 63,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 72,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 53,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 63,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 72,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 51,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 51,
+              "start": 9.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 9.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 9.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 9.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 51,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 74,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 13.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 13.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 13.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 74,
+              "start": 13.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 58,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 74,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Chords - Outro loop",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 60,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 68,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 75,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 68,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 75,
+              "start": 1.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 60,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 67,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 68,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 75,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 63,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 72,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 63,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 72,
+              "start": 5.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 56,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 63,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 65,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            },
+            {
+              "pitch": 72,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 72,
+              "label": "house piano stab"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "old-skool-house-hook",
+      "name": "Hook - Drift Organ Riff",
+      "role": "hook",
+      "stockDevices": [
+        "Drift",
+        "Echo",
+        "Auto Filter"
+      ],
+      "description": "A small organ-like riff gives the scaffold a memorable call without stealing all the space.",
+      "clips": [
+        {
+          "name": "Old Skool House Hook - Piano groove",
+          "startBar": 3,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 67,
+              "start": 0,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 68,
+              "start": 0.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 1,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 1.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 60,
+              "start": 2,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 2.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 3,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 72,
+              "start": 3.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 68,
+              "start": 4,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 4.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 5,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 60,
+              "start": 5.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 6,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 6.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 72,
+              "start": 7,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 7.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 68,
+              "start": 8,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 8.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 9,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 60,
+              "start": 9.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 10,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 10.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 72,
+              "start": 11,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 11.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 12,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 68,
+              "start": 12.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 13,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 13.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 60,
+              "start": 14,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 14.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 15,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 72,
+              "start": 15.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Hook - Full groove",
+          "startBar": 10,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 67,
+              "start": 0,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 68,
+              "start": 0.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 1,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 1.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 60,
+              "start": 2,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 2.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 3,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 72,
+              "start": 3.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 4,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 68,
+              "start": 4.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 5,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 5.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 60,
+              "start": 6,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 6.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 7,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 72,
+              "start": 7.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 8,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 68,
+              "start": 8.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 9,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 9.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 60,
+              "start": 10,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 10.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 11,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 72,
+              "start": 11.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 12,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 68,
+              "start": 12.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 13,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 13.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 60,
+              "start": 14,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 14.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 15,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 72,
+              "start": 15.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            }
+          ]
+        },
+        {
+          "name": "Old Skool House Hook - Outro loop",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 67,
+              "start": 0,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 68,
+              "start": 0.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 1,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 1.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 60,
+              "start": 2,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 2.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 3,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 72,
+              "start": 3.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 4,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 68,
+              "start": 4.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 5,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 5.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 60,
+              "start": 6,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 63,
+              "start": 6.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 67,
+              "start": 7,
+              "duration": 0.22,
+              "velocity": 66,
+              "label": "short organ riff"
+            },
+            {
+              "pitch": 72,
+              "start": 7.5,
+              "duration": 0.22,
+              "velocity": 74,
+              "label": "short organ riff"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

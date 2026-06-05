@@ -1,0 +1,2980 @@
+{
+  "meta": {
+    "id": "tech-house:hot-iron",
+    "label": "Tech House in A minor",
+    "generator": "ableton-genre-scaffold",
+    "stockOnly": true,
+    "seed": "hot-iron",
+    "density": "balanced",
+    "energy": "medium"
+  },
+  "genre": {
+    "id": "tech-house",
+    "label": "Tech House"
+  },
+  "key": {
+    "root": "A",
+    "rootSemitone": 9,
+    "scaleName": "minor",
+    "intervals": [
+      0,
+      2,
+      3,
+      5,
+      7,
+      8,
+      10
+    ],
+    "label": "A minor"
+  },
+  "tempo": 126,
+  "bars": 16,
+  "sections": [
+    {
+      "index": 0,
+      "name": "DJ intro",
+      "startBar": 0,
+      "bars": 3,
+      "endBar": 3,
+      "energy": 0.55,
+      "tags": [
+        "intro"
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Bass enters",
+      "startBar": 3,
+      "bars": 4,
+      "endBar": 7,
+      "energy": 0.82,
+      "tags": [
+        "groove"
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Perc break",
+      "startBar": 7,
+      "bars": 2,
+      "endBar": 9,
+      "energy": 0.42,
+      "tags": [
+        "break"
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Full drop",
+      "startBar": 9,
+      "bars": 5,
+      "endBar": 14,
+      "energy": 1,
+      "tags": [
+        "peak"
+      ]
+    },
+    {
+      "index": 4,
+      "name": "DJ outro",
+      "startBar": 14,
+      "bars": 2,
+      "endBar": 16,
+      "energy": 0.68,
+      "tags": [
+        "outro"
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "tech-house-drums",
+      "name": "Drums - Tight Club Kit",
+      "role": "drums",
+      "stockDevices": [
+        "Drum Rack",
+        "Core Library electronic kit",
+        "Drum Buss",
+        "Glue Compressor"
+      ],
+      "description": "A straight, loud club groove: four-on-floor kick, sharp clap, offbeat hats, and phrase fills.",
+      "clips": [
+        {
+          "name": "Tech House Drums - DJ intro",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 0.5,
+              "duration": 0.16,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 1,
+              "duration": 0.12,
+              "velocity": 114,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 1,
+              "duration": 0.1,
+              "velocity": 103,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 1.5,
+              "duration": 0.16,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 2,
+              "duration": 0.12,
+              "velocity": 114,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 42,
+              "start": 2.25,
+              "duration": 0.055,
+              "velocity": 46,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 2.5,
+              "duration": 0.16,
+              "velocity": 73,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 2.75,
+              "duration": 0.055,
+              "velocity": 45,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 3,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 3,
+              "duration": 0.1,
+              "velocity": 102,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 3.5,
+              "duration": 0.16,
+              "velocity": 83,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 113,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 4.5,
+              "duration": 0.16,
+              "velocity": 81,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 4.75,
+              "duration": 0.055,
+              "velocity": 43,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 5,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 5,
+              "duration": 0.1,
+              "velocity": 98,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 5.5,
+              "duration": 0.16,
+              "velocity": 82,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 6,
+              "duration": 0.12,
+              "velocity": 113,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 6.5,
+              "duration": 0.16,
+              "velocity": 77,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 6.75,
+              "duration": 0.055,
+              "velocity": 54,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 7,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 7,
+              "duration": 0.1,
+              "velocity": 99,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 7.5,
+              "duration": 0.16,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.12,
+              "velocity": 112,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 8.5,
+              "duration": 0.16,
+              "velocity": 82,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 9,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 9,
+              "duration": 0.1,
+              "velocity": 99,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 9.5,
+              "duration": 0.16,
+              "velocity": 83,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 10,
+              "duration": 0.12,
+              "velocity": 112,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 10.5,
+              "duration": 0.16,
+              "velocity": 81,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 10.75,
+              "duration": 0.055,
+              "velocity": 42,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 11,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 11,
+              "duration": 0.1,
+              "velocity": 97,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 11.5,
+              "duration": 0.16,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Drums - Bass enters",
+          "startBar": 3,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 114,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 0.5,
+              "duration": 0.16,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 1,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 1,
+              "duration": 0.1,
+              "velocity": 99,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 1.5,
+              "duration": 0.16,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 1.75,
+              "duration": 0.055,
+              "velocity": 43,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 2,
+              "duration": 0.12,
+              "velocity": 114,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 2.5,
+              "duration": 0.16,
+              "velocity": 81,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 3,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 3,
+              "duration": 0.1,
+              "velocity": 102,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 3.25,
+              "duration": 0.055,
+              "velocity": 50,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 3.5,
+              "duration": 0.16,
+              "velocity": 83,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 42,
+              "start": 4.25,
+              "duration": 0.055,
+              "velocity": 41,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 4.5,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 4.75,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 5,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 5,
+              "duration": 0.1,
+              "velocity": 99,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 5.5,
+              "duration": 0.16,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 6,
+              "duration": 0.12,
+              "velocity": 114,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 6.5,
+              "duration": 0.16,
+              "velocity": 79,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 7,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 7,
+              "duration": 0.1,
+              "velocity": 98,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 7.5,
+              "duration": 0.16,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 42,
+              "start": 8.25,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 8.5,
+              "duration": 0.16,
+              "velocity": 82,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 9,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 9,
+              "duration": 0.1,
+              "velocity": 102,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 9.5,
+              "duration": 0.16,
+              "velocity": 79,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 9.75,
+              "duration": 0.055,
+              "velocity": 38,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 10,
+              "duration": 0.12,
+              "velocity": 114,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 42,
+              "start": 10.25,
+              "duration": 0.055,
+              "velocity": 42,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 10.5,
+              "duration": 0.16,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 11,
+              "duration": 0.12,
+              "velocity": 114,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 11,
+              "duration": 0.1,
+              "velocity": 103,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 11.5,
+              "duration": 0.16,
+              "velocity": 82,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 12,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 42,
+              "start": 12.25,
+              "duration": 0.055,
+              "velocity": 39,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 12.5,
+              "duration": 0.16,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 13,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 13,
+              "duration": 0.1,
+              "velocity": 97,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 13.5,
+              "duration": 0.16,
+              "velocity": 83,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 14,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 14.5,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 14.75,
+              "duration": 0.055,
+              "velocity": 37,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 15,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 15,
+              "duration": 0.1,
+              "velocity": 98,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 38,
+              "start": 15.25,
+              "duration": 0.1,
+              "velocity": 72,
+              "label": "snare pickup"
+            },
+            {
+              "pitch": 38,
+              "start": 15.5,
+              "duration": 0.1,
+              "velocity": 72,
+              "label": "snare pickup"
+            },
+            {
+              "pitch": 46,
+              "start": 15.5,
+              "duration": 0.16,
+              "velocity": 77,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 38,
+              "start": 15.75,
+              "duration": 0.1,
+              "velocity": 72,
+              "label": "snare pickup"
+            },
+            {
+              "pitch": 42,
+              "start": 15.75,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "tight 16th top loop"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Drums - Perc break",
+          "startBar": 7,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 114,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 1,
+              "duration": 0.1,
+              "velocity": 67,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 1.25,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 1.5,
+              "duration": 0.16,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 2,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 2.5,
+              "duration": 0.16,
+              "velocity": 79,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 39,
+              "start": 3,
+              "duration": 0.1,
+              "velocity": 65,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 3.5,
+              "duration": 0.16,
+              "velocity": 82,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 4.5,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 4.75,
+              "duration": 0.055,
+              "velocity": 54,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 39,
+              "start": 5,
+              "duration": 0.1,
+              "velocity": 70,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 36,
+              "start": 6,
+              "duration": 0.12,
+              "velocity": 114,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 42,
+              "start": 6.25,
+              "duration": 0.055,
+              "velocity": 41,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 39,
+              "start": 7,
+              "duration": 0.1,
+              "velocity": 71,
+              "label": "tight backbeat clap"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Drums - Full drop",
+          "startBar": 9,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 0.5,
+              "duration": 0.16,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 1,
+              "duration": 0.12,
+              "velocity": 113,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 1,
+              "duration": 0.1,
+              "velocity": 100,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 1.5,
+              "duration": 0.16,
+              "velocity": 79,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 1.75,
+              "duration": 0.055,
+              "velocity": 38,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 2,
+              "duration": 0.12,
+              "velocity": 113,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 42,
+              "start": 2.25,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 2.5,
+              "duration": 0.16,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 3,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 3,
+              "duration": 0.1,
+              "velocity": 102,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 3.5,
+              "duration": 0.16,
+              "velocity": 73,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 3.75,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 42,
+              "start": 4.25,
+              "duration": 0.055,
+              "velocity": 35,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 4.5,
+              "duration": 0.16,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 5,
+              "duration": 0.12,
+              "velocity": 114,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 5,
+              "duration": 0.1,
+              "velocity": 99,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 5.25,
+              "duration": 0.055,
+              "velocity": 53,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 5.5,
+              "duration": 0.16,
+              "velocity": 73,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 5.75,
+              "duration": 0.055,
+              "velocity": 46,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 6,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 42,
+              "start": 6.25,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 6.5,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 7,
+              "duration": 0.12,
+              "velocity": 112,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 7,
+              "duration": 0.1,
+              "velocity": 98,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 7.5,
+              "duration": 0.16,
+              "velocity": 83,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 8.5,
+              "duration": 0.16,
+              "velocity": 82,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 9,
+              "duration": 0.12,
+              "velocity": 112,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 9,
+              "duration": 0.1,
+              "velocity": 103,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 9.5,
+              "duration": 0.16,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 9.75,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 10,
+              "duration": 0.12,
+              "velocity": 113,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 42,
+              "start": 10.25,
+              "duration": 0.055,
+              "velocity": 44,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 10.5,
+              "duration": 0.16,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 10.75,
+              "duration": 0.055,
+              "velocity": 54,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 11,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 11,
+              "duration": 0.1,
+              "velocity": 102,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 11.25,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 11.5,
+              "duration": 0.16,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 12,
+              "duration": 0.12,
+              "velocity": 112,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 42,
+              "start": 12.25,
+              "duration": 0.055,
+              "velocity": 37,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 12.5,
+              "duration": 0.16,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 13,
+              "duration": 0.12,
+              "velocity": 112,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 13,
+              "duration": 0.1,
+              "velocity": 101,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 13.5,
+              "duration": 0.16,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 13.75,
+              "duration": 0.055,
+              "velocity": 41,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 14,
+              "duration": 0.12,
+              "velocity": 112,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 42,
+              "start": 14.25,
+              "duration": 0.055,
+              "velocity": 44,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 14.5,
+              "duration": 0.16,
+              "velocity": 82,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 15,
+              "duration": 0.12,
+              "velocity": 114,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 15,
+              "duration": 0.1,
+              "velocity": 97,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 38,
+              "start": 15.25,
+              "duration": 0.1,
+              "velocity": 72,
+              "label": "snare pickup"
+            },
+            {
+              "pitch": 42,
+              "start": 15.25,
+              "duration": 0.055,
+              "velocity": 54,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 38,
+              "start": 15.5,
+              "duration": 0.1,
+              "velocity": 72,
+              "label": "snare pickup"
+            },
+            {
+              "pitch": 46,
+              "start": 15.5,
+              "duration": 0.16,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 38,
+              "start": 15.75,
+              "duration": 0.1,
+              "velocity": 72,
+              "label": "snare pickup"
+            },
+            {
+              "pitch": 36,
+              "start": 16,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 42,
+              "start": 16.25,
+              "duration": 0.055,
+              "velocity": 44,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 16.5,
+              "duration": 0.16,
+              "velocity": 82,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 17,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 17,
+              "duration": 0.1,
+              "velocity": 98,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 42,
+              "start": 17.25,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 17.5,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 18,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 18.5,
+              "duration": 0.16,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 18.75,
+              "duration": 0.055,
+              "velocity": 44,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 19,
+              "duration": 0.12,
+              "velocity": 114,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 19,
+              "duration": 0.1,
+              "velocity": 102,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 19.5,
+              "duration": 0.16,
+              "velocity": 79,
+              "label": "offbeat open hat"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Drums - DJ outro",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 0.5,
+              "duration": 0.16,
+              "velocity": 73,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 0.75,
+              "duration": 0.055,
+              "velocity": 43,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 1,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 1,
+              "duration": 0.1,
+              "velocity": 100,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 1.5,
+              "duration": 0.16,
+              "velocity": 82,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 2,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 2.5,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 2.75,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 3,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 3,
+              "duration": 0.1,
+              "velocity": 97,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 3.5,
+              "duration": 0.16,
+              "velocity": 73,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 112,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 42,
+              "start": 4.25,
+              "duration": 0.055,
+              "velocity": 53,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 46,
+              "start": 4.5,
+              "duration": 0.16,
+              "velocity": 77,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 5,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 5,
+              "duration": 0.1,
+              "velocity": 103,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 5.5,
+              "duration": 0.16,
+              "velocity": 75,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 36,
+              "start": 6,
+              "duration": 0.12,
+              "velocity": 112,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 46,
+              "start": 6.5,
+              "duration": 0.16,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            },
+            {
+              "pitch": 42,
+              "start": 6.75,
+              "duration": 0.055,
+              "velocity": 37,
+              "label": "tight 16th top loop"
+            },
+            {
+              "pitch": 36,
+              "start": 7,
+              "duration": 0.12,
+              "velocity": 114,
+              "label": "solid club kick"
+            },
+            {
+              "pitch": 39,
+              "start": 7,
+              "duration": 0.1,
+              "velocity": 98,
+              "label": "tight backbeat clap"
+            },
+            {
+              "pitch": 46,
+              "start": 7.5,
+              "duration": 0.16,
+              "velocity": 78,
+              "label": "offbeat open hat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech-house-perc",
+      "name": "Perc - Minimal Top Loop",
+      "role": "perc",
+      "stockDevices": [
+        "Drum Rack",
+        "Auto Pan",
+        "Auto Filter"
+      ],
+      "description": "Small syncopated percussion gives the groove its rolling club motion.",
+      "clips": [
+        {
+          "name": "Tech House Perc - DJ intro",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 37,
+              "start": 0.75,
+              "duration": 0.07,
+              "velocity": 58,
+              "label": "syncopated rim"
+            },
+            {
+              "pitch": 37,
+              "start": 2.5,
+              "duration": 0.07,
+              "velocity": 68,
+              "label": "syncopated rim"
+            },
+            {
+              "pitch": 47,
+              "start": 2.75,
+              "duration": 0.1,
+              "velocity": 65,
+              "label": "low percussion answer"
+            },
+            {
+              "pitch": 37,
+              "start": 6.5,
+              "duration": 0.07,
+              "velocity": 69,
+              "label": "syncopated rim"
+            },
+            {
+              "pitch": 37,
+              "start": 7.75,
+              "duration": 0.07,
+              "velocity": 58,
+              "label": "syncopated rim"
+            },
+            {
+              "pitch": 37,
+              "start": 10.5,
+              "duration": 0.07,
+              "velocity": 59,
+              "label": "syncopated rim"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Perc - Bass enters",
+          "startBar": 3,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 47,
+              "start": 5.5,
+              "duration": 0.1,
+              "velocity": 52,
+              "label": "low percussion answer"
+            },
+            {
+              "pitch": 37,
+              "start": 6.5,
+              "duration": 0.07,
+              "velocity": 60,
+              "label": "syncopated rim"
+            },
+            {
+              "pitch": 37,
+              "start": 8.75,
+              "duration": 0.07,
+              "velocity": 70,
+              "label": "syncopated rim"
+            },
+            {
+              "pitch": 47,
+              "start": 13.5,
+              "duration": 0.1,
+              "velocity": 66,
+              "label": "low percussion answer"
+            },
+            {
+              "pitch": 37,
+              "start": 15.75,
+              "duration": 0.07,
+              "velocity": 67,
+              "label": "syncopated rim"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Perc - Perc break",
+          "startBar": 7,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 37,
+              "start": 2.5,
+              "duration": 0.07,
+              "velocity": 59,
+              "label": "syncopated rim"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Perc - Full drop",
+          "startBar": 9,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 37,
+              "start": 0.75,
+              "duration": 0.07,
+              "velocity": 66,
+              "label": "syncopated rim"
+            },
+            {
+              "pitch": 37,
+              "start": 2.5,
+              "duration": 0.07,
+              "velocity": 58,
+              "label": "syncopated rim"
+            },
+            {
+              "pitch": 37,
+              "start": 3.75,
+              "duration": 0.07,
+              "velocity": 63,
+              "label": "syncopated rim"
+            },
+            {
+              "pitch": 47,
+              "start": 6.75,
+              "duration": 0.1,
+              "velocity": 52,
+              "label": "low percussion answer"
+            },
+            {
+              "pitch": 37,
+              "start": 7.75,
+              "duration": 0.07,
+              "velocity": 59,
+              "label": "syncopated rim"
+            },
+            {
+              "pitch": 37,
+              "start": 8.75,
+              "duration": 0.07,
+              "velocity": 69,
+              "label": "syncopated rim"
+            },
+            {
+              "pitch": 47,
+              "start": 9.5,
+              "duration": 0.1,
+              "velocity": 61,
+              "label": "low percussion answer"
+            },
+            {
+              "pitch": 47,
+              "start": 13.5,
+              "duration": 0.1,
+              "velocity": 66,
+              "label": "low percussion answer"
+            },
+            {
+              "pitch": 37,
+              "start": 14.5,
+              "duration": 0.07,
+              "velocity": 62,
+              "label": "syncopated rim"
+            },
+            {
+              "pitch": 47,
+              "start": 18.75,
+              "duration": 0.1,
+              "velocity": 54,
+              "label": "low percussion answer"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Perc - DJ outro",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 37,
+              "start": 2.5,
+              "duration": 0.07,
+              "velocity": 62,
+              "label": "syncopated rim"
+            },
+            {
+              "pitch": 37,
+              "start": 6.5,
+              "duration": 0.07,
+              "velocity": 58,
+              "label": "syncopated rim"
+            },
+            {
+              "pitch": 47,
+              "start": 6.75,
+              "duration": 0.1,
+              "velocity": 59,
+              "label": "low percussion answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech-house-bass",
+      "name": "Bass - Rolling Operator",
+      "role": "bass",
+      "stockDevices": [
+        "Operator",
+        "Saturator",
+        "EQ Eight",
+        "Compressor"
+      ],
+      "description": "A short, repeating mono bass phrase locks into the kick and gives the loop its identity.",
+      "clips": [
+        {
+          "name": "Tech House Bass - DJ intro",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 45,
+              "start": 0.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 1.25,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 1.75,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 2.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 3.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 4.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 5.25,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 47,
+              "start": 5.75,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 6.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 7.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 8.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 9.25,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 62,
+              "start": 9.75,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 10.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 11.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Bass - Bass enters",
+          "startBar": 3,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 52,
+              "start": 0.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 1.25,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 1.75,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 2.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 3.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 4.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 5.25,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 5.75,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 6.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 7.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 8.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 9.25,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 9.75,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 10.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 11.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 12.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 13.25,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 13.75,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 14.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 15.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Bass - Perc break",
+          "startBar": 7,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 52,
+              "start": 0.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 2.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 4.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 6.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Bass - Full drop",
+          "startBar": 9,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 45,
+              "start": 0.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 1.25,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 1.75,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 2.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 3.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 4.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 5.25,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 5.75,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 6.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 7.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 8.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 9.25,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 53,
+              "start": 9.75,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 10.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 11.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 12.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 13.25,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 13.75,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 14.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 15.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 16.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 17.25,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 47,
+              "start": 17.75,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 18.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 45,
+              "start": 19.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Bass - DJ outro",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 50,
+              "start": 0.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 1.25,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 1.75,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 2.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 50,
+              "start": 3.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 4.5,
+              "duration": 0.23,
+              "velocity": 96,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 5.25,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 53,
+              "start": 5.75,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 6.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            },
+            {
+              "pitch": 52,
+              "start": 7.5,
+              "duration": 0.23,
+              "velocity": 88,
+              "label": "rolling mono bass"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech-house-stabs",
+      "name": "Stabs - Wavetable Chord Shots",
+      "role": "chords",
+      "stockDevices": [
+        "Wavetable",
+        "Auto Filter",
+        "Echo",
+        "Reverb"
+      ],
+      "description": "Sparse chord shots add harmonic color while keeping the low end and drums dominant.",
+      "clips": [
+        {
+          "name": "Tech House Stabs - DJ intro",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 60,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 69,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 76,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 60,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 69,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 76,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 60,
+              "start": 5.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 69,
+              "start": 5.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 76,
+              "start": 5.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 60,
+              "start": 7.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 69,
+              "start": 7.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 76,
+              "start": 7.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 62,
+              "start": 9.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 65,
+              "start": 9.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 81,
+              "start": 9.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 62,
+              "start": 11.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 65,
+              "start": 11.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 81,
+              "start": 11.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Stabs - Bass enters",
+          "startBar": 3,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 64,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 67,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 83,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 64,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 67,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 83,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 57,
+              "start": 9.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 60,
+              "start": 9.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 76,
+              "start": 9.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 57,
+              "start": 11.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 60,
+              "start": 11.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 76,
+              "start": 11.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Stabs - Full drop",
+          "startBar": 9,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 60,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 69,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 76,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 60,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 69,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 76,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 67,
+              "start": 9.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 76,
+              "start": 9.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 83,
+              "start": 9.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 67,
+              "start": 11.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 76,
+              "start": 11.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 83,
+              "start": 11.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 60,
+              "start": 13.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 69,
+              "start": 13.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 76,
+              "start": 13.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 60,
+              "start": 15.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 69,
+              "start": 15.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 76,
+              "start": 15.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 60,
+              "start": 17.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 69,
+              "start": 17.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 76,
+              "start": 17.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 60,
+              "start": 19.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 69,
+              "start": 19.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 76,
+              "start": 19.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            }
+          ]
+        },
+        {
+          "name": "Tech House Stabs - DJ outro",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 65,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 74,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 81,
+              "start": 1.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 65,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 74,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 81,
+              "start": 3.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 64,
+              "start": 5.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 67,
+              "start": 5.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 83,
+              "start": 5.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 64,
+              "start": 7.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 67,
+              "start": 7.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            },
+            {
+              "pitch": 83,
+              "start": 7.5,
+              "duration": 0.18,
+              "velocity": 62,
+              "label": "filtered tech-house stab"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech-house-hook",
+      "name": "Hook - One-Shot Synth Motif",
+      "role": "hook",
+      "stockDevices": [
+        "Drift",
+        "Auto Filter",
+        "Delay"
+      ],
+      "description": "A tiny repeated motif creates the earworm while leaving room for vocal chops or samples later.",
+      "clips": [
+        {
+          "name": "Tech House Hook - Full drop",
+          "startBar": 9,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 76,
+              "start": 0,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 76,
+              "start": 0.75,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 77,
+              "start": 2.5,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 76,
+              "start": 3.25,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 76,
+              "start": 4,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 76,
+              "start": 4.75,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 77,
+              "start": 6.5,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 76,
+              "start": 7.25,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 76,
+              "start": 8,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 76,
+              "start": 8.75,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 77,
+              "start": 10.5,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 76,
+              "start": 11.25,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 76,
+              "start": 12,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 76,
+              "start": 12.75,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 77,
+              "start": 14.5,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 76,
+              "start": 15.25,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 76,
+              "start": 16,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 76,
+              "start": 16.75,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 77,
+              "start": 18.5,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            },
+            {
+              "pitch": 76,
+              "start": 19.25,
+              "duration": 0.18,
+              "velocity": 70,
+              "label": "short synth hook"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

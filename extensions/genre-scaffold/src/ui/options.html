@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genre Scaffold</title>
+  <script>
+    const isWebKitMessageHandlerAvailable = window.webkit &&
+      window.webkit.messageHandlers &&
+      window.webkit.messageHandlers.live;
+    const isWebView2 = window.chrome && window.chrome.webview;
+
+    function sendMessage(message) {
+      if (isWebKitMessageHandlerAvailable) {
+        window.webkit.messageHandlers.live.postMessage(message);
+      } else if (isWebView2) {
+        window.chrome.webview.postMessage(message);
+      } else {
+        document.documentElement.dataset.lastMessage = JSON.stringify(message);
+      }
+    }
+
+    function closeWithResult(result) {
+      sendMessage({ method: "close_and_send", params: [JSON.stringify(result)] });
+    }
+
+    function randomSeed() {
+      return Math.random().toString(36).slice(2, 10);
+    }
+
+    function readForm() {
+      const useDefaultTempo = document.getElementById("useDefaultTempo").checked;
+      return {
+        genre: document.getElementById("genre").value,
+        key: document.getElementById("key").value,
+        bars: Number(document.querySelector("input[name='bars']:checked").value),
+        energy: document.querySelector("input[name='energy']:checked").value,
+        density: document.querySelector("input[name='density']:checked").value,
+        useDefaultTempo,
+        tempo: useDefaultTempo ? undefined : Number(document.getElementById("tempo").value),
+        seed: document.getElementById("seed").value.trim() || randomSeed()
+      };
+    }
+
+    function generate() {
+      closeWithResult(readForm());
+    }
+
+    function cancel() {
+      closeWithResult({ cancelled: true });
+    }
+
+    function updateTempoState() {
+      const useDefaultTempo = document.getElementById("useDefaultTempo").checked;
+      const tempo = document.getElementById("tempo");
+      tempo.disabled = useDefaultTempo;
+      tempo.parentElement.classList.toggle("disabled", useDefaultTempo);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("seed").value = randomSeed();
+      document.getElementById("useDefaultTempo").addEventListener("change", updateTempoState);
+      document.getElementById("shuffleSeed").addEventListener("click", () => {
+        document.getElementById("seed").value = randomSeed();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") cancel();
+        if (event.key === "Enter" && event.metaKey) generate();
+      });
+      updateTempoState();
+    });
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    * { margin: 0; }
+    input, button, select { font: inherit; }
+
+    :root {
+      --bg: hsl(0, 0%, 21%);
+      --panel: hsl(0, 0%, 16%);
+      --input: hsl(0, 0%, 12%);
+      --text: hsl(0, 0%, 74%);
+      --muted: hsl(0, 0%, 48%);
+      --border: hsl(0, 0%, 8%);
+      --accent: hsl(31, 100%, 67%);
+      --accent-text: hsl(0, 0%, 7%);
+      --focus: hsl(0, 0%, 62%);
+    }
+
+    html {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "AbletonSansSmall", Arial, sans-serif;
+      font-size: 11.5px;
+      font-weight: 500;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      min-height: 100%;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    h1 {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .status {
+      color: var(--muted);
+      font-size: 10.5px;
+      white-space: nowrap;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    label,
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      min-width: 0;
+    }
+
+    .label-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .hint {
+      color: var(--muted);
+      font-size: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      height: 23px;
+      color: var(--text);
+      background: var(--input);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 0 6px;
+      outline-offset: 0;
+    }
+
+    input:focus,
+    select:focus,
+    button:focus {
+      outline: 2px solid var(--focus);
+    }
+
+    select {
+      appearance: none;
+      background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%), linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+      background-position: calc(100% - 11px) 9px, calc(100% - 7px) 9px;
+      background-size: 4px 4px, 4px 4px;
+      background-repeat: no-repeat;
+    }
+
+    .segmented {
+      display: grid;
+      grid-template-columns: repeat(var(--segments), minmax(0, 1fr));
+      border: 1px solid var(--border);
+      background: var(--input);
+      border-radius: 3px;
+      overflow: hidden;
+      height: 24px;
+    }
+
+    .segmented input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .segmented span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 0;
+      height: 100%;
+      padding: 0 5px;
+      color: var(--text);
+      border-right: 1px solid var(--border);
+      user-select: none;
+    }
+
+    .segmented label:last-child span {
+      border-right: 0;
+    }
+
+    .segmented input:checked + span {
+      background: var(--accent);
+      color: var(--accent-text);
+    }
+
+    .tempo-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 6px;
+      align-items: end;
+    }
+
+    .check {
+      flex-direction: row;
+      align-items: center;
+      gap: 6px;
+      height: 23px;
+      white-space: nowrap;
+      color: var(--text);
+    }
+
+    .disabled {
+      opacity: 0.45;
+    }
+
+    .seed-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 48px;
+      gap: 6px;
+    }
+
+    button {
+      height: 23px;
+      color: var(--text);
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 0 10px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    button:hover {
+      filter: brightness(1.1);
+    }
+
+    .primary {
+      background: var(--accent);
+      color: var(--accent-text);
+    }
+
+    footer {
+      margin-top: auto;
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Genre Scaffold</h1>
+    <div class="status">MIDI, arrangement, tempo</div>
+  </header>
+
+  <main class="grid">
+    <label>
+      <span>Genre</span>
+      <select id="genre" data-testid="genre-select">
+        <option value="old-skool-house">Old Skool House</option>
+        <option value="tech-house">Tech House</option>
+        <option value="uk-garage">UK Garage</option>
+        <option value="trap">Trap</option>
+        <option value="90s-hip-hop">90s Hip Hop</option>
+      </select>
+    </label>
+
+    <label>
+      <span>Key</span>
+      <input id="key" data-testid="key-input" type="text" value="C minor" spellcheck="false">
+    </label>
+
+    <div class="field">
+      <div class="label-row">
+        <span>Length</span>
+        <span class="hint">bars</span>
+      </div>
+      <div class="segmented" style="--segments: 4">
+        <label data-testid="bars-8"><input type="radio" name="bars" value="8"><span>8</span></label>
+        <label data-testid="bars-16"><input type="radio" name="bars" value="16" checked><span>16</span></label>
+        <label data-testid="bars-32"><input type="radio" name="bars" value="32"><span>32</span></label>
+        <label data-testid="bars-64"><input type="radio" name="bars" value="64"><span>64</span></label>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="label-row">
+        <span>Tempo</span>
+        <label class="check"><input id="useDefaultTempo" data-testid="tempo-default-checkbox" type="checkbox" checked>Genre</label>
+      </div>
+      <input id="tempo" data-testid="tempo-input" type="number" min="40" max="240" value="126">
+    </div>
+
+    <div class="field">
+      <span>Energy</span>
+      <div class="segmented" style="--segments: 3">
+        <label data-testid="energy-low"><input type="radio" name="energy" value="low"><span>Low</span></label>
+        <label data-testid="energy-medium"><input type="radio" name="energy" value="medium" checked><span>Med</span></label>
+        <label data-testid="energy-high"><input type="radio" name="energy" value="high"><span>High</span></label>
+      </div>
+    </div>
+
+    <div class="field">
+      <span>Density</span>
+      <div class="segmented" style="--segments: 3">
+        <label data-testid="density-sparse"><input type="radio" name="density" value="sparse"><span>Sparse</span></label>
+        <label data-testid="density-balanced"><input type="radio" name="density" value="balanced" checked><span>Balanced</span></label>
+        <label data-testid="density-busy"><input type="radio" name="density" value="busy"><span>Busy</span></label>
+      </div>
+    </div>
+
+    <div class="field" style="grid-column: 1 / -1;">
+      <span id="seedLabel">Seed</span>
+      <div class="seed-row">
+        <input id="seed" data-testid="seed-input" type="text" spellcheck="false" aria-labelledby="seedLabel">
+        <button id="shuffleSeed" data-testid="shuffle-seed" type="button">New</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <button data-testid="cancel" type="button" onclick="cancel()">Cancel</button>
+    <button data-testid="generate" class="primary" type="button" onclick="generate()">Generate</button>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "ableton-extensions",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Monorepo of Ableton Live Extension SDK experiments.",
+  "scripts": {
+    "genre-scaffold:build": "npm --prefix extensions/genre-scaffold run build",
+    "genre-scaffold:example": "npm --prefix extensions/genre-scaffold run example",
+    "genre-scaffold:generate": "npm --prefix extensions/genre-scaffold run generate --",
+    "genre-scaffold:package": "npm --prefix extensions/genre-scaffold run package",
+    "genre-scaffold:start": "npm --prefix extensions/genre-scaffold run start",
+    "genre-scaffold:test": "npm --prefix extensions/genre-scaffold run test",
+    "genre-scaffold:validate": "npm --prefix extensions/genre-scaffold run validate:generations",
+    "test": "npm run genre-scaffold:test"
+  }
+}

@@ -1,0 +1,2484 @@
+{
+  "meta": {
+    "id": "trap:hot-iron",
+    "label": "Trap in F# minor",
+    "generator": "ableton-genre-scaffold",
+    "stockOnly": true,
+    "seed": "hot-iron",
+    "density": "balanced",
+    "energy": "medium"
+  },
+  "genre": {
+    "id": "trap",
+    "label": "Trap"
+  },
+  "key": {
+    "root": "F#",
+    "rootSemitone": 6,
+    "scaleName": "minor",
+    "intervals": [
+      0,
+      2,
+      3,
+      5,
+      7,
+      8,
+      10
+    ],
+    "label": "F# minor"
+  },
+  "tempo": 140,
+  "bars": 16,
+  "sections": [
+    {
+      "index": 0,
+      "name": "Sparse intro",
+      "startBar": 0,
+      "bars": 2,
+      "endBar": 2,
+      "energy": 0.45,
+      "tags": [
+        "intro"
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Hook setup",
+      "startBar": 2,
+      "bars": 4,
+      "endBar": 6,
+      "energy": 0.78,
+      "tags": [
+        "groove"
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Drop",
+      "startBar": 6,
+      "bars": 4,
+      "endBar": 10,
+      "energy": 1,
+      "tags": [
+        "peak"
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Breakdown",
+      "startBar": 10,
+      "bars": 2,
+      "endBar": 12,
+      "energy": 0.38,
+      "tags": [
+        "break"
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Final hook",
+      "startBar": 12,
+      "bars": 4,
+      "endBar": 16,
+      "energy": 0.92,
+      "tags": [
+        "peak",
+        "outro"
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "trap-drums",
+      "name": "Drums - 808 Trap Kit",
+      "role": "drums",
+      "stockDevices": [
+        "Drum Rack",
+        "Core Library 808-style kit",
+        "Drum Buss",
+        "Saturator"
+      ],
+      "description": "Half-time snare, sparse kicks, and hat rolls give the scaffold its trap grid.",
+      "clips": [
+        {
+          "name": "Trap Drums - Sparse intro",
+          "startBar": 0,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 108,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 0,
+              "duration": 0.055,
+              "velocity": 62,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 1.75,
+              "duration": 0.12,
+              "velocity": 101,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 38,
+              "start": 2,
+              "duration": 0.11,
+              "velocity": 102,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 108,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 38,
+              "start": 6,
+              "duration": 0.11,
+              "velocity": 105,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 36,
+              "start": 6.75,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "808 kick pattern"
+            }
+          ]
+        },
+        {
+          "name": "Trap Drums - Hook setup",
+          "startBar": 2,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 36,
+              "start": 1.5,
+              "duration": 0.12,
+              "velocity": 109,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 1.5,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 38,
+              "start": 2,
+              "duration": 0.11,
+              "velocity": 101,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 42,
+              "start": 2,
+              "duration": 0.055,
+              "velocity": 44,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 2.5,
+              "duration": 0.12,
+              "velocity": 101,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 2.5,
+              "duration": 0.055,
+              "velocity": 63,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 3.5,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 3.5,
+              "duration": 0.055,
+              "velocity": 54,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 109,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 4,
+              "duration": 0.055,
+              "velocity": 43,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 5.5,
+              "duration": 0.12,
+              "velocity": 107,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 38,
+              "start": 6,
+              "duration": 0.11,
+              "velocity": 103,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.12,
+              "velocity": 105,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 6.5,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 7.5,
+              "duration": 0.12,
+              "velocity": 106,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 7.5,
+              "duration": 0.055,
+              "velocity": 60,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.12,
+              "velocity": 108,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 9,
+              "duration": 0.055,
+              "velocity": 56,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 9.5,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 38,
+              "start": 10,
+              "duration": 0.11,
+              "velocity": 104,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 42,
+              "start": 10,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 10.5,
+              "duration": 0.12,
+              "velocity": 106,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 10.5,
+              "duration": 0.055,
+              "velocity": 56,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 11,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 11.5,
+              "duration": 0.12,
+              "velocity": 108,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 36,
+              "start": 12,
+              "duration": 0.12,
+              "velocity": 101,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 12,
+              "duration": 0.055,
+              "velocity": 62,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 13.5,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 38,
+              "start": 14,
+              "duration": 0.11,
+              "velocity": 101,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 36,
+              "start": 14.5,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 15,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 15,
+              "duration": 0.045,
+              "velocity": 48,
+              "label": "1/32 trap hat roll"
+            },
+            {
+              "pitch": 42,
+              "start": 15.125,
+              "duration": 0.045,
+              "velocity": 52,
+              "label": "1/32 trap hat roll"
+            },
+            {
+              "pitch": 42,
+              "start": 15.25,
+              "duration": 0.045,
+              "velocity": 56,
+              "label": "1/32 trap hat roll"
+            },
+            {
+              "pitch": 42,
+              "start": 15.375,
+              "duration": 0.045,
+              "velocity": 60,
+              "label": "1/32 trap hat roll"
+            },
+            {
+              "pitch": 36,
+              "start": 15.5,
+              "duration": 0.12,
+              "velocity": 105,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 15.5,
+              "duration": 0.055,
+              "velocity": 60,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 40,
+              "start": 15.75,
+              "duration": 0.05,
+              "velocity": 47,
+              "label": "snap pickup"
+            }
+          ]
+        },
+        {
+          "name": "Trap Drums - Drop",
+          "startBar": 6,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 36,
+              "start": 0.75,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 1,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 1.5,
+              "duration": 0.055,
+              "velocity": 62,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 38,
+              "start": 2,
+              "duration": 0.11,
+              "velocity": 104,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 42,
+              "start": 2,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 2.5,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 2.5,
+              "duration": 0.055,
+              "velocity": 53,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 3,
+              "duration": 0.055,
+              "velocity": 61,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 3.25,
+              "duration": 0.12,
+              "velocity": 106,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 3.5,
+              "duration": 0.055,
+              "velocity": 63,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 4.5,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 4.75,
+              "duration": 0.12,
+              "velocity": 105,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 5,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 5.5,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 38,
+              "start": 6,
+              "duration": 0.11,
+              "velocity": 103,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 42,
+              "start": 6,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.12,
+              "velocity": 105,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 6.5,
+              "duration": 0.055,
+              "velocity": 54,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 7.25,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.12,
+              "velocity": 106,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 8,
+              "duration": 0.055,
+              "velocity": 43,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 8.5,
+              "duration": 0.055,
+              "velocity": 54,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 8.75,
+              "duration": 0.12,
+              "velocity": 106,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 9.5,
+              "duration": 0.055,
+              "velocity": 46,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 38,
+              "start": 10,
+              "duration": 0.11,
+              "velocity": 106,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 36,
+              "start": 10.5,
+              "duration": 0.12,
+              "velocity": 106,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 36,
+              "start": 11.25,
+              "duration": 0.12,
+              "velocity": 107,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 36,
+              "start": 12,
+              "duration": 0.12,
+              "velocity": 111,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 12,
+              "duration": 0.055,
+              "velocity": 61,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 12.75,
+              "duration": 0.12,
+              "velocity": 106,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 13,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 38,
+              "start": 14,
+              "duration": 0.11,
+              "velocity": 106,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 42,
+              "start": 14,
+              "duration": 0.055,
+              "velocity": 59,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 14.5,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 15,
+              "duration": 0.055,
+              "velocity": 46,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 15.25,
+              "duration": 0.12,
+              "velocity": 106,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 15.25,
+              "duration": 0.045,
+              "velocity": 48,
+              "label": "1/32 trap hat roll"
+            },
+            {
+              "pitch": 42,
+              "start": 15.375,
+              "duration": 0.045,
+              "velocity": 52,
+              "label": "1/32 trap hat roll"
+            },
+            {
+              "pitch": 42,
+              "start": 15.5,
+              "duration": 0.055,
+              "velocity": 58,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 15.5,
+              "duration": 0.045,
+              "velocity": 56,
+              "label": "1/32 trap hat roll"
+            },
+            {
+              "pitch": 42,
+              "start": 15.625,
+              "duration": 0.045,
+              "velocity": 60,
+              "label": "1/32 trap hat roll"
+            },
+            {
+              "pitch": 40,
+              "start": 15.75,
+              "duration": 0.05,
+              "velocity": 42,
+              "label": "snap pickup"
+            }
+          ]
+        },
+        {
+          "name": "Trap Drums - Breakdown",
+          "startBar": 10,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 109,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 1,
+              "duration": 0.055,
+              "velocity": 41,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 1.5,
+              "duration": 0.055,
+              "velocity": 62,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 38,
+              "start": 2,
+              "duration": 0.11,
+              "velocity": 107,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 36,
+              "start": 2.5,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 108,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 4.5,
+              "duration": 0.055,
+              "velocity": 44,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 5.5,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 38,
+              "start": 6,
+              "duration": 0.11,
+              "velocity": 106,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 7,
+              "duration": 0.055,
+              "velocity": 60,
+              "label": "steady trap hats"
+            }
+          ]
+        },
+        {
+          "name": "Trap Drums - Final hook",
+          "startBar": 12,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 36,
+              "start": 0.75,
+              "duration": 0.12,
+              "velocity": 107,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 1.5,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 38,
+              "start": 2,
+              "duration": 0.11,
+              "velocity": 102,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 42,
+              "start": 2,
+              "duration": 0.055,
+              "velocity": 50,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 2.5,
+              "duration": 0.12,
+              "velocity": 102,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 2.5,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 3,
+              "duration": 0.055,
+              "velocity": 60,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 3.25,
+              "duration": 0.12,
+              "velocity": 107,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 104,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 4,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 4.5,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 4.75,
+              "duration": 0.12,
+              "velocity": 105,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 5,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 38,
+              "start": 6,
+              "duration": 0.11,
+              "velocity": 103,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 42,
+              "start": 6,
+              "duration": 0.055,
+              "velocity": 50,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.12,
+              "velocity": 106,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 6.5,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 7,
+              "duration": 0.055,
+              "velocity": 61,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 7.25,
+              "duration": 0.12,
+              "velocity": 107,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.12,
+              "velocity": 107,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 8.5,
+              "duration": 0.055,
+              "velocity": 44,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 8.75,
+              "duration": 0.12,
+              "velocity": 105,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 9,
+              "duration": 0.055,
+              "velocity": 44,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 9.5,
+              "duration": 0.055,
+              "velocity": 42,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 38,
+              "start": 10,
+              "duration": 0.11,
+              "velocity": 104,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 42,
+              "start": 10,
+              "duration": 0.055,
+              "velocity": 41,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 10.5,
+              "duration": 0.12,
+              "velocity": 109,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 11,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 11.25,
+              "duration": 0.12,
+              "velocity": 110,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 11.5,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 12,
+              "duration": 0.12,
+              "velocity": 101,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 12,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 12.5,
+              "duration": 0.055,
+              "velocity": 53,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 12.75,
+              "duration": 0.12,
+              "velocity": 108,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 13,
+              "duration": 0.055,
+              "velocity": 62,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 42,
+              "start": 13.5,
+              "duration": 0.055,
+              "velocity": 48,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 38,
+              "start": 14,
+              "duration": 0.11,
+              "velocity": 104,
+              "label": "half-time snare"
+            },
+            {
+              "pitch": 36,
+              "start": 14.5,
+              "duration": 0.12,
+              "velocity": 105,
+              "label": "808 kick pattern"
+            },
+            {
+              "pitch": 42,
+              "start": 14.5,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "steady trap hats"
+            },
+            {
+              "pitch": 36,
+              "start": 15.25,
+              "duration": 0.12,
+              "velocity": 106,
+              "label": "808 kick pattern"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trap-perc",
+      "name": "Perc - Sparse Ear Candy",
+      "role": "perc",
+      "stockDevices": [
+        "Drum Rack",
+        "Echo",
+        "Hybrid Reverb"
+      ],
+      "description": "Sparse snaps and percussion leave negative space around the 808 and vocal lane.",
+      "clips": [
+        {
+          "name": "Trap Perc - Sparse intro",
+          "startBar": 0,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 37,
+              "start": 4.75,
+              "duration": 0.05,
+              "velocity": 38,
+              "label": "rim ear candy"
+            }
+          ]
+        },
+        {
+          "name": "Trap Perc - Hook setup",
+          "startBar": 2,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 37,
+              "start": 3,
+              "duration": 0.05,
+              "velocity": 47,
+              "label": "rim ear candy"
+            },
+            {
+              "pitch": 37,
+              "start": 8.75,
+              "duration": 0.05,
+              "velocity": 41,
+              "label": "rim ear candy"
+            },
+            {
+              "pitch": 37,
+              "start": 11,
+              "duration": 0.05,
+              "velocity": 47,
+              "label": "rim ear candy"
+            },
+            {
+              "pitch": 46,
+              "start": 13.5,
+              "duration": 0.12,
+              "velocity": 51,
+              "label": "open-hat lift"
+            },
+            {
+              "pitch": 37,
+              "start": 15,
+              "duration": 0.05,
+              "velocity": 52,
+              "label": "rim ear candy"
+            },
+            {
+              "pitch": 37,
+              "start": 15.75,
+              "duration": 0.05,
+              "velocity": 58,
+              "label": "rim ear candy"
+            }
+          ]
+        },
+        {
+          "name": "Trap Perc - Drop",
+          "startBar": 6,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 37,
+              "start": 8.75,
+              "duration": 0.05,
+              "velocity": 38,
+              "label": "rim ear candy"
+            },
+            {
+              "pitch": 37,
+              "start": 11.75,
+              "duration": 0.05,
+              "velocity": 46,
+              "label": "rim ear candy"
+            }
+          ]
+        },
+        {
+          "name": "Trap Perc - Breakdown",
+          "startBar": 10,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 46,
+              "start": 5.5,
+              "duration": 0.12,
+              "velocity": 51,
+              "label": "open-hat lift"
+            }
+          ]
+        },
+        {
+          "name": "Trap Perc - Final hook",
+          "startBar": 12,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 37,
+              "start": 0.75,
+              "duration": 0.05,
+              "velocity": 40,
+              "label": "rim ear candy"
+            },
+            {
+              "pitch": 37,
+              "start": 3,
+              "duration": 0.05,
+              "velocity": 58,
+              "label": "rim ear candy"
+            },
+            {
+              "pitch": 46,
+              "start": 3.5,
+              "duration": 0.12,
+              "velocity": 61,
+              "label": "open-hat lift"
+            },
+            {
+              "pitch": 37,
+              "start": 7,
+              "duration": 0.05,
+              "velocity": 51,
+              "label": "rim ear candy"
+            },
+            {
+              "pitch": 37,
+              "start": 7.75,
+              "duration": 0.05,
+              "velocity": 46,
+              "label": "rim ear candy"
+            },
+            {
+              "pitch": 37,
+              "start": 8.75,
+              "duration": 0.05,
+              "velocity": 50,
+              "label": "rim ear candy"
+            },
+            {
+              "pitch": 37,
+              "start": 12.75,
+              "duration": 0.05,
+              "velocity": 45,
+              "label": "rim ear candy"
+            },
+            {
+              "pitch": 37,
+              "start": 15,
+              "duration": 0.05,
+              "velocity": 48,
+              "label": "rim ear candy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trap-808",
+      "name": "Bass - Operator 808",
+      "role": "bass",
+      "stockDevices": [
+        "Operator",
+        "Saturator",
+        "EQ Eight",
+        "Compressor"
+      ],
+      "description": "Long low 808 notes follow the minor progression and answer the sparse kick pattern.",
+      "clips": [
+        {
+          "name": "Trap 808 - Sparse intro",
+          "startBar": 0,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 30,
+              "start": 0,
+              "duration": 1.35,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 37,
+              "start": 1.75,
+              "duration": 0.45,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 30,
+              "start": 2.5,
+              "duration": 1,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 42,
+              "start": 3.45,
+              "duration": 0.32,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 4,
+              "duration": 1.35,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 52,
+              "start": 5.75,
+              "duration": 0.45,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 6.5,
+              "duration": 1,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 52,
+              "start": 7.45,
+              "duration": 0.32,
+              "velocity": 94,
+              "label": "808 root movement"
+            }
+          ]
+        },
+        {
+          "name": "Trap 808 - Hook setup",
+          "startBar": 2,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 38,
+              "start": 0,
+              "duration": 1.35,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 45,
+              "start": 1.75,
+              "duration": 0.45,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 38,
+              "start": 2.5,
+              "duration": 1,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 50,
+              "start": 3.45,
+              "duration": 0.32,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 4,
+              "duration": 1.35,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 47,
+              "start": 5.75,
+              "duration": 0.45,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 6.5,
+              "duration": 1,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 52,
+              "start": 7.45,
+              "duration": 0.32,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 30,
+              "start": 8,
+              "duration": 1.35,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 37,
+              "start": 9.75,
+              "duration": 0.45,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 30,
+              "start": 10.5,
+              "duration": 1,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 42,
+              "start": 11.45,
+              "duration": 0.32,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 12,
+              "duration": 1.35,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 47,
+              "start": 13.75,
+              "duration": 0.45,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 14.5,
+              "duration": 1,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 52,
+              "start": 15.45,
+              "duration": 0.32,
+              "velocity": 94,
+              "label": "808 root movement"
+            }
+          ]
+        },
+        {
+          "name": "Trap 808 - Drop",
+          "startBar": 6,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 38,
+              "start": 0,
+              "duration": 1.35,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 50,
+              "start": 1.75,
+              "duration": 0.45,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 38,
+              "start": 2.5,
+              "duration": 1,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 50,
+              "start": 3.45,
+              "duration": 0.32,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 4,
+              "duration": 1.35,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 52,
+              "start": 5.75,
+              "duration": 0.45,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 6.5,
+              "duration": 1,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 52,
+              "start": 7.45,
+              "duration": 0.32,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 30,
+              "start": 8,
+              "duration": 1.35,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 37,
+              "start": 9.75,
+              "duration": 0.45,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 30,
+              "start": 10.5,
+              "duration": 1,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 42,
+              "start": 11.45,
+              "duration": 0.32,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 12,
+              "duration": 1.35,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 47,
+              "start": 13.75,
+              "duration": 0.45,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 14.5,
+              "duration": 1,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 52,
+              "start": 15.45,
+              "duration": 0.32,
+              "velocity": 94,
+              "label": "808 root movement"
+            }
+          ]
+        },
+        {
+          "name": "Trap 808 - Breakdown",
+          "startBar": 10,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 38,
+              "start": 0,
+              "duration": 2.2,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 45,
+              "start": 3,
+              "duration": 0.75,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 4,
+              "duration": 2.2,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 47,
+              "start": 7,
+              "duration": 0.75,
+              "velocity": 94,
+              "label": "808 root movement"
+            }
+          ]
+        },
+        {
+          "name": "Trap 808 - Final hook",
+          "startBar": 12,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 30,
+              "start": 0,
+              "duration": 1.35,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 37,
+              "start": 1.75,
+              "duration": 0.45,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 30,
+              "start": 2.5,
+              "duration": 1,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 42,
+              "start": 3.45,
+              "duration": 0.32,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 4,
+              "duration": 1.35,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 47,
+              "start": 5.75,
+              "duration": 0.45,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 6.5,
+              "duration": 1,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 52,
+              "start": 7.45,
+              "duration": 0.32,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 38,
+              "start": 8,
+              "duration": 1.35,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 50,
+              "start": 9.75,
+              "duration": 0.45,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 38,
+              "start": 10.5,
+              "duration": 1,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 50,
+              "start": 11.45,
+              "duration": 0.32,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 12,
+              "duration": 1.35,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 47,
+              "start": 13.75,
+              "duration": 0.45,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 40,
+              "start": 14.5,
+              "duration": 1,
+              "velocity": 94,
+              "label": "808 root movement"
+            },
+            {
+              "pitch": 52,
+              "start": 15.45,
+              "duration": 0.32,
+              "velocity": 94,
+              "label": "808 root movement"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trap-chords",
+      "name": "Chords - Dark Wavetable Pad",
+      "role": "chords",
+      "stockDevices": [
+        "Wavetable",
+        "Auto Filter",
+        "Hybrid Reverb",
+        "Utility"
+      ],
+      "description": "Slow minor pads set the key and mood without crowding the drums.",
+      "clips": [
+        {
+          "name": "Trap Chords - Sparse intro",
+          "startBar": 0,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 57,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 66,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 73,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 68,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 76,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 83,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            }
+          ]
+        },
+        {
+          "name": "Trap Chords - Hook setup",
+          "startBar": 2,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 62,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 66,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 81,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 68,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 76,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 83,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 57,
+              "start": 8,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 66,
+              "start": 8,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 73,
+              "start": 8,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 64,
+              "start": 12,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 68,
+              "start": 12,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 83,
+              "start": 12,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            }
+          ]
+        },
+        {
+          "name": "Trap Chords - Drop",
+          "startBar": 6,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 66,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 74,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 81,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 64,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 68,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 83,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 54,
+              "start": 8,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 57,
+              "start": 8,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 73,
+              "start": 8,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 68,
+              "start": 12,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 76,
+              "start": 12,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 83,
+              "start": 12,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            }
+          ]
+        },
+        {
+          "name": "Trap Chords - Breakdown",
+          "startBar": 10,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 62,
+              "start": 0,
+              "duration": 3.6,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 66,
+              "start": 0,
+              "duration": 3.6,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 81,
+              "start": 0,
+              "duration": 3.6,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 64,
+              "start": 4,
+              "duration": 3.6,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 68,
+              "start": 4,
+              "duration": 3.6,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 83,
+              "start": 4,
+              "duration": 3.6,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            }
+          ]
+        },
+        {
+          "name": "Trap Chords - Final hook",
+          "startBar": 12,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 57,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 66,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 73,
+              "start": 0,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 64,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 68,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 83,
+              "start": 4,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 62,
+              "start": 8,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 66,
+              "start": 8,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 81,
+              "start": 8,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 68,
+              "start": 12,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 76,
+              "start": 12,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            },
+            {
+              "pitch": 83,
+              "start": 12,
+              "duration": 2.8,
+              "velocity": 52,
+              "label": "dark sustained minor pad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trap-bell-hook",
+      "name": "Hook - Bell Pluck",
+      "role": "hook",
+      "stockDevices": [
+        "Operator",
+        "Echo",
+        "Reverb"
+      ],
+      "description": "Sparse bell notes use minor-scale space and leave room for a vocal/topline.",
+      "clips": [
+        {
+          "name": "Trap Hook - Sparse intro",
+          "startBar": 0,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 85,
+              "start": 0.25,
+              "duration": 0.2,
+              "velocity": 62,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 88,
+              "start": 1.5,
+              "duration": 0.2,
+              "velocity": 65,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 90,
+              "start": 2.25,
+              "duration": 0.2,
+              "velocity": 68,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 97,
+              "start": 3.5,
+              "duration": 0.2,
+              "velocity": 71,
+              "label": "sparse bell motif"
+            }
+          ]
+        },
+        {
+          "name": "Trap Hook - Hook setup",
+          "startBar": 2,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 90,
+              "start": 0.25,
+              "duration": 0.2,
+              "velocity": 62,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 88,
+              "start": 1.5,
+              "duration": 0.2,
+              "velocity": 65,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 85,
+              "start": 2.25,
+              "duration": 0.2,
+              "velocity": 68,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 81,
+              "start": 3.5,
+              "duration": 0.2,
+              "velocity": 71,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 90,
+              "start": 8.25,
+              "duration": 0.2,
+              "velocity": 62,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 88,
+              "start": 9.5,
+              "duration": 0.2,
+              "velocity": 65,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 85,
+              "start": 10.25,
+              "duration": 0.2,
+              "velocity": 68,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 81,
+              "start": 11.5,
+              "duration": 0.2,
+              "velocity": 71,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 90,
+              "start": 12.25,
+              "duration": 0.2,
+              "velocity": 62,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 88,
+              "start": 13.5,
+              "duration": 0.2,
+              "velocity": 65,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 85,
+              "start": 14.25,
+              "duration": 0.2,
+              "velocity": 68,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 81,
+              "start": 15.5,
+              "duration": 0.2,
+              "velocity": 71,
+              "label": "sparse bell motif"
+            }
+          ]
+        },
+        {
+          "name": "Trap Hook - Drop",
+          "startBar": 6,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 90,
+              "start": 0.25,
+              "duration": 0.2,
+              "velocity": 62,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 88,
+              "start": 1.5,
+              "duration": 0.2,
+              "velocity": 65,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 85,
+              "start": 2.25,
+              "duration": 0.2,
+              "velocity": 68,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 81,
+              "start": 3.5,
+              "duration": 0.2,
+              "velocity": 71,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 90,
+              "start": 4.25,
+              "duration": 0.2,
+              "velocity": 62,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 88,
+              "start": 5.5,
+              "duration": 0.2,
+              "velocity": 65,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 85,
+              "start": 6.25,
+              "duration": 0.2,
+              "velocity": 68,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 81,
+              "start": 7.5,
+              "duration": 0.2,
+              "velocity": 71,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 90,
+              "start": 8.25,
+              "duration": 0.2,
+              "velocity": 62,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 88,
+              "start": 9.5,
+              "duration": 0.2,
+              "velocity": 65,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 85,
+              "start": 10.25,
+              "duration": 0.2,
+              "velocity": 68,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 81,
+              "start": 11.5,
+              "duration": 0.2,
+              "velocity": 71,
+              "label": "sparse bell motif"
+            }
+          ]
+        },
+        {
+          "name": "Trap Hook - Final hook",
+          "startBar": 12,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 90,
+              "start": 0.25,
+              "duration": 0.2,
+              "velocity": 62,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 88,
+              "start": 1.5,
+              "duration": 0.2,
+              "velocity": 65,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 85,
+              "start": 2.25,
+              "duration": 0.2,
+              "velocity": 68,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 81,
+              "start": 3.5,
+              "duration": 0.2,
+              "velocity": 71,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 90,
+              "start": 8.25,
+              "duration": 0.2,
+              "velocity": 62,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 88,
+              "start": 9.5,
+              "duration": 0.2,
+              "velocity": 65,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 85,
+              "start": 10.25,
+              "duration": 0.2,
+              "velocity": 68,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 81,
+              "start": 11.5,
+              "duration": 0.2,
+              "velocity": 71,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 90,
+              "start": 12.25,
+              "duration": 0.2,
+              "velocity": 62,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 88,
+              "start": 13.5,
+              "duration": 0.2,
+              "velocity": 65,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 85,
+              "start": 14.25,
+              "duration": 0.2,
+              "velocity": 68,
+              "label": "sparse bell motif"
+            },
+            {
+              "pitch": 81,
+              "start": 15.5,
+              "duration": 0.2,
+              "velocity": 71,
+              "label": "sparse bell motif"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

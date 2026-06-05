@@ -1,0 +1,4730 @@
+{
+  "meta": {
+    "id": "uk-garage:hot-iron",
+    "label": "UK Garage in F minor",
+    "generator": "ableton-genre-scaffold",
+    "stockOnly": true,
+    "seed": "hot-iron",
+    "density": "balanced",
+    "energy": "medium"
+  },
+  "genre": {
+    "id": "uk-garage",
+    "label": "UK Garage"
+  },
+  "key": {
+    "root": "F",
+    "rootSemitone": 5,
+    "scaleName": "minor",
+    "intervals": [
+      0,
+      2,
+      3,
+      5,
+      7,
+      8,
+      10
+    ],
+    "label": "F minor"
+  },
+  "tempo": 132,
+  "bars": 16,
+  "sections": [
+    {
+      "index": 0,
+      "name": "Atmos intro",
+      "startBar": 0,
+      "bars": 3,
+      "endBar": 3,
+      "energy": 0.48,
+      "tags": [
+        "intro"
+      ]
+    },
+    {
+      "index": 1,
+      "name": "2-step groove",
+      "startBar": 3,
+      "bars": 4,
+      "endBar": 7,
+      "energy": 0.82,
+      "tags": [
+        "groove"
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Vocal-space break",
+      "startBar": 7,
+      "bars": 2,
+      "endBar": 9,
+      "energy": 0.4,
+      "tags": [
+        "break"
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Full shuffle",
+      "startBar": 9,
+      "bars": 5,
+      "endBar": 14,
+      "energy": 1,
+      "tags": [
+        "peak"
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Outro shuffle",
+      "startBar": 14,
+      "bars": 2,
+      "endBar": 16,
+      "energy": 0.65,
+      "tags": [
+        "outro"
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "uk-garage-drums",
+      "name": "Drums - 2-Step Kit",
+      "role": "drums",
+      "stockDevices": [
+        "Drum Rack",
+        "Core Library electronic kit",
+        "Drum Buss",
+        "Hybrid Reverb"
+      ],
+      "description": "A swung 2-step pattern with syncopated kicks, snappy backbeats, and shuffled hats.",
+      "clips": [
+        {
+          "name": "UK Garage Drums - Atmos intro",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 99,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 37,
+              "start": 0.81,
+              "duration": 0.06,
+              "velocity": 46,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 38,
+              "start": 1,
+              "duration": 0.1,
+              "velocity": 95,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 1.81,
+              "duration": 0.12,
+              "velocity": 97,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 36,
+              "start": 2.81,
+              "duration": 0.12,
+              "velocity": 93,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 38,
+              "start": 3,
+              "duration": 0.1,
+              "velocity": 101,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 97,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 38,
+              "start": 5,
+              "duration": 0.1,
+              "velocity": 97,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 5.81,
+              "duration": 0.12,
+              "velocity": 97,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 6,
+              "duration": 0.055,
+              "velocity": 44,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 6.5,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 6.81,
+              "duration": 0.12,
+              "velocity": 96,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 37,
+              "start": 6.81,
+              "duration": 0.06,
+              "velocity": 44,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 38,
+              "start": 7,
+              "duration": 0.1,
+              "velocity": 99,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 42,
+              "start": 7.31,
+              "duration": 0.055,
+              "velocity": 56,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 8.5,
+              "duration": 0.055,
+              "velocity": 60,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 37,
+              "start": 8.81,
+              "duration": 0.06,
+              "velocity": 56,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 38,
+              "start": 9,
+              "duration": 0.1,
+              "velocity": 97,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 9.81,
+              "duration": 0.12,
+              "velocity": 96,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 10,
+              "duration": 0.055,
+              "velocity": 50,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 10.5,
+              "duration": 0.055,
+              "velocity": 67,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 10.81,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 38,
+              "start": 11,
+              "duration": 0.1,
+              "velocity": 98,
+              "label": "garage backbeat snare"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Drums - 2-step groove",
+          "startBar": 3,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 99,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 0,
+              "duration": 0.055,
+              "velocity": 61,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 0.5,
+              "duration": 0.055,
+              "velocity": 58,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 0.81,
+              "duration": 0.055,
+              "velocity": 53,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 1,
+              "duration": 0.1,
+              "velocity": 100,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 1.31,
+              "duration": 0.12,
+              "velocity": 98,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 1.31,
+              "duration": 0.055,
+              "velocity": 48,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 2,
+              "duration": 0.055,
+              "velocity": 48,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 2.5,
+              "duration": 0.12,
+              "velocity": 93,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 2.5,
+              "duration": 0.055,
+              "velocity": 50,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 37,
+              "start": 2.81,
+              "duration": 0.06,
+              "velocity": 47,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 42,
+              "start": 2.81,
+              "duration": 0.055,
+              "velocity": 46,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 3,
+              "duration": 0.1,
+              "velocity": 94,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 42,
+              "start": 3.31,
+              "duration": 0.055,
+              "velocity": 57,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 3.5,
+              "duration": 0.12,
+              "velocity": 98,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 3.5,
+              "duration": 0.055,
+              "velocity": 56,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 99,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 4,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 4.5,
+              "duration": 0.055,
+              "velocity": 45,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 5,
+              "duration": 0.1,
+              "velocity": 100,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 5.31,
+              "duration": 0.12,
+              "velocity": 101,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 5.31,
+              "duration": 0.055,
+              "velocity": 44,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 5.5,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 6,
+              "duration": 0.055,
+              "velocity": 46,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.12,
+              "velocity": 101,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 6.5,
+              "duration": 0.055,
+              "velocity": 56,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 37,
+              "start": 6.81,
+              "duration": 0.06,
+              "velocity": 54,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 42,
+              "start": 6.81,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 7,
+              "duration": 0.1,
+              "velocity": 100,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 7.5,
+              "duration": 0.12,
+              "velocity": 95,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 37,
+              "start": 7.81,
+              "duration": 0.06,
+              "velocity": 43,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.12,
+              "velocity": 100,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 8,
+              "duration": 0.055,
+              "velocity": 62,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 8.5,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 8.81,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 9,
+              "duration": 0.1,
+              "velocity": 99,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 9.31,
+              "duration": 0.12,
+              "velocity": 93,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 9.31,
+              "duration": 0.055,
+              "velocity": 66,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 10,
+              "duration": 0.055,
+              "velocity": 64,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 10.5,
+              "duration": 0.12,
+              "velocity": 94,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 38,
+              "start": 11,
+              "duration": 0.1,
+              "velocity": 101,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 42,
+              "start": 11.31,
+              "duration": 0.055,
+              "velocity": 47,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 11.5,
+              "duration": 0.12,
+              "velocity": 94,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 11.5,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 37,
+              "start": 11.81,
+              "duration": 0.06,
+              "velocity": 51,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 36,
+              "start": 12,
+              "duration": 0.12,
+              "velocity": 93,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 12.5,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 13,
+              "duration": 0.1,
+              "velocity": 100,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 13.31,
+              "duration": 0.12,
+              "velocity": 100,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 14,
+              "duration": 0.055,
+              "velocity": 48,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 14.5,
+              "duration": 0.12,
+              "velocity": 101,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 14.5,
+              "duration": 0.055,
+              "velocity": 56,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 14.81,
+              "duration": 0.1,
+              "velocity": 62,
+              "label": "swung snare pickup"
+            },
+            {
+              "pitch": 42,
+              "start": 14.81,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 15,
+              "duration": 0.1,
+              "velocity": 102,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 38,
+              "start": 15.31,
+              "duration": 0.1,
+              "velocity": 62,
+              "label": "swung snare pickup"
+            },
+            {
+              "pitch": 42,
+              "start": 15.31,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 15.5,
+              "duration": 0.12,
+              "velocity": 101,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 37,
+              "start": 15.81,
+              "duration": 0.06,
+              "velocity": 49,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 38,
+              "start": 15.81,
+              "duration": 0.1,
+              "velocity": 62,
+              "label": "swung snare pickup"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Drums - Vocal-space break",
+          "startBar": 7,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 101,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 0.81,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 1,
+              "duration": 0.1,
+              "velocity": 76,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 42,
+              "start": 1.31,
+              "duration": 0.055,
+              "velocity": 66,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 2,
+              "duration": 0.055,
+              "velocity": 56,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 2.5,
+              "duration": 0.12,
+              "velocity": 99,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 2.5,
+              "duration": 0.055,
+              "velocity": 48,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 2.81,
+              "duration": 0.055,
+              "velocity": 53,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 3,
+              "duration": 0.1,
+              "velocity": 69,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 42,
+              "start": 3.31,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 3.5,
+              "duration": 0.055,
+              "velocity": 54,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 100,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 4.5,
+              "duration": 0.055,
+              "velocity": 43,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 5,
+              "duration": 0.1,
+              "velocity": 72,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 42,
+              "start": 5.5,
+              "duration": 0.055,
+              "velocity": 54,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 6,
+              "duration": 0.055,
+              "velocity": 46,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 6.5,
+              "duration": 0.055,
+              "velocity": 48,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 7,
+              "duration": 0.1,
+              "velocity": 72,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 42,
+              "start": 7.31,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 7.5,
+              "duration": 0.055,
+              "velocity": 59,
+              "label": "shuffled garage hats"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Drums - Full shuffle",
+          "startBar": 9,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 93,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 0,
+              "duration": 0.055,
+              "velocity": 67,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 0.5,
+              "duration": 0.055,
+              "velocity": 67,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 0.81,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 1,
+              "duration": 0.1,
+              "velocity": 102,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 1.31,
+              "duration": 0.12,
+              "velocity": 99,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 1.31,
+              "duration": 0.055,
+              "velocity": 53,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 1.5,
+              "duration": 0.055,
+              "velocity": 64,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 2,
+              "duration": 0.055,
+              "velocity": 56,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 2.5,
+              "duration": 0.12,
+              "velocity": 97,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 2.5,
+              "duration": 0.055,
+              "velocity": 50,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 3,
+              "duration": 0.1,
+              "velocity": 100,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 42,
+              "start": 3.31,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 3.5,
+              "duration": 0.12,
+              "velocity": 96,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 3.5,
+              "duration": 0.055,
+              "velocity": 63,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 101,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 4,
+              "duration": 0.055,
+              "velocity": 53,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 4.5,
+              "duration": 0.055,
+              "velocity": 44,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 37,
+              "start": 4.81,
+              "duration": 0.06,
+              "velocity": 41,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 42,
+              "start": 4.81,
+              "duration": 0.055,
+              "velocity": 54,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 5,
+              "duration": 0.1,
+              "velocity": 95,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 5.31,
+              "duration": 0.12,
+              "velocity": 99,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 6,
+              "duration": 0.055,
+              "velocity": 48,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.12,
+              "velocity": 101,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 37,
+              "start": 6.81,
+              "duration": 0.06,
+              "velocity": 51,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 38,
+              "start": 7,
+              "duration": 0.1,
+              "velocity": 99,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 42,
+              "start": 7.31,
+              "duration": 0.055,
+              "velocity": 65,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 7.5,
+              "duration": 0.12,
+              "velocity": 97,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 7.5,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 37,
+              "start": 7.81,
+              "duration": 0.06,
+              "velocity": 51,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 36,
+              "start": 8,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 8,
+              "duration": 0.055,
+              "velocity": 64,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 8.5,
+              "duration": 0.055,
+              "velocity": 67,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 8.81,
+              "duration": 0.055,
+              "velocity": 44,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 9,
+              "duration": 0.1,
+              "velocity": 102,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 9.31,
+              "duration": 0.12,
+              "velocity": 99,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 9.31,
+              "duration": 0.055,
+              "velocity": 66,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 9.5,
+              "duration": 0.055,
+              "velocity": 59,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 10.5,
+              "duration": 0.12,
+              "velocity": 100,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 10.5,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 10.81,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 11,
+              "duration": 0.1,
+              "velocity": 101,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 42,
+              "start": 11.31,
+              "duration": 0.055,
+              "velocity": 65,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 11.5,
+              "duration": 0.12,
+              "velocity": 94,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 36,
+              "start": 12,
+              "duration": 0.12,
+              "velocity": 95,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 12,
+              "duration": 0.055,
+              "velocity": 50,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 12.5,
+              "duration": 0.055,
+              "velocity": 46,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 37,
+              "start": 12.81,
+              "duration": 0.06,
+              "velocity": 49,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 38,
+              "start": 13,
+              "duration": 0.1,
+              "velocity": 100,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 13.31,
+              "duration": 0.12,
+              "velocity": 99,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 13.31,
+              "duration": 0.055,
+              "velocity": 58,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 13.5,
+              "duration": 0.055,
+              "velocity": 54,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 14.5,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 14.5,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 14.81,
+              "duration": 0.1,
+              "velocity": 62,
+              "label": "swung snare pickup"
+            },
+            {
+              "pitch": 42,
+              "start": 14.81,
+              "duration": 0.055,
+              "velocity": 67,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 15,
+              "duration": 0.1,
+              "velocity": 94,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 38,
+              "start": 15.31,
+              "duration": 0.1,
+              "velocity": 62,
+              "label": "swung snare pickup"
+            },
+            {
+              "pitch": 42,
+              "start": 15.31,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 15.5,
+              "duration": 0.12,
+              "velocity": 97,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 15.5,
+              "duration": 0.055,
+              "velocity": 66,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 37,
+              "start": 15.81,
+              "duration": 0.06,
+              "velocity": 40,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 38,
+              "start": 15.81,
+              "duration": 0.1,
+              "velocity": 62,
+              "label": "swung snare pickup"
+            },
+            {
+              "pitch": 36,
+              "start": 16,
+              "duration": 0.12,
+              "velocity": 101,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 16,
+              "duration": 0.055,
+              "velocity": 57,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 16.5,
+              "duration": 0.055,
+              "velocity": 49,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 37,
+              "start": 16.81,
+              "duration": 0.06,
+              "velocity": 50,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 42,
+              "start": 16.81,
+              "duration": 0.055,
+              "velocity": 56,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 17,
+              "duration": 0.1,
+              "velocity": 101,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 17.31,
+              "duration": 0.12,
+              "velocity": 94,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 17.31,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 18,
+              "duration": 0.055,
+              "velocity": 48,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 18.5,
+              "duration": 0.12,
+              "velocity": 93,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 18.5,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 37,
+              "start": 18.81,
+              "duration": 0.06,
+              "velocity": 44,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 38,
+              "start": 19,
+              "duration": 0.1,
+              "velocity": 96,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 19.5,
+              "duration": 0.12,
+              "velocity": 102,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 19.5,
+              "duration": 0.055,
+              "velocity": 50,
+              "label": "shuffled garage hats"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Drums - Outro shuffle",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 36,
+              "start": 0,
+              "duration": 0.12,
+              "velocity": 102,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 0,
+              "duration": 0.055,
+              "velocity": 51,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 1,
+              "duration": 0.1,
+              "velocity": 96,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 1.31,
+              "duration": 0.12,
+              "velocity": 96,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 1.31,
+              "duration": 0.055,
+              "velocity": 62,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 42,
+              "start": 2,
+              "duration": 0.055,
+              "velocity": 50,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 2.5,
+              "duration": 0.12,
+              "velocity": 96,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 2.5,
+              "duration": 0.055,
+              "velocity": 54,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 37,
+              "start": 2.81,
+              "duration": 0.06,
+              "velocity": 40,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 42,
+              "start": 2.81,
+              "duration": 0.055,
+              "velocity": 46,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 38,
+              "start": 3,
+              "duration": 0.1,
+              "velocity": 96,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 3.5,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 3.5,
+              "duration": 0.055,
+              "velocity": 55,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 37,
+              "start": 3.81,
+              "duration": 0.06,
+              "velocity": 51,
+              "label": "ghost rim push"
+            },
+            {
+              "pitch": 36,
+              "start": 4,
+              "duration": 0.12,
+              "velocity": 95,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 38,
+              "start": 5,
+              "duration": 0.1,
+              "velocity": 96,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 5.31,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 42,
+              "start": 5.31,
+              "duration": 0.055,
+              "velocity": 52,
+              "label": "shuffled garage hats"
+            },
+            {
+              "pitch": 36,
+              "start": 6.5,
+              "duration": 0.12,
+              "velocity": 103,
+              "label": "syncopated 2-step kick"
+            },
+            {
+              "pitch": 38,
+              "start": 7,
+              "duration": 0.1,
+              "velocity": 96,
+              "label": "garage backbeat snare"
+            },
+            {
+              "pitch": 36,
+              "start": 7.5,
+              "duration": 0.12,
+              "velocity": 99,
+              "label": "syncopated 2-step kick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uk-garage-perc",
+      "name": "Perc - Shuffled Tops",
+      "role": "perc",
+      "stockDevices": [
+        "Drum Rack",
+        "Auto Pan",
+        "Echo"
+      ],
+      "description": "Extra shuffled tops and small percussive answers reinforce the garage feel.",
+      "clips": [
+        {
+          "name": "UK Garage Perc - Atmos intro",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 70,
+              "start": 4.31,
+              "duration": 0.045,
+              "velocity": 52,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 40,
+              "start": 5.5,
+              "duration": 0.06,
+              "velocity": 65,
+              "label": "snap answer"
+            },
+            {
+              "pitch": 70,
+              "start": 7,
+              "duration": 0.045,
+              "velocity": 51,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 8.31,
+              "duration": 0.045,
+              "velocity": 52,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 9,
+              "duration": 0.045,
+              "velocity": 45,
+              "label": "shuffle texture"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Perc - 2-step groove",
+          "startBar": 3,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 70,
+              "start": 2.31,
+              "duration": 0.045,
+              "velocity": 43,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 3.81,
+              "duration": 0.045,
+              "velocity": 41,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 4.31,
+              "duration": 0.045,
+              "velocity": 42,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 5.81,
+              "duration": 0.045,
+              "velocity": 35,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 6.31,
+              "duration": 0.045,
+              "velocity": 53,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 7,
+              "duration": 0.045,
+              "velocity": 36,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 9,
+              "duration": 0.045,
+              "velocity": 49,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 40,
+              "start": 11.5,
+              "duration": 0.06,
+              "velocity": 62,
+              "label": "snap answer"
+            },
+            {
+              "pitch": 40,
+              "start": 13.5,
+              "duration": 0.06,
+              "velocity": 64,
+              "label": "snap answer"
+            },
+            {
+              "pitch": 70,
+              "start": 15,
+              "duration": 0.045,
+              "velocity": 49,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 15.81,
+              "duration": 0.045,
+              "velocity": 43,
+              "label": "shuffle texture"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Perc - Vocal-space break",
+          "startBar": 7,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 40,
+              "start": 1.5,
+              "duration": 0.06,
+              "velocity": 62,
+              "label": "snap answer"
+            },
+            {
+              "pitch": 70,
+              "start": 3.81,
+              "duration": 0.045,
+              "velocity": 49,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 5.81,
+              "duration": 0.045,
+              "velocity": 47,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 6.31,
+              "duration": 0.045,
+              "velocity": 38,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 7,
+              "duration": 0.045,
+              "velocity": 52,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 40,
+              "start": 7.5,
+              "duration": 0.06,
+              "velocity": 66,
+              "label": "snap answer"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Perc - Full shuffle",
+          "startBar": 9,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 70,
+              "start": 0.31,
+              "duration": 0.045,
+              "velocity": 50,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 1,
+              "duration": 0.045,
+              "velocity": 54,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 2.31,
+              "duration": 0.045,
+              "velocity": 50,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 3.81,
+              "duration": 0.045,
+              "velocity": 37,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 4.31,
+              "duration": 0.045,
+              "velocity": 41,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 5.81,
+              "duration": 0.045,
+              "velocity": 36,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 7.81,
+              "duration": 0.045,
+              "velocity": 39,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 9.81,
+              "duration": 0.045,
+              "velocity": 45,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 10.31,
+              "duration": 0.045,
+              "velocity": 45,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 11,
+              "duration": 0.045,
+              "velocity": 51,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 11.81,
+              "duration": 0.045,
+              "velocity": 50,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 13,
+              "duration": 0.045,
+              "velocity": 52,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 15,
+              "duration": 0.045,
+              "velocity": 39,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 15.81,
+              "duration": 0.045,
+              "velocity": 35,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 16.31,
+              "duration": 0.045,
+              "velocity": 44,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 17,
+              "duration": 0.045,
+              "velocity": 42,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 17.81,
+              "duration": 0.045,
+              "velocity": 51,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 40,
+              "start": 19.5,
+              "duration": 0.06,
+              "velocity": 56,
+              "label": "snap answer"
+            },
+            {
+              "pitch": 70,
+              "start": 19.81,
+              "duration": 0.045,
+              "velocity": 34,
+              "label": "shuffle texture"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Perc - Outro shuffle",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 70,
+              "start": 0.31,
+              "duration": 0.045,
+              "velocity": 52,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 40,
+              "start": 1.5,
+              "duration": 0.06,
+              "velocity": 66,
+              "label": "snap answer"
+            },
+            {
+              "pitch": 40,
+              "start": 3.5,
+              "duration": 0.06,
+              "velocity": 66,
+              "label": "snap answer"
+            },
+            {
+              "pitch": 70,
+              "start": 4.31,
+              "duration": 0.045,
+              "velocity": 44,
+              "label": "shuffle texture"
+            },
+            {
+              "pitch": 70,
+              "start": 5.81,
+              "duration": 0.045,
+              "velocity": 35,
+              "label": "shuffle texture"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uk-garage-bass",
+      "name": "Bass - Shuffled Sub",
+      "role": "bass",
+      "stockDevices": [
+        "Operator",
+        "Saturator",
+        "EQ Eight",
+        "Sidechain Compressor"
+      ],
+      "description": "A swung sub pattern answers the kick rather than simply following it.",
+      "clips": [
+        {
+          "name": "UK Garage Bass - Atmos intro",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 41,
+              "start": 0,
+              "duration": 0.32,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 53,
+              "start": 0.82,
+              "duration": 0.18,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 48,
+              "start": 1.55,
+              "duration": 0.24,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 41,
+              "start": 2.5,
+              "duration": 0.38,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 48,
+              "start": 3.2,
+              "duration": 0.22,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 49,
+              "start": 4,
+              "duration": 0.32,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 61,
+              "start": 4.82,
+              "duration": 0.18,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 56,
+              "start": 5.55,
+              "duration": 0.24,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 49,
+              "start": 6.5,
+              "duration": 0.38,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 56,
+              "start": 7.2,
+              "duration": 0.22,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 46,
+              "start": 8,
+              "duration": 0.32,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 58,
+              "start": 8.82,
+              "duration": 0.18,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 53,
+              "start": 9.55,
+              "duration": 0.24,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 46,
+              "start": 10.5,
+              "duration": 0.38,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 58,
+              "start": 11.2,
+              "duration": 0.22,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Bass - 2-step groove",
+          "startBar": 3,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 48,
+              "start": 0,
+              "duration": 0.32,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 60,
+              "start": 0.82,
+              "duration": 0.18,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 55,
+              "start": 1.55,
+              "duration": 0.24,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 48,
+              "start": 2.5,
+              "duration": 0.38,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 55,
+              "start": 3.2,
+              "duration": 0.22,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 41,
+              "start": 4,
+              "duration": 0.32,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 53,
+              "start": 4.82,
+              "duration": 0.18,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 48,
+              "start": 5.55,
+              "duration": 0.24,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 41,
+              "start": 6.5,
+              "duration": 0.38,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 48,
+              "start": 7.2,
+              "duration": 0.22,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 49,
+              "start": 8,
+              "duration": 0.32,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 61,
+              "start": 8.82,
+              "duration": 0.18,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 56,
+              "start": 9.55,
+              "duration": 0.24,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 49,
+              "start": 10.5,
+              "duration": 0.38,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 56,
+              "start": 11.2,
+              "duration": 0.22,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 46,
+              "start": 12,
+              "duration": 0.32,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 58,
+              "start": 12.82,
+              "duration": 0.18,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 53,
+              "start": 13.55,
+              "duration": 0.24,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 46,
+              "start": 14.5,
+              "duration": 0.38,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 58,
+              "start": 15.2,
+              "duration": 0.22,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Bass - Vocal-space break",
+          "startBar": 7,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 48,
+              "start": 0,
+              "duration": 0.7,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 55,
+              "start": 2.5,
+              "duration": 0.35,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 41,
+              "start": 4,
+              "duration": 0.7,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 48,
+              "start": 6.5,
+              "duration": 0.35,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Bass - Full shuffle",
+          "startBar": 9,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 49,
+              "start": 0,
+              "duration": 0.32,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 61,
+              "start": 0.82,
+              "duration": 0.18,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 56,
+              "start": 1.55,
+              "duration": 0.24,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 49,
+              "start": 2.5,
+              "duration": 0.38,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 56,
+              "start": 3.2,
+              "duration": 0.22,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 46,
+              "start": 4,
+              "duration": 0.32,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 58,
+              "start": 4.82,
+              "duration": 0.18,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 53,
+              "start": 5.55,
+              "duration": 0.24,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 46,
+              "start": 6.5,
+              "duration": 0.38,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 53,
+              "start": 7.2,
+              "duration": 0.22,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 48,
+              "start": 8,
+              "duration": 0.32,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 60,
+              "start": 8.82,
+              "duration": 0.18,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 55,
+              "start": 9.55,
+              "duration": 0.24,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 48,
+              "start": 10.5,
+              "duration": 0.38,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 60,
+              "start": 11.2,
+              "duration": 0.22,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 41,
+              "start": 12,
+              "duration": 0.32,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 53,
+              "start": 12.82,
+              "duration": 0.18,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 48,
+              "start": 13.55,
+              "duration": 0.24,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 41,
+              "start": 14.5,
+              "duration": 0.38,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 48,
+              "start": 15.2,
+              "duration": 0.22,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 49,
+              "start": 16,
+              "duration": 0.32,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 61,
+              "start": 16.82,
+              "duration": 0.18,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 56,
+              "start": 17.55,
+              "duration": 0.24,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 49,
+              "start": 18.5,
+              "duration": 0.38,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 56,
+              "start": 19.2,
+              "duration": 0.22,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Bass - Outro shuffle",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 46,
+              "start": 0,
+              "duration": 0.32,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 58,
+              "start": 0.82,
+              "duration": 0.18,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 53,
+              "start": 1.55,
+              "duration": 0.24,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 46,
+              "start": 2.5,
+              "duration": 0.38,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 53,
+              "start": 3.2,
+              "duration": 0.22,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 48,
+              "start": 4,
+              "duration": 0.32,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 60,
+              "start": 4.82,
+              "duration": 0.18,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 55,
+              "start": 5.55,
+              "duration": 0.24,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 48,
+              "start": 6.5,
+              "duration": 0.38,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            },
+            {
+              "pitch": 55,
+              "start": 7.2,
+              "duration": 0.22,
+              "velocity": 86,
+              "label": "swung sub bass answer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uk-garage-chords",
+      "name": "Chords - Organ Seventh Stabs",
+      "role": "chords",
+      "stockDevices": [
+        "Wavetable",
+        "Chord",
+        "Auto Filter",
+        "Echo"
+      ],
+      "description": "Seventh-chord stabs supply the soulful UKG color and leave rhythmic gaps for the drums.",
+      "clips": [
+        {
+          "name": "UK Garage Chords - Atmos intro",
+          "startBar": 0,
+          "bars": 3,
+          "notes": [
+            {
+              "pitch": 56,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 56,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 56,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 56,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 9.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 9.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 9.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 9.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 11.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 11.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 11.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 11.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Chords - 2-step groove",
+          "startBar": 3,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 63,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 67,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 67,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 67,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 67,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 53,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 56,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 53,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 56,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 53,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 56,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 53,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 56,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 9.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 9.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 9.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 9.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 11.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 11.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 11.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 11.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 58,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 61,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 58,
+              "start": 13.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 61,
+              "start": 13.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 13.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 13.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 58,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 61,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 58,
+              "start": 15.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 61,
+              "start": 15.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 15.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 15.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Chords - Vocal-space break",
+          "startBar": 7,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 60,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 67,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 67,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 53,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 56,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 53,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 56,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Chords - Full shuffle",
+          "startBar": 9,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 68,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 77,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 77,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 77,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 77,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 67,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 8,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 9.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 67,
+              "start": 9.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 9.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 9.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 67,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 10.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 11.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 67,
+              "start": 11.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 11.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 11.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 12,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 13.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 13.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 13.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 13.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 14.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 15.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 15.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 15.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 15.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 61,
+              "start": 16,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 16,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 16,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 16,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 61,
+              "start": 17.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 17.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 17.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 17.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 61,
+              "start": 18.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 18.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 18.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 18.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 61,
+              "start": 19.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 19.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 19.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 72,
+              "start": 19.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Chords - Outro shuffle",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 65,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 0,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 1.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 2.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 65,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 68,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 73,
+              "start": 3.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 67,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 4,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 67,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 5.2,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 67,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 6.5,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 60,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 63,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 67,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            },
+            {
+              "pitch": 70,
+              "start": 7.25,
+              "duration": 0.28,
+              "velocity": 66,
+              "label": "swung seventh-chord stab"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uk-garage-hook",
+      "name": "Hook - Pluck Chops",
+      "role": "hook",
+      "stockDevices": [
+        "Drift",
+        "Echo",
+        "Auto Filter"
+      ],
+      "description": "A clipped pluck line suggests vocal-chop phrasing without depending on samples.",
+      "clips": [
+        {
+          "name": "UK Garage Hook - 2-step groove",
+          "startBar": 3,
+          "bars": 4,
+          "notes": [
+            {
+              "pitch": 80,
+              "start": 0.15,
+              "duration": 0.16,
+              "velocity": 68,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 77,
+              "start": 0.82,
+              "duration": 0.16,
+              "velocity": 70,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 75,
+              "start": 1.55,
+              "duration": 0.16,
+              "velocity": 72,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 2.65,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 68,
+              "start": 3.2,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 80,
+              "start": 4.15,
+              "duration": 0.16,
+              "velocity": 68,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 77,
+              "start": 4.82,
+              "duration": 0.16,
+              "velocity": 70,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 75,
+              "start": 5.55,
+              "duration": 0.16,
+              "velocity": 72,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 6.65,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 68,
+              "start": 7.2,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 80,
+              "start": 8.15,
+              "duration": 0.16,
+              "velocity": 68,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 77,
+              "start": 8.82,
+              "duration": 0.16,
+              "velocity": 70,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 75,
+              "start": 9.55,
+              "duration": 0.16,
+              "velocity": 72,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 10.65,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 68,
+              "start": 11.2,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 80,
+              "start": 12.15,
+              "duration": 0.16,
+              "velocity": 68,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 77,
+              "start": 12.82,
+              "duration": 0.16,
+              "velocity": 70,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 75,
+              "start": 13.55,
+              "duration": 0.16,
+              "velocity": 72,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 14.65,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 68,
+              "start": 15.2,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "pluck-chop motif"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Hook - Vocal-space break",
+          "startBar": 7,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 72,
+              "start": 0.15,
+              "duration": 0.16,
+              "velocity": 68,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 68,
+              "start": 0.82,
+              "duration": 0.16,
+              "velocity": 70,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 1.55,
+              "duration": 0.16,
+              "velocity": 72,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 75,
+              "start": 2.65,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 77,
+              "start": 3.2,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 4.15,
+              "duration": 0.16,
+              "velocity": 68,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 68,
+              "start": 4.82,
+              "duration": 0.16,
+              "velocity": 70,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 5.55,
+              "duration": 0.16,
+              "velocity": 72,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 75,
+              "start": 6.65,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 77,
+              "start": 7.2,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "pluck-chop motif"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Hook - Full shuffle",
+          "startBar": 9,
+          "bars": 5,
+          "notes": [
+            {
+              "pitch": 77,
+              "start": 0.15,
+              "duration": 0.16,
+              "velocity": 68,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 75,
+              "start": 0.82,
+              "duration": 0.16,
+              "velocity": 70,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 1.55,
+              "duration": 0.16,
+              "velocity": 72,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 73,
+              "start": 2.65,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 3.2,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 77,
+              "start": 4.15,
+              "duration": 0.16,
+              "velocity": 68,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 75,
+              "start": 4.82,
+              "duration": 0.16,
+              "velocity": 70,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 5.55,
+              "duration": 0.16,
+              "velocity": 72,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 73,
+              "start": 6.65,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 7.2,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 77,
+              "start": 8.15,
+              "duration": 0.16,
+              "velocity": 68,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 75,
+              "start": 8.82,
+              "duration": 0.16,
+              "velocity": 70,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 9.55,
+              "duration": 0.16,
+              "velocity": 72,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 73,
+              "start": 10.65,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 11.2,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 77,
+              "start": 12.15,
+              "duration": 0.16,
+              "velocity": 68,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 75,
+              "start": 12.82,
+              "duration": 0.16,
+              "velocity": 70,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 13.55,
+              "duration": 0.16,
+              "velocity": 72,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 73,
+              "start": 14.65,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 15.2,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 77,
+              "start": 16.15,
+              "duration": 0.16,
+              "velocity": 68,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 75,
+              "start": 16.82,
+              "duration": 0.16,
+              "velocity": 70,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 17.55,
+              "duration": 0.16,
+              "velocity": 72,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 73,
+              "start": 18.65,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 19.2,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "pluck-chop motif"
+            }
+          ]
+        },
+        {
+          "name": "UK Garage Hook - Outro shuffle",
+          "startBar": 14,
+          "bars": 2,
+          "notes": [
+            {
+              "pitch": 72,
+              "start": 0.15,
+              "duration": 0.16,
+              "velocity": 68,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 68,
+              "start": 0.82,
+              "duration": 0.16,
+              "velocity": 70,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 1.55,
+              "duration": 0.16,
+              "velocity": 72,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 75,
+              "start": 2.65,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 77,
+              "start": 3.2,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 4.15,
+              "duration": 0.16,
+              "velocity": 68,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 68,
+              "start": 4.82,
+              "duration": 0.16,
+              "velocity": 70,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 72,
+              "start": 5.55,
+              "duration": 0.16,
+              "velocity": 72,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 75,
+              "start": 6.65,
+              "duration": 0.16,
+              "velocity": 74,
+              "label": "pluck-chop motif"
+            },
+            {
+              "pitch": 77,
+              "start": 7.2,
+              "duration": 0.16,
+              "velocity": 76,
+              "label": "pluck-chop motif"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
