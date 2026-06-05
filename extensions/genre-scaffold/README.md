@@ -56,15 +56,35 @@ Update `.env` if your Ableton Live Beta app lives somewhere else:
 EXTENSION_HOST_PATH=/Applications/Ableton Live 12 Beta.app/Contents/Helpers/ExtensionHost/ExtensionHostNodeModule.node
 ```
 
-## Run In Live
+## Run In Live During Development
 
-Start the extension in development mode:
+Developer Mode changes how extensions are loaded. When Developer Mode is enabled, Live shuts down the Live-managed Extension Host and expects you to run the host yourself.
+
+Use this workflow while developing:
+
+1. Enable Developer Mode in Live Preferences or Settings > Extensions.
+2. Start the extension host from this extension folder:
 
 ```sh
 npm start
 ```
 
-In Ableton Live Beta, use the extension from a MIDI track or MIDI arrangement selection context menu:
+3. Keep that process running while testing context menus in Live.
+
+You should see output like:
+
+```text
+Starting Extension Host...
+[Genre Scaffold]: Genre Scaffold activated.
+```
+
+If Developer Mode is on and `npm start` is not running, the extension can appear in Live's installed extensions list but its context menu actions will not be active.
+
+## Run Installed Package
+
+For installed `.ablx` testing, disable Developer Mode, restart Live Beta, and let Live run the installed extension host.
+
+Then use the extension from a MIDI track or MIDI arrangement selection context menu:
 
 ```text
 Generate Genre Scaffold
@@ -87,10 +107,10 @@ Build and package an installable Ableton extension:
 npm run package
 ```
 
-The package is written to:
+The package is written with the current manifest version in the filename:
 
 ```text
-dist/genre-scaffold.ablx
+dist/genre-scaffold_<version>.ablx
 ```
 
 Install it by adding the `.ablx` package from Ableton Live Beta Preferences or Settings > Extensions.

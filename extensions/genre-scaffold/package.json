@@ -11,7 +11,7 @@
     "build": "npm run build:production",
     "build:dev": "tsc --noEmit && tsx build.ts",
     "build:production": "tsc --noEmit && tsx build.ts --production",
-    "package": "npm run build:production && extensions-cli package -o dist/genre-scaffold.ablx",
+    "package": "npm run build:production && node scripts/package-extension.cjs",
     "start": "npm run build:dev && extensions-cli run",
     "test": "node --test",
     "validate:generations": "node test/variation-report.js",
