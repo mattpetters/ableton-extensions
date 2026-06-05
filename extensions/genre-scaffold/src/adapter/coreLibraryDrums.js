@@ -3,6 +3,18 @@ import os from "node:os";
 import path from "node:path";
 
 const AUDIO_EXTENSIONS = new Set([".wav", ".aif", ".aiff"]);
+export const SIMPLER_TRIGGER_PITCH = 60;
+export const POC_KICK_VELOCITY = 110;
+export const POC_KICK_DURATION = 0.25;
+
+const POC_KICK_SAMPLE_PREFERENCES = [
+  "Samples/One Shots/Drums/Kick/Kick 909 ES.wav",
+  "Samples/One Shots/Drums/Kick/Kick 808 Tone.aif",
+  "Samples/One Shots/Drums/Kick/Kick 808 Hard.wav",
+  "Samples/One Shots/Drums/Kick/Kick Garage.wav",
+  "Samples/Multisamples/Drum Machines/909/Kick 909 Tune1.wav",
+  "Samples/Multisamples/Drum Machines/808/Kick 808 Tone1 f.wav"
+];
 
 const DRUM_ROLE_BY_PITCH = new Map([
   [35, "kick"],
@@ -259,6 +271,81 @@ function filesForAnyCoreSamples(coreRoot, usedRoles) {
   const drumMachinesRoot = path.join(coreRoot, "Samples/Multisamples/Drum Machines");
   files.push(...audioFilesIn(drumMachinesRoot));
   return [...new Set(files)];
+}
+
+function kickFallbackFiles(coreRoot) {
+  return [
+    path.join(coreRoot, "Samples/One Shots/Drums/Kick"),
+    path.join(coreRoot, "Samples/Multisamples/Drum Machines/909"),
+    path.join(coreRoot, "Samples/Multisamples/Drum Machines/808"),
+    path.join(coreRoot, "Samples/Multisamples/Drum Machines")
+  ].flatMap(audioFilesIn)
+    .filter((file) => /\bkick\b/i.test(path.basename(file)) || /^kick/i.test(path.basename(file)))
+    .sort((a, b) => scoreSample(b, ["909", "808", "kick"]) - scoreSample(a, ["909", "808", "kick"]) || a.localeCompare(b));
+}
+
+export function createSimplerTriggerNote(startTime = 0) {
+  return {
+    pitch: SIMPLER_TRIGGER_PITCH,
+    startTime,
+    duration: POC_KICK_DURATION,
+    velocity: POC_KICK_VELOCITY
+  };
+}
+
+export function resolvePocKickSample(options = {}) {
+  const coreRoots = options.discoverDefaults === false
+    ? [...new Set((options.coreLibraryRoots ?? []).map(expandHome).filter(existsDir))]
+    : discoverCoreLibraryRoots(options.coreLibraryRoots ?? []);
+  if (!coreRoots.length) {
+    return {
+      samplePath: undefined,
+      fileName: undefined,
+      coreRoot: undefined,
+      sourceLabel: "Core Library missing",
+      warnings: ["Ableton Core Library was not found. Checked installed Live application bundles and common Core Library folders."],
+      searchedRoots: []
+    };
+  }
+
+  for (const coreRoot of coreRoots) {
+    for (const relativePath of POC_KICK_SAMPLE_PREFERENCES) {
+      const samplePath = path.join(coreRoot, relativePath);
+      if (existsFile(samplePath)) {
+        return {
+          samplePath,
+          fileName: path.basename(samplePath),
+          coreRoot,
+          sourceLabel: "preferred Core Library kick",
+          warnings: [],
+          searchedRoots: coreRoots
+        };
+      }
+    }
+  }
+
+  for (const coreRoot of coreRoots) {
+    const fallback = kickFallbackFiles(coreRoot)[0];
+    if (fallback) {
+      return {
+        samplePath: fallback,
+        fileName: path.basename(fallback),
+        coreRoot,
+        sourceLabel: "fallback Core Library kick",
+        warnings: ["Preferred POC kick samples were not found, so Genre Scaffold used the best matching Core Library kick sample."],
+        searchedRoots: coreRoots
+      };
+    }
+  }
+
+  return {
+    samplePath: undefined,
+    fileName: undefined,
+    coreRoot: coreRoots[0],
+    sourceLabel: "Kick sample missing",
+    warnings: ["Core Library was found, but no usable kick audio sample was found."],
+    searchedRoots: coreRoots
+  };
 }
 
 function sampleTokens(file) {

@@ -3,7 +3,12 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
-import { resolveDrumSamplePlan } from "../src/adapter/coreLibraryDrums.js";
+import {
+  createSimplerTriggerNote,
+  resolveDrumSamplePlan,
+  resolvePocKickSample,
+  SIMPLER_TRIGGER_PITCH
+} from "../src/adapter/coreLibraryDrums.js";
 import { generateScaffold, writeMidiFile } from "../src/index.js";
 import { isPitchInScale, parseKey, SCALES } from "../src/lib/theory.js";
 import { listGenres } from "../src/genres/index.js";
@@ -122,6 +127,47 @@ test("drum sample planner falls through to any matching one-shots when the targe
 
   assert.equal(plan.assignments.length, 3);
   assert.ok(plan.warnings.some((warning) => warning.includes("909 Core Kit preset was not found")));
+});
+
+test("POC kick sample resolver prefers a known Core Library kick", () => {
+  const coreRoot = makeMockCoreLibrary({
+    "Samples/One Shots/Drums/Kick/Kick 909 ES.wav": "",
+    "Samples/One Shots/Drums/Kick/Kick Other.wav": ""
+  });
+
+  const result = resolvePocKickSample({
+    coreLibraryRoots: [coreRoot],
+    discoverDefaults: false
+  });
+
+  assert.equal(result.fileName, "Kick 909 ES.wav");
+  assert.equal(result.sourceLabel, "preferred Core Library kick");
+  assert.equal(result.warnings.length, 0);
+});
+
+test("POC kick sample resolver reports a clear failure when no kick exists", () => {
+  const coreRoot = makeMockCoreLibrary({
+    "Samples/One Shots/Drums/Snare/Snare Only.wav": ""
+  });
+
+  const result = resolvePocKickSample({
+    coreLibraryRoots: [coreRoot],
+    discoverDefaults: false
+  });
+
+  assert.equal(result.samplePath, undefined);
+  assert.ok(result.warnings.some((warning) => warning.includes("no usable kick")));
+});
+
+test("POC Simpler trigger note uses neutral pitch 60", () => {
+  const note = createSimplerTriggerNote();
+  assert.equal(SIMPLER_TRIGGER_PITCH, 60);
+  assert.deepEqual(note, {
+    pitch: 60,
+    startTime: 0,
+    duration: 0.25,
+    velocity: 110
+  });
 });
 
 function makeMockCoreLibrary(files) {
