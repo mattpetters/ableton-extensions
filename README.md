@@ -10,13 +10,13 @@ Each extension lives in `extensions/<extension-name>` with its own setup notes, 
 
 ![Genre Scaffold UI](assets/screenshots/genre-scaffold-ui.png)
 
-**Status:** MVP packaged and in-Live smoke tested. Current pass is polishing stock-device mapping, key selection, and musical defaults before a public release tag.
+**Status:** MVP packaged and in-Live smoke tested. Current pass is validating that each generated drum/percussion rack is audible, useful, and customizable with stock Core Library samples.
 
 **Path:** [extensions/genre-scaffold](extensions/genre-scaffold)
 
 **Setup:** [Genre Scaffold setup instructions](extensions/genre-scaffold/README.md#setup)
 
-**What it does:** Generates a stock-only MIDI and arrangement scaffold in Ableton Live. Choose a genre, root, scale, length, tempo behavior, energy, density, and seed; the extension creates tracks, clips, MIDI notes, section markers, and insertable stock-device chains.
+**What it does:** Generates a stock-only MIDI and arrangement scaffold in Ableton Live. Choose a genre, root, scale, length, tempo behavior, energy, density, and seed; the extension creates tracks, clips, MIDI notes, section markers, insertable stock-device chains, and sampled Drum Racks populated from Ableton's Core Library when available.
 
 **Current genres:**
 
@@ -32,7 +32,8 @@ Each extension lives in `extensions/<extension-name>` with its own setup notes, 
 - Deterministic seeds for repeatable variations
 - Root, scale, tempo, section, arrangement, density, and energy controls
 - MIDI tracks for drums, bass, harmony, lead/chop, and percussion or FX roles
-- Stock-only Ableton devices with explicit initial-device labels and conservative effect tuning
+- Stock-only Ableton devices with explicit source labels, conservative effect tuning, and Core Library Drum Rack sample loading
+- Core Library fallback waterfall for 909, 808, Garage, Boom Bap, percussion, and generic one-shot drum samples
 - CLI fallback that emits `.json` and multitrack `.mid` examples
 - Browser-tested UI at intended and narrow modal sizes
 

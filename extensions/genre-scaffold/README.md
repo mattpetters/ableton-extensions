@@ -8,12 +8,12 @@ Genre Scaffold creates a useful starting session from a small set of musical cho
 
 ## Status
 
-MVP packaged, browser-tested, and in-Live smoke tested. Generation tests pass across all five MVP genres, including two seeded rounds per genre to confirm meaningful variation.
+MVP packaged, browser-tested, and in-Live smoke tested. Generation tests pass across all five MVP genres, including two seeded rounds per genre to confirm meaningful variation. Drum and percussion tracks now build sampled Drum Racks from Ableton's Core Library instead of leaving empty racks.
 
 Remaining release checks:
 
 - Reinstall the latest versioned `.ablx`
-- Run one generation per genre in Live with the stock-device polish pass
+- Run one generation per genre in Live and confirm each generated Drum Rack pad is audible
 - Run a second generation per genre in Live and inspect the musical difference
 
 ## Features
@@ -24,7 +24,10 @@ Remaining release checks:
 - Sets project tempo from the selected genre or manual override
 - Uses deterministic seeds for repeatable variations
 - Stays stock-only for V0, with insertable Ableton stock-device chains
-- Labels generated tracks with the actual initial stock device, such as `Init Drum Rack`
+- Finds Ableton's Core Library inside installed Live app bundles and common Core Library folders
+- Populates generated Drum Rack pads with Simpler chains and imported Core Library samples
+- Uses a kit waterfall: 909/707/808 for house and tech house, Garage/707/909/606 for UKG, 808 for trap, Boom Bap/vinyl/MPC-flavored samples for 90s hip hop, percussion kits for perc tracks, then any matching Core Library one-shots
+- Labels generated tracks with the sample source target and `GS <version>` for stale-build spotting
 - Applies conservative parameter tuning to inserted effects when Live exposes matching parameters
 - Ships with a CLI that writes `.json` scaffold data and multitrack `.mid` files
 
@@ -101,6 +104,27 @@ The easiest triggers are:
 
 The extension opens the options modal, then creates tracks, clips, notes, section markers, and tempo.
 
+## Drum Rack Samples
+
+Genre Scaffold looks for Ableton's bundled Core Library in places such as:
+
+```text
+/Applications/Ableton Live 12 Beta.app/Contents/App-Resources/Core Library
+/Applications/Ableton Live 12 Suite.app/Contents/App-Resources/Core Library
+```
+
+When a generated track starts with `Drum Rack`, the extension inserts a Drum Rack, creates drum chains for the MIDI notes used by that track, inserts Simpler on each chain, imports matching Core Library samples into the Live project, and replaces each Simpler sample.
+
+The target kit/palette is genre-aware:
+
+- Old Skool House and Tech House prefer `909 Core Kit`, then 707/808-style fallbacks.
+- UK Garage prefers `Garage Kit`, then 707/909/606-style fallbacks.
+- Trap prefers `808 Core Kit`.
+- 90s Hip Hop prefers `Boom Bap Kit` and vinyl/MPC-flavored one-shots.
+- Percussion tracks prefer percussion, conga, shaker, rim, tom, and miscellaneous one-shot folders.
+
+If the preferred preset or sample folder is missing, the extension falls through to any matching Core Library drum one-shots. To customize the result, unfold the Drum Rack and drag your own sample onto any pad, or select the Simpler inside a pad chain and replace its sample.
+
 ## Package
 
 Build and package an installable Ableton extension:
@@ -163,5 +187,5 @@ The validation checks that every MVP genre generates enough MIDI material, keeps
 - V0 does not require third-party samples, packs, or VSTs.
 - The SDK beta exposes song key/scale as read-only, so key currently controls generated MIDI but does not update Live's global key/scale UI.
 - The SDK beta can insert built-in Live devices by name, but does not currently expose reliable ADG/preset or third-party VST loading.
-- Drum Rack tracks are labeled as initialized racks and carry suggested kit/preset notes in the scaffold data for future advanced-mode selection.
+- The SDK beta does not expose Live's native Info Text setter for tracks or clips. Genre Scaffold generates helpful per-track notes internally and logs them, while the visible Live track name includes the source target and `GS <version>`.
 - Advanced mode is planned for per-role stock instrument choices, preferred racks/presets, user sample packs, and VST preset swaps once those loading paths are validated.

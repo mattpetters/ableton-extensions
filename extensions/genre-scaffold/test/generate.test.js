@@ -1,5 +1,9 @@
 import assert from "node:assert/strict";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 import test from "node:test";
+import { resolveDrumSamplePlan } from "../src/adapter/coreLibraryDrums.js";
 import { generateScaffold, writeMidiFile } from "../src/index.js";
 import { isPitchInScale, parseKey, SCALES } from "../src/lib/theory.js";
 import { listGenres } from "../src/genres/index.js";
@@ -76,3 +80,56 @@ test("MIDI writer emits a standard MIDI file", () => {
   assert.ok(midi.includes(Buffer.from("MTrk")));
   assert.ok(midi.length > 256);
 });
+
+test("drum sample planner prefers matching Core Library drum machine samples", () => {
+  const coreRoot = makeMockCoreLibrary({
+    "Racks/Drum Racks/Drum Machines/909 Core Kit.adg": "",
+    "Samples/Multisamples/Drum Machines/909/Kick 909.wav": "",
+    "Samples/Multisamples/Drum Machines/909/Snare 909.wav": "",
+    "Samples/One Shots/Drums/Hihat/Hihat Open 909.aif": "",
+    "Samples/One Shots/Drums/Clap/Clap 909.wav": ""
+  });
+
+  const plan = resolveDrumSamplePlan({
+    genreId: "old-skool-house",
+    trackRole: "drums",
+    trackName: "Drums - 909 House Pattern",
+    usedPitches: [36, 39, 46],
+    coreLibraryRoots: [coreRoot]
+  });
+
+  assert.equal(plan.kitLabel, "909 Core Kit");
+  assert.equal(plan.assignments.length, 3);
+  assert.ok(plan.assignments.some((assignment) => assignment.fileName.includes("Kick 909")));
+  assert.ok(plan.assignments.some((assignment) => assignment.fileName.includes("Clap 909")));
+  assert.ok(plan.shortLabel.includes("909"));
+});
+
+test("drum sample planner falls through to any matching one-shots when the target preset is missing", () => {
+  const coreRoot = makeMockCoreLibrary({
+    "Samples/One Shots/Drums/Kick/Kick Fallback.wav": "",
+    "Samples/One Shots/Drums/Snare/Snare Fallback.wav": "",
+    "Samples/One Shots/Drums/Hihat/Hihat Closed Fallback.wav": ""
+  });
+
+  const plan = resolveDrumSamplePlan({
+    genreId: "tech-house",
+    trackRole: "drums",
+    trackName: "Drums - Tight Club Pattern",
+    usedPitches: [36, 38, 42],
+    coreLibraryRoots: [coreRoot]
+  });
+
+  assert.equal(plan.assignments.length, 3);
+  assert.ok(plan.warnings.some((warning) => warning.includes("909 Core Kit preset was not found")));
+});
+
+function makeMockCoreLibrary(files) {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "genre-scaffold-core-"));
+  for (const [relativePath, contents] of Object.entries(files)) {
+    const fullPath = path.join(root, relativePath);
+    fs.mkdirSync(path.dirname(fullPath), { recursive: true });
+    fs.writeFileSync(fullPath, contents);
+  }
+  return root;
+}

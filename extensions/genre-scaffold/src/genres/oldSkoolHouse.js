@@ -14,7 +14,7 @@ function createDrums(ctx) {
     name: "Drums - 909 House Pattern",
     role: "drums",
     stockDevices: ["Drum Rack", "Drum Buss", "EQ Eight"],
-    suggestedPreset: "Swap the empty Drum Rack for a 909-style Core Library kit.",
+    suggestedPreset: "Loads 909-style Core Library samples when available; swap pads for your favorite house kit.",
     description: "Four-on-the-floor kick, claps on 2 and 4, and offbeat hats for the classic boots-and-cats engine.",
     clips: sectionClips(ctx, "Drums", (section, rng) => {
       const notes = [];
@@ -87,7 +87,7 @@ function createPerc(ctx) {
     name: "Perc - Conga Push",
     role: "perc",
     stockDevices: ["Drum Rack", "Auto Filter"],
-    suggestedPreset: "Use conga, shaker, or classic house percussion Drum Rack pads.",
+    suggestedPreset: "Loads conga, shaker, or classic house percussion samples when available; replace pads to personalize the groove.",
     description: "Light conga and shaker movement gives the loop a human old-school house push.",
     clips: sectionClips(ctx, "Perc", (section, rng) => {
       const notes = [];

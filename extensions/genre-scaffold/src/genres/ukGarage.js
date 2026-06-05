@@ -14,7 +14,7 @@ function createDrums(ctx) {
     name: "Drums - Dry 2-Step Pattern",
     role: "drums",
     stockDevices: ["Drum Rack", "Drum Buss", "EQ Eight"],
-    suggestedPreset: "Swap the empty Drum Rack for a Garage, 606, 707, or short 909-style kit.",
+    suggestedPreset: "Targets Garage, 606, 707, or short 909-style Core Library samples; keep the kit dry and punchy.",
     soundNotes: "Intentionally dry by default; add roomy reverb only for niche distant/atmospheric UKG.",
     description: "A dry swung 2-step pattern with syncopated kicks, snappy backbeats, and shuffled hats.",
     clips: sectionClips(ctx, "Drums", (section, rng) => {
@@ -93,7 +93,7 @@ function createPerc(ctx) {
     name: "Perc - Shuffled Tops",
     role: "perc",
     stockDevices: ["Drum Rack", "Auto Pan", "Echo"],
-    suggestedPreset: "Use short shuffled hats, snaps, and rim samples; keep delay low.",
+    suggestedPreset: "Loads short shuffled hats, snaps, and rim samples when available; keep delay low.",
     description: "Extra shuffled tops and small percussive answers reinforce the garage feel.",
     clips: sectionClips(ctx, "Perc", (section, rng) => {
       const notes = [];

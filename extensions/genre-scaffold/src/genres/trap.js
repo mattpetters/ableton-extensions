@@ -27,7 +27,7 @@ function createDrums(ctx) {
     name: "Drums - 808 Trap Pattern",
     role: "drums",
     stockDevices: ["Drum Rack", "Drum Buss", "Saturator"],
-    suggestedPreset: "Swap the empty Drum Rack for an 808-style Core Library kit.",
+    suggestedPreset: "Loads 808-style Core Library samples when available; swap pads for your preferred trap kit.",
     description: "Half-time snare, sparse kicks, and hat rolls give the scaffold its trap grid.",
     clips: sectionClips(ctx, "Drums", (section, rng) => {
       const notes = [];
@@ -94,7 +94,7 @@ function createPerc(ctx) {
     name: "Perc - Sparse Ear Candy",
     role: "perc",
     stockDevices: ["Drum Rack", "Echo", "Auto Filter"],
-    suggestedPreset: "Use short snaps, rims, and percs; keep space effects subtle.",
+    suggestedPreset: "Loads short snaps, rims, and percussion samples when available; keep space effects subtle.",
     description: "Sparse snaps and percussion leave negative space around the 808 and vocal lane.",
     clips: sectionClips(ctx, "Perc", (section, rng) => {
       const notes = [];

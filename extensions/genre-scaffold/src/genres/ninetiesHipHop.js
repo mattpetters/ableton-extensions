@@ -14,7 +14,7 @@ function createDrums(ctx) {
     name: "Drums - Boom Bap Pattern",
     role: "drums",
     stockDevices: ["Drum Rack", "Drum Buss", "Saturator"],
-    suggestedPreset: "Swap the empty Drum Rack for an acoustic/electronic boom-bap kit.",
+    suggestedPreset: "Targets Boom Bap or acoustic/electronic Core Library samples; swap pads for your own dusty kit.",
     description: "Swung hats, heavy snare on 2 and 4, and syncopated kicks for a boom-bap pocket.",
     clips: sectionClips(ctx, "Drums", (section, rng) => {
       const notes = [];
@@ -91,7 +91,7 @@ function createPerc(ctx) {
     name: "Perc - Vinyl Top Texture",
     role: "perc",
     stockDevices: ["Drum Rack", "Vinyl Distortion", "Auto Filter"],
-    suggestedPreset: "Use dusty shaker, rim, and vinyl-noise samples for this Drum Rack.",
+    suggestedPreset: "Loads dusty shaker, rim, and vinyl-style percussion samples when available.",
     description: "Subtle shaker and rim details create a sampled-loop feel while staying stock-only.",
     clips: sectionClips(ctx, "Perc", (section, rng) => {
       const notes = [];
